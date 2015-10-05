@@ -1,0 +1,491 @@
+@charset "utf-8";
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Microsoft Yahei";
+}
+/*课程查看*/
+.title
+{
+width: 100%;
+height: 120px;
+position: relative;
+top: 0px;
+left: 0px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: rgba(180, 172, 172, 0.65);
+background-color: rgba(1, 81, 142, 0.9);
+text-align: center;
+padding-top: 10px;
+color: white;
+font-size: 43px;
+font-family: "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+}
+.wraperleft
+{
+width:100%;
+height:auto;
+border-right-color:rgba(180, 172, 172, 0.65);
+border-right-style:solid;
+border-right-width:1px;
+margin-left:-15px;
+}
+.content
+{ 
+width:250px; 
+height:650px; 
+border-right:1px solid #CCCCCC;
+border-left:1px solid #CCCCCC;
+border-bottom: 1px solid #CCCCCC;
+color:#000000; 
+font-size:14px; 
+text-align:center;
+margin-left: 6%;
+background-color: white;
+}
+.div1
+{
+text-align:center;
+ width:250px; 
+ padding-top:10px;
+}
+.div2
+{
+height: 50px;
+line-height: 50px;
+cursor: pointer;
+font-size: 15px;
+position: relative;
+border-bottom: rgba(194, 190, 190, 0.8) 1px dotted;
+}
+.div2:hover
+{
+height: 50px;
+line-height: 50px;
+cursor: pointer;
+font-size: 15px;
+position: relative;
+border-bottom: rgba(194, 190, 190, 0.8) 1px dotted;
+color:#999999;
+}
+.change
+{
+display:none;
+}
+.div3
+{
+display: none;
+cursor:pointer; 
+font-size:13px;
+}
+#course,#collegeinfo  
+{
+cursor:pointer; 
+font-size:13px;
+display:block;
+}
+.div3 ul
+{
+margin:0;
+padding:0;
+}
+.div3 li
+{ height:30px; 
+line-height:30px; 
+list-style:none;
+text-align:center;
+padding-left:20px;
+ }
+ .div3 li:hover
+{ height:30px; 
+line-height:30px; 
+list-style:none;
+ text-align:center;
+ color:#999999;
+ }
+ .college
+ {
+ display: inline-block;
+ padding-right: 15px;
+ margin-left: -28px;
+ }
+ .div1 a
+ {
+  color:#000000;
+  text-decoration:none;
+ }
+ .div1 a:hover
+ {
+ color:#999999;
+ text-decoration:none;
+ }
+ .navigation
+ {
+ border-bottom:1px rgba(153, 153, 153, 0.47) solid;
+ height:60px;
+ }
+ .three
+ {
+ width: 0px;
+ height: 0px;
+ border-bottom: 30px solid transparent;
+ border-top: 30px solid transparent;
+ border-left: 40px solid rgba(194, 190, 190, 0.3);
+ display:inline-block;
+ position: absolute;
+ top: 0px;
+ left: 52px;
+ }
+ .flagword
+ {
+ display: inline-block;
+ position: absolute;
+ top: 20px;
+ left: 60px;
+ }
+ .horizen
+ {
+ border-right:3px double #999999;
+ }
+ .search
+ {
+ width: auto;
+ height: 605px;
+ padding-top: 1px;
+ }
+ .queryform
+ {
+width: 84%;
+margin-left: 55px;
+height: 500px;
+overflow:auto;
+overflow-x:auto;
+ }
+ .querytip
+ {
+ margin-top: 10px;
+font-size: 28px;
+margin-bottom: 25px;
+ }
+ #footer
+ {
+ width: 100%;
+height: 150px;
+background: rgba(153, 153, 153, 0.31);
+margin-top: 0px;
+position: absolute;
+top: 83%;
+ }
+ .showtable
+ {
+ width: 94%;
+ padding-left: 25px;
+ }
+ .gosearch
+ {
+ margin-top: -35px;
+margin-right: 0px;
+text-align: right;
+margin-bottom: 5px;
+ }
+/*课程添加*/
+.addform
+{
+width: 90%;
+margin-left: 10%;
+border: 1px solid rgba(153, 153, 153, 0.59);
+border-radius: 5px;
+padding: 10px;
+text-align: center;
+margin-top: 35px;
+}
+.upline
+{
+width:60%;
+display:inline-block;
+margin-left: 15px;
+}
+.space label
+{
+font-family: "Microsoft Yahei";
+font-size: 15px;
+font-weight: 300;
+}
+.space
+{
+margin-top: 20px;
+margin-bottom: 30px;
+}
+.input-append .add-on {
+margin-top: 1px;
+display: inline-block;
+width: auto;
+height: 34px;
+min-width: 16px;
+padding: 4px 5px;
+font-size: 14px;
+font-weight: normal;
+line-height: 20px;
+text-align: center;
+text-shadow: 0 1px 0 #ffffff;
+background-color: #eeeeee;
+border: 1px solid #ccc;
+margin-left: -3px;
+border-radius: 2px;
+}
+.input-append {
+display: inline-block;
+margin-bottom: 10px;
+vertical-align: middle;
+font-size: 0;
+white-space: nowrap;
+width: 60%;
+margin-left: 15px;
+}
+.spinner input
+{
+width: 70%;
+margin-left: -24%;
+padding-top:6px;
+-webkit-padding-top:8px;
+}
+.spinner .add-on a.spin-up, .spinner .add-on a.spin-down 
+{
+padding-top:3px;
+}
+.drop
+{
+width: 46%;
+margin-left: 15px;
+height: 35px;
+border-radius: 4px;
+border: 1px solid #ccc;
+vertical-align: bottom;
+}
+/*年级添加*/
+.contain
+{
+display: inline-block;
+width: 72%;
+border-radius: 2px;
+border: 1px solid rgba(153, 153, 153, 0.57);
+margin-left: 16px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 30px;
+text-align: left;
+vertical-align: middle;
+}
+.belong
+{
+display: inline-block;
+width: 40%;
+margin-right: 10px;
+}
+.allchoose
+{
+text-align: right;
+margin-bottom: -10px;
+margin-right: 10px;
+}
+/*课程计划添加*/
+.sr-only
+{
+position: relative;
+font-size: 14px;
+}
+.progress
+{
+height:25px;
+}
+.stepfirst
+{
+text-align: left;
+font-size: 20px;
+border-bottom: 1px solid rgb(204, 204, 204);
+padding-bottom: 5px;
+padding-left: 4px;
+color: white;
+margin-top: -1px;
+padding-top: 5px;
+}
+.right
+{
+text-align:right;
+padding-top: 6px;
+}
+.vis
+{
+visibility:hidden;
+}
+.newsearch
+{
+ width: auto;
+ height: 600px;
+ border: 1px solid rgba(153, 153, 153, 0.47);
+ border-radius: 7px;
+ padding-top: 1px;
+ overflow:hidden;
+ margin-bottom:3px;
+}
+#thirdstep .fixed-table-header
+{
+background-color:rgb(245, 245, 245);
+}
+.quickaddplan
+{
+margin-right: 101px;
+margin-top: -10px;
+margin-bottom: 10px;
+}
+.dropdown-menu
+{
+min-width:150px;
+}
+.progress-bar-danger
+{
+background-color:#3399CC;
+}
+.point
+{
+display: inline-block;
+margin-left: 80px;
+margin-bottom: -35px;
+padding: 6px;
+border: 1px solid rgb(204, 204, 204);
+border-radius: 5px;
+}
+#thirdstep .fixed-table-container
+{
+padding-bottom:0px!important;
+}
+/*学院添加*/
+.btn_add
+{
+text-align: right;
+margin-bottom: 10px;
+}
+.modal-dialog
+{
+width:350px;
+}
+/*专业添加*/
+.detail-view table tr td
+{
+border-bottom: 1px solid rgb(221, 221, 221);
+border-left:hidden;
+padding:8px;
+}
+tr.detail-view td:first-child
+{
+padding:0px !important;
+}
+/*知识点添加*/
+.pointspace
+{
+margin-top:20px;
+margin-bottom:10px;
+}
+/*登陆页*/
+.banner
+{ 
+position: relative; 
+overflow: auto; 
+}
+.banner li
+{ 
+list-style: none; 
+}
+.banner ul li 
+{ 
+float: left;
+}
+p.bjqs-caption 
+{
+width:100%;
+background: rgba(47, 48, 49, 0.5);
+background:rgba(255, 255, 255, 0.5);
+height:100%;
+text-align: center;
+padding-top: 10%;
+font-size: 50px;
+}
+#footer
+{
+width:100%;
+background:rgba(1, 81, 142, 0.9);
+height:50px;
+margin-top:139px;
+color:white;
+font-size:15px;
+text-align:center;
+padding-top:10px;
+margin-left:1px;
+}
+.loginbox,.registerbox
+{
+position: absolute;
+left: 37%;
+top: 15%;
+width: 400px;
+height: 300px;
+background: rgba(0, 0, 0, 0.56);
+border: 1px solid rgba(0, 0, 0, 0.56);
+border-radius: 4px;
+}
+.loginspace
+{
+margin-top:0px;
+margin-bottom:20px;
+color:white;
+text-align:center;
+}
+.loginclose,.registerclose
+{
+margin-left: 94%;
+color: rgba(255, 255, 255, 0.71);
+font-size: 20px;
+cursor: pointer;
+margin-top: 5px;
+}
+.loginclose:hover,.registerclose:hover
+{
+margin-left: 94%;
+color: rgba(255, 255, 255, 1);
+font-size: 20px;
+cursor: pointer;
+margin-top: 5px;
+}
+.loginstyle,.registerstyle
+{
+background-color: transparent;
+border: 2px solid white;
+color: white;
+width: 70px;
+}
+.loginstyle:hover,.registerstyle:hover
+{
+background-color: white;
+border: 2px solid white;
+color: rgb(51, 51, 51);
+width: 70px;
+}
+label.error
+{
+background: #fffAF0;
+  color: #111;
+  padding: 4px;
+  margin-bottom: -15px;
+  border: 1px solid #DCA;
+  border-radius: 3px;
+  margin-left: 40px;
+  margin-top: -13px;
+  z-index: 20;
+  box-shadow: 2px 3px 4px #817E7E;
+  height: 30px;
+}
+label.error span
+{
+border:1px solid #DCA;
+background:#fffAF0;
+}

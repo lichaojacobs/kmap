@@ -1,0 +1,165 @@
+[
+    {
+        "courseid": 10000,
+        "coursename": "数据库原理",
+        "credit": "3",
+		"category":"必修"
+		
+    },
+    {
+        "courseid": 10001,
+        "coursename": "数据结构",
+        "credit": "4",
+		"category":"必修"
+    },
+    {
+        "courseid": 10002,
+        "coursename": "运营管理",
+        "credit": "3",
+		"category":"必修"
+    },
+    {
+        "courseid": 10003,
+        "coursename": "管理统计学",
+        "credit": "4",
+		"category":"必修"
+    },
+    {
+       "courseid": 10004,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"选修"
+    },
+    {
+        "courseid": 10005,
+        "coursename": "运营管理",
+        "credit": "3",
+		"category":"选修"
+    },
+    { "courseid": 10006,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+    {
+       "courseid": 10007,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+    {
+        "courseid": 10008,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+    {
+         "courseid": 10009,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+    {
+        "courseid": 10010,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10011,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10012,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10013,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10014,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10015,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10016,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10017,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10018,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10019,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10020,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10021,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10022,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10023,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10024,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10025,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    },
+	{
+         "courseid": 10026,
+        "coursename": "信息经济学",
+        "credit": "2",
+		"category":"必修"
+    }
+
+]

@@ -1,0 +1,58 @@
+[
+    {   "collegename":"管理学院",
+        "collegeid": "10001"
+        
+    },
+    {
+        "collegename": "文法学院",
+        "collegeid": "10002"
+    },
+    {
+        "collegename": "文法学院",
+        "collegeid": "10003"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10004"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10005"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10006"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10007"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10008"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10009"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10010"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10011"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10012"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10013"
+    },
+	{
+        "collegename": "文法学院",
+        "collegeid": "10014"
+    }
+]

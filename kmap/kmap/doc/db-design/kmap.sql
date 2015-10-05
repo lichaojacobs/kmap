@@ -1,0 +1,202 @@
+-- I use it to build a database for kmap.
+-- author: andy
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- Major
+DROP TABLE IF EXISTS major;
+CREATE TABLE major (
+  id     INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  year   INT UNSIGNED COMMENT '入学年份',
+  name   VARCHAR(300),
+  info   VARCHAR(1500) COMMENT '专业简介',
+  PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- User
+DROP TABLE IF EXISTS user;
+CREATE TABLE user (
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name     VARCHAR(100),
+  email    VARCHAR(100) NOT NULL,
+  passwd   VARCHAR(100) NOT NULL,
+  eid      INT UNSIGNED COMMENT '办公网学号',
+  epasswd  VARCHAR(100) COMMENT '办公网密码',
+  major    INT UNSIGNED,
+
+  PRIMARY KEY (id),
+
+  FOREIGN KEY (major)
+    REFERENCES major(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- Category: The category of courses.
+DROP TABLE IF EXISTS category;
+CREATE TABLE category (
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name     VARCHAR(100),
+  color    VARCHAR(8)   DEFAULT '#000000',
+  PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- Property: The property of courses.
+DROP TABLE IF EXISTS property;
+CREATE TABLE property (
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name     VARCHAR(100),
+  PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- Course
+DROP TABLE IF EXISTS course;
+CREATE TABLE course (
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name     VARCHAR(100) NOT NULL,
+  info     VARCHAR(1500),
+  category INT UNSIGNED,
+  property INT UNSIGNED,
+
+  PRIMARY KEY (id),
+
+  FOREIGN KEY (category)
+    REFERENCES category(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE,
+
+  FOREIGN KEY (property)
+    REFERENCES property(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- MC: The relation between `major` and `course`.
+DROP TABLE IF EXISTS mc;
+CREATE TABLE mc (
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  major    INT UNSIGNED,
+  course   INT UNSIGNED,
+  credit   DECIMAL(3, 1) COMMENT '学分',
+
+  PRIMARY KEY (id),
+
+  FOREIGN KEY (major)
+    REFERENCES major(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE,
+
+  FOREIGN KEY (course)
+    REFERENCES course(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- UC: The relation between `user` and `course`.
+DROP TABLE IF EXISTS uc;
+CREATE TABLE uc (
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  user     INT UNSIGNED,
+  course   INT UNSIGNED,
+  mark     DECIMAL(4, 1) COMMENT '成绩',
+
+  PRIMARY KEY (id),
+
+  FOREIGN KEY (user)
+    REFERENCES user(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE,
+
+  FOREIGN KEY (course)
+    REFERENCES course(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- Detail(知识点)
+DROP TABLE IF EXISTS detail;
+CREATE TABLE detail (
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name     VARCHAR(100) NOT NULL,
+  info     VARCHAR(1500),
+  course   INT UNSIGNED,
+
+  PRIMARY KEY (id),
+
+  FOREIGN KEY (course)
+    REFERENCES course(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- Bonus(用户为知识点添加的附加信息)
+DROP TABLE IF EXISTS bonus;
+CREATE TABLE bonus (
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  info     TEXT NOT NULL,
+  score    INT COMMENT '得分: 采用投票机制',
+  user     INT UNSIGNED,
+  detail   INT UNSIGNED,
+
+  PRIMARY KEY (id),
+
+  FOREIGN KEY (user)
+    REFERENCES user(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE,
+
+  FOREIGN KEY (detail)
+    REFERENCES detail(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- CC: The relation among courses(课程).
+DROP TABLE IF EXISTS cc;
+CREATE TABLE cc (
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  tail     INT UNSIGNED COMMENT '前驱课程',
+  head     INT UNSIGNED COMMENT '后继课程',
+
+  PRIMARY KEY (id),
+
+  FOREIGN KEY (tail)
+    REFERENCES course(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE,
+
+  FOREIGN KEY (head)
+    REFERENCES course(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- DD: The relation among details(知识点).
+DROP TABLE IF EXISTS dd;
+CREATE TABLE dd (
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  tail     INT UNSIGNED COMMENT '大粒度知识点',
+  head     INT UNSIGNED COMMENT '小粒度知识点',
+
+  PRIMARY KEY (id),
+
+  FOREIGN KEY (tail)
+    REFERENCES detail(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE,
+
+  FOREIGN KEY (head)
+    REFERENCES detail(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

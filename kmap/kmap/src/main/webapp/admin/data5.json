@@ -1,0 +1,157 @@
+[
+   
+	{
+	    "id": "10001",
+        "name": "文法学院",
+		"major":[
+		{
+		"id":"1",
+		"name":"dheu"
+		},
+		{
+		"id":"2",
+		"name":"dheu"
+		},
+		{
+		"id":"3",
+		"name":"dheu"
+		}
+		]
+    },
+	{
+	    "id": "10002",
+        "name": "文法学院",
+		"major":[
+		{
+		"id":"1",
+		"name":"dheu"
+		},
+		{
+		"id":"2",
+		"name":"dheu"
+		},
+		{
+		"id":"3",
+		"name":"dheu"
+		}
+		]
+    },
+	{
+	    "id": "10003",
+        "name": "文法学院",
+		"major":[
+		{
+		"id":"1",
+		"name":"dheu"
+		},
+		{
+		"id":"2",
+		"name":"dheu"
+		},
+		{
+		"id":"3",
+		"name":"dheu"
+		}
+		]
+    },
+	{
+	    "id": "10004",
+        "name": "文法学院",
+		"major":[
+		{
+		"id":"1",
+		"name":"dheu"
+		},
+		{
+		"id":"2",
+		"name":"dheu"
+		},
+		{
+		"id":"3",
+		"name":"dheu"
+		}
+		]
+    },
+	{
+	    "id": "10005",
+        "name": "文法学院",
+		"major":[
+		{
+		"id":"1",
+		"name":"dheu"
+		},
+		{
+		"id":"2",
+		"name":"dheu"
+		},
+		{
+		"id":"3",
+		"name":"dheu"
+		}
+		]
+    },
+	{
+	    "id": "10006",
+        "name": "文法学院",
+		"major":[
+		{
+		"id":"1",
+		"name":"dheu"
+		},
+		{
+		"id":"2",
+		"name":"dheu"
+		},
+		{
+		"id":"3",
+		"name":"dheu"
+		}
+		]
+    },
+	{
+	    "id": "10007",
+        "name": "文法学院",
+		"major":[
+		{
+		"id":"1",
+		"name":"dheu"
+		},
+		{
+		"id":"2",
+		"name":"dheu"
+		},
+		{
+		"id":"3",
+		"name":"dheu"
+		}
+		]
+    },
+	{    
+	    "id": "10008",
+        "name": "文法学院",
+		"major":[
+		{
+		"id":"1",
+		"name":"dheu"
+		},
+		{
+		"id":"2",
+		"name":"dheu"
+		},
+		{
+		"id":"3",
+		"name":"dheu"
+		}
+		]
+        
+    },
+	{    
+	    "id": "10008",
+        "name": "文法学院",
+		"major":[
+		
+		]
+        
+    }
+
+]

@@ -1,0 +1,13 @@
+[
+    {   "course":“数据库原理”,
+        "courseone": "+<input type="checkbox"></>+",
+        "coursetwo": "<input type="checkbox"></>",
+        
+    },
+    {
+        "course": "数据结构",
+         "courseone": "<input type="checkbox"></>",
+        "coursetwo": "<input type="checkbox"></>",
+    }
+    
+]
