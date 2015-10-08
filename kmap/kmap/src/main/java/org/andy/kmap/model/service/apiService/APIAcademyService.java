@@ -34,7 +34,18 @@ public class APIAcademyService {
     }
 
 
+    public CommonResult deleteAcademies(int collegeid){
 
+        return apiAcademyDao.deleteAcademies(collegeid);
+
+    }
+
+
+    public CommonResult editAcademy(Academy academy){
+
+       return  apiAcademyDao.editAcademy(academy);
+
+    }
 
 
 

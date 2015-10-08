@@ -17,5 +17,9 @@ public interface APIAcademyDao {
 
     public CommonResult addAcademies(Academy academy);
 
+    public CommonResult deleteAcademies(int collegeid);
+
+    public CommonResult editAcademy(Academy academy);
+
 
 }

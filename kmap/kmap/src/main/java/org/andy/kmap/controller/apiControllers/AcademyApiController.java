@@ -28,7 +28,7 @@ public class AcademyApiController {
 
     }
 
-    @RequestMapping("addAcademies")
+    @RequestMapping("addAcademy")
     public @ResponseBody Object addAcademies(HttpServletRequest request){
 
         //获取参数
@@ -50,6 +50,53 @@ public class AcademyApiController {
             return academyService.addAcademies(academy);
 
         }
+
+    }
+
+    @RequestMapping("deleteAcademy")
+    public @ResponseBody Object deleteAcademy(HttpServletRequest request){
+
+        String collegeid=request.getParameter("collegeid");
+        if(collegeid==null)
+        {
+
+            CommonResult commonResult=new CommonResult();
+            commonResult.setDetail("网络异常，稍后再试！");
+            commonResult.setStatus(-1);
+
+            return  commonResult;
+        }else
+        {
+
+            return academyService.deleteAcademies(Integer.valueOf(collegeid));
+
+        }
+
+    }
+
+    @RequestMapping("editAcademy")
+    public @ResponseBody Object editAcademy(HttpServletRequest request){
+        //获取参数
+        String collegeid=request.getParameter("collegeid");
+        String collegename=request.getParameter("collegename");
+        if(collegeid==null||collegename==null)
+        {
+            CommonResult commonResult=new CommonResult();
+            commonResult.setDetail("网络异常，稍后再试！");
+            commonResult.setStatus(-1);
+
+            return  commonResult;
+
+        }else {
+            Academy academy=new Academy();
+            academy.setCollegeid(Integer.valueOf(collegeid));
+            academy.setCollegename(collegename);
+            return academyService.editAcademy(academy);
+
+        }
+
+
+
 
     }
 

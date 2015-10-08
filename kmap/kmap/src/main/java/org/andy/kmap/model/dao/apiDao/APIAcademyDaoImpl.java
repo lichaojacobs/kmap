@@ -54,7 +54,7 @@ public class APIAcademyDaoImpl implements APIAcademyDao {
      * @param academy
      * @return
      */
-    public CommonResult addAcademies(final Academy academy){
+    public CommonResult addAcademies( Academy academy){
 
         //定义返回的结果
         CommonResult commonResult=new CommonResult();
@@ -103,10 +103,66 @@ public class APIAcademyDaoImpl implements APIAcademyDao {
 
         }
 
+    }
 
+    /**
+     * 删除一条学院记录
+     * @param collegeid
+     * @return
+     */
+    public CommonResult deleteAcademies(int collegeid){
+
+        //定义返回的结果
+        CommonResult commonResult=new CommonResult();
+
+        try {
+
+            //先不考虑外键
+            jdbcTemplate.update("DELETE FROM academy WHERE codeNumber="+collegeid);
+            commonResult.setStatus(1);
+            commonResult.setDetail("已删除");
+
+            return commonResult;
+
+        }catch (Exception ex){
+
+            commonResult.setStatus(-1);
+            commonResult.setDetail(ex.getMessage());
+
+            return commonResult;
+
+        }
+
+    }
+
+
+    /**
+     * 修改学院信息
+     * @param academy
+     * @return
+     */
+    public CommonResult editAcademy(Academy academy){
+
+        //定义返回的结果
+        CommonResult commonResult=new CommonResult();
+        try {
+            jdbcTemplate.update("UPDATE academy SET codeNumber="+academy.getCollegeid()+",name='"+academy.getCollegename()+"'WHERE codeNumber="+academy.getCollegeid());
+            commonResult.setStatus(1);
+            commonResult.setDetail("修改成功！");
+            return commonResult;
+
+        }catch (Exception ex){
+
+            commonResult.setDetail(ex.getMessage());
+            commonResult.setStatus(-1);
+            return commonResult;
+
+        }
 
 
 
     }
+
+
 
 }

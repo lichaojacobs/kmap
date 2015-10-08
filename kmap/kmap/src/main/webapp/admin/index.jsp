@@ -61,11 +61,23 @@ $("#collegedeletesure .modal-body p").append('确认要删除'+collegeactionname
 function collegedelete(e)
 {
 //alert(collegeactionid);
+    //ajax函数
+    $.post("API/Academy/deleteAcademy.do",{"collegeid":collegeactionid},function(data,status){
 
-$("#collegetable").bootstrapTable('remove', {
+        if(data.status=='1'){
+            alert(data.detail);
+            //前端伪变化
+            $("#collegetable").bootstrapTable('remove', {
                 field: 'collegeid',
                 values: [collegeactionid]
             });
+        }
+        else
+        {
+            alert(data.detail);
+        }
+    })
+
 }
 
 <!--添加新行-->
@@ -74,7 +86,7 @@ function collegeadd()
 var insertcollegeid=$("#myModal input:first").val();
 var insertcollegename=$("#myModal input:eq(1)").val();
     //ajax函数
-    $.post("API/Academy/addAcademies.do",{"collegeid":insertcollegeid,"collegename":insertcollegename},function(data,status){
+    $.post("API/Academy/addAcademy.do",{"collegeid":insertcollegeid,"collegename":insertcollegename},function(data,status){
 
         if(data.status=='1'){
             alert(data.detail);
@@ -95,13 +107,28 @@ var insertcollegename=$("#myModal input:eq(1)").val();
 }
 function collegeedit()
 {
-$("#collegetable").bootstrapTable('updateRow', {
+
+    var updateCollegeid= $("#editModal .modal-body input:first").val();
+    var updateName= $("#editModal .modal-body input:eq(1)").val();
+    //ajax函数
+    $.post("API/Academy/editAcademy.do",{"collegeid":updateCollegeid,"collegename":updateName},function(data,status){
+
+        if(data.status=='1'){
+            alert(data.detail);
+            //前端伪变化
+            $("#collegetable").bootstrapTable('updateRow', {
                 index: collegeactionindex,
                 row: {
-                    collegename: $("#editModal .modal-body input:first").val(),
-                    collegeid: $("#editModal .modal-body input:eq(1)").val()
+                    collegeid: $("#editModal .modal-body input:first").val(),
+                    collegename: $("#editModal .modal-body input:eq(1)").val()
                 }
             });
+        }
+        else
+        {
+            alert(data.detail);
+        }
+    })
 }
 </script>
 </head>
