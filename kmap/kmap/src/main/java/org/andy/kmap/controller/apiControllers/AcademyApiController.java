@@ -2,6 +2,7 @@ package org.andy.kmap.controller.apiControllers;
 
 import org.andy.kmap.model.entity.Academy;
 import org.andy.kmap.model.entity.CommonResult;
+import org.andy.kmap.model.entity.Grade;
 import org.andy.kmap.model.service.apiService.APIAcademyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -95,6 +96,38 @@ public class AcademyApiController {
 
         }
 
+
+
+
+    }
+
+
+    /**
+     * 单个添加年级
+     * @param request
+     * @return
+     */
+    @RequestMapping("addGrade")
+    public @ResponseBody Object addGrade(HttpServletRequest request){
+
+
+        String collegeid=request.getParameter("collegeid");
+        String gradeyear=request.getParameter("gradeyear");
+        if(collegeid==null||gradeyear==null) {
+            CommonResult commonResult = new CommonResult();
+            commonResult.setDetail("网络异常，稍后再试！");
+            commonResult.setStatus(-1);
+
+            return commonResult;
+        }else
+        {
+
+            Grade grade=new Grade();
+            grade.setAcademyid(Integer.valueOf(collegeid));
+            grade.setYear(gradeyear);
+            return academyService.gradeAdd(grade);
+
+        }
 
 
 

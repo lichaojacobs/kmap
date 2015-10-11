@@ -2,6 +2,7 @@ package org.andy.kmap.model.dao.apiDao;
 
 import org.andy.kmap.model.entity.Academy;
 import org.andy.kmap.model.entity.CommonResult;
+import org.andy.kmap.model.entity.Grade;
 
 import java.util.List;
 
@@ -20,6 +21,8 @@ public interface APIAcademyDao {
     public CommonResult deleteAcademies(int collegeid);
 
     public CommonResult editAcademy(Academy academy);
+
+    public CommonResult gradeAdd(Grade grade);
 
 
 }

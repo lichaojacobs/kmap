@@ -34,46 +34,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1178">
               <caret line="0" column="31" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <file leaf-file-name="gradeadd.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/gradeadd.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="1805">
-              <caret line="128" column="52" selection-start-line="128" selection-start-column="52" selection-end-line="128" selection-end-column="52" />
-              <folding>
-                <element signature="n#bean#1;n#beans#0;n#!!top" expanded="false" />
-                <element signature="n#bean#2;n#beans#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25" vertical-offset="1231" max-vertical-offset="5206">
-              <caret line="115" column="29" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
-              <folding>
-                <element signature="e#2399#2854#0#HTML" expanded="false" />
-                <element signature="e#2890#3546#0#HTML" expanded="false" />
-                <marker date="1444207096798" expanded="true" signature="1201:1232" placeholder="..." />
-                <marker date="1444207096798" expanded="true" signature="1394:1425" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/CommonResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="475">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="22" />
+            <state vertical-scroll-proportion="-126.89286" vertical-offset="57" max-vertical-offset="4142">
+              <caret line="190" column="16" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -82,10 +52,11 @@
       <file leaf-file-name="AcademyApiController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/apiControllers/AcademyApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1109" max-vertical-offset="1577">
-              <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="1748">
+              <caret line="109" column="29" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="29" />
               <folding>
                 <element signature="method#deleteAcademy#0;class#AcademyApiController#0" expanded="false" />
+                <element signature="method#editAcademy#0;class#AcademyApiController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -94,12 +65,26 @@
       <file leaf-file-name="APIAcademyService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/apiService/APIAcademyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="779">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="453" max-vertical-offset="817">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="method#addAcademies#0;class#APIAcademyService#0" expanded="false" />
                 <element signature="method#deleteAcademies#0;class#APIAcademyService#0" expanded="false" />
                 <element signature="method#editAcademy#0;class#APIAcademyService#0" expanded="false" />
+                <element signature="method#gradeAdd#0;class#APIAcademyService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-107.89286" vertical-offset="0" max-vertical-offset="5985">
+              <caret line="159" column="17" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
+              <folding>
+                <marker date="1444405322581" expanded="true" signature="1201:1232" placeholder="..." />
+                <marker date="1444405322581" expanded="true" signature="1394:1425" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -108,58 +93,22 @@
       <file leaf-file-name="APIAcademyDaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIAcademyDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35714287" vertical-offset="1786" max-vertical-offset="2052">
-              <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.21428572" vertical-offset="2071" max-vertical-offset="3078">
+              <caret line="178" column="29" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getAllAcademies#0;class#APIAcademyDaoImpl#0" expanded="false" />
-                <element signature="e#876#885#0" expanded="true" />
+                <element signature="e#917#926#0" expanded="true" />
                 <element signature="method#deleteAcademies#0;class#APIAcademyDaoImpl#0" expanded="false" />
                 <element signature="method#editAcademy#0;class#APIAcademyDaoImpl#0" expanded="false" />
-                <marker date="1444229516019" expanded="true" signature="786:821" placeholder="select codeN..academy..." />
-                <marker date="1444229516019" expanded="true" signature="1601:1665" placeholder="select codeN..academy..." />
-                <marker date="1444229516019" expanded="true" signature="2639:2743" placeholder="INSERT INTO ..." />
-                <marker date="1444229516019" expanded="true" signature="3340:3377" placeholder="DELETE FROM ..." />
-                <marker date="1444229516019" expanded="true" signature="3928:3991" placeholder="UPDATE acade..." />
-                <marker date="1444229516019" expanded="true" signature="3928:4017" placeholder="UPDATE acade..." />
-                <marker date="1444229516019" expanded="true" signature="3928:4037" placeholder="UPDATE acade..." />
+                <marker date="1444406563355" expanded="true" signature="827:862" placeholder="select codeN..academy..." />
+                <marker date="1444406563355" expanded="true" signature="1642:1706" placeholder="select codeN..academy..." />
+                <marker date="1444406563355" expanded="true" signature="2680:2784" placeholder="INSERT INTO ..." />
+                <marker date="1444406563355" expanded="true" signature="3381:3418" placeholder="DELETE FROM ..." />
+                <marker date="1444406563355" expanded="true" signature="3969:4078" placeholder="UPDATE acade..." />
+                <marker date="1444406563355" expanded="true" signature="4664:4725" placeholder="select year,..." />
+                <marker date="1444406563355" expanded="true" signature="5663:5753" placeholder="INSERT INTO ..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APIAcademyDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIAcademyDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="532">
-              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/UserDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="893" max-vertical-offset="1558">
-              <caret line="89" column="51" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="method#getUser#0;class#UserDaoImpl#0" expanded="false" />
-                <marker date="1443287281383" expanded="true" signature="860:913" placeholder="INSERT INTO ..." />
-                <marker date="1443287281383" expanded="true" signature="1698:1759" placeholder="SELECT id, n..user..." />
-                <marker date="1443287281383" expanded="true" signature="2568:2607" placeholder="SELECT role ..roles..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JdbcTemplate.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2982" max-vertical-offset="21337">
-              <caret line="186" column="46" selection-start-line="186" selection-start-column="25" selection-end-line="186" selection-end-column="46" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -179,9 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/DetailDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/PropertyDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/PropertyDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/map/CourseMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/Bonus.java" />
@@ -227,8 +173,11 @@
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/CommonResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIAcademyDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/apiService/APIAcademyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/Grade.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/apiControllers/AcademyApiController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/gradeadd.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/gradeadd.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIAcademyDaoImpl.java" />
       </list>
     </option>
@@ -287,6 +236,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -303,6 +253,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,10 +399,145 @@
               <option name="myItemId" value="kmap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiDao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1051,11 +1184,12 @@
       <workItem from="1444058841121" duration="1419000" />
       <workItem from="1444196922722" duration="376000" />
       <workItem from="1444200445947" duration="7478000" />
+      <workItem from="1444393948501" duration="11468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291813000" />
+    <option name="totallyTimeSpent" value="303281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
@@ -1076,7 +1210,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5008104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22106825" sideWeight="0.49920508" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22106825" sideWeight="0.49920508" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21428572" sideWeight="0.5007949" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1140,7 +1274,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1149,20 +1283,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/CategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -1452,9 +1572,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1178">
           <caret line="0" column="31" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1473,81 +1591,106 @@
           <folding>
             <element signature="imports" expanded="false" />
             <element signature="method#getUser#0;class#UserDaoImpl#0" expanded="false" />
-            <marker date="1443287281383" expanded="true" signature="860:913" placeholder="INSERT INTO ..." />
-            <marker date="1443287281383" expanded="true" signature="1698:1759" placeholder="SELECT id, n..user..." />
-            <marker date="1443287281383" expanded="true" signature="2568:2607" placeholder="SELECT role ..roles..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIAcademyDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="532">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/apiService/APIAcademyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="779">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="method#addAcademies#0;class#APIAcademyService#0" expanded="false" />
-            <element signature="method#deleteAcademies#0;class#APIAcademyService#0" expanded="false" />
-            <element signature="method#editAcademy#0;class#APIAcademyService#0" expanded="false" />
+            <marker date="1443287281383" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1443287281383" expanded="true" signature="-1:-1" placeholder="SELECT id, n..user..." />
+            <marker date="1443287281383" expanded="true" signature="-1:-1" placeholder="SELECT role ..roles..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/CommonResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="22" />
+        <state vertical-scroll-proportion="-0.10752688" vertical-offset="182" max-vertical-offset="475">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIAcademyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="570">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/Grade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45519713" vertical-offset="25" max-vertical-offset="589">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#178#179#0" expanded="false" />
+            <element signature="e#205#206#0" expanded="false" />
+            <element signature="e#245#246#0" expanded="false" />
+            <element signature="e#277#278#0" expanded="false" />
+            <element signature="e#310#311#0" expanded="false" />
+            <element signature="e#342#343#0" expanded="false" />
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#431#432#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="1231" max-vertical-offset="5206">
-          <caret line="115" column="29" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+        <state vertical-scroll-proportion="-107.89286" vertical-offset="0" max-vertical-offset="5985">
+          <caret line="159" column="17" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
           <folding>
-            <element signature="e#2399#2854#0#HTML" expanded="false" />
-            <element signature="e#2890#3546#0#HTML" expanded="false" />
-            <marker date="1444207096798" expanded="true" signature="1201:1232" placeholder="..." />
-            <marker date="1444207096798" expanded="true" signature="1394:1425" placeholder="..." />
+            <marker date="1444405322581" expanded="true" signature="1201:1232" placeholder="..." />
+            <marker date="1444405322581" expanded="true" signature="1394:1425" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/apiService/APIAcademyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="453" max-vertical-offset="817">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="method#addAcademies#0;class#APIAcademyService#0" expanded="false" />
+            <element signature="method#deleteAcademies#0;class#APIAcademyService#0" expanded="false" />
+            <element signature="method#editAcademy#0;class#APIAcademyService#0" expanded="false" />
+            <element signature="method#gradeAdd#0;class#APIAcademyService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/gradeadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-126.89286" vertical-offset="57" max-vertical-offset="4142">
+          <caret line="190" column="16" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/apiControllers/AcademyApiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1109" max-vertical-offset="1577">
-          <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="1748">
+          <caret line="109" column="29" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="29" />
           <folding>
             <element signature="method#deleteAcademy#0;class#AcademyApiController#0" expanded="false" />
+            <element signature="method#editAcademy#0;class#AcademyApiController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIAcademyDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35714287" vertical-offset="1786" max-vertical-offset="2052">
-          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.21428572" vertical-offset="2071" max-vertical-offset="3078">
+          <caret line="178" column="29" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getAllAcademies#0;class#APIAcademyDaoImpl#0" expanded="false" />
-            <element signature="e#876#885#0" expanded="true" />
+            <element signature="e#917#926#0" expanded="true" />
             <element signature="method#deleteAcademies#0;class#APIAcademyDaoImpl#0" expanded="false" />
             <element signature="method#editAcademy#0;class#APIAcademyDaoImpl#0" expanded="false" />
-            <marker date="1444229516019" expanded="true" signature="786:821" placeholder="select codeN..academy..." />
-            <marker date="1444229516019" expanded="true" signature="1601:1665" placeholder="select codeN..academy..." />
-            <marker date="1444229516019" expanded="true" signature="2639:2743" placeholder="INSERT INTO ..." />
-            <marker date="1444229516019" expanded="true" signature="3340:3377" placeholder="DELETE FROM ..." />
-            <marker date="1444229516019" expanded="true" signature="3928:3991" placeholder="UPDATE acade..." />
-            <marker date="1444229516019" expanded="true" signature="3928:4017" placeholder="UPDATE acade..." />
-            <marker date="1444229516019" expanded="true" signature="3928:4037" placeholder="UPDATE acade..." />
+            <marker date="1444406563355" expanded="true" signature="827:862" placeholder="select codeN..academy..." />
+            <marker date="1444406563355" expanded="true" signature="1642:1706" placeholder="select codeN..academy..." />
+            <marker date="1444406563355" expanded="true" signature="2680:2784" placeholder="INSERT INTO ..." />
+            <marker date="1444406563355" expanded="true" signature="3381:3418" placeholder="DELETE FROM ..." />
+            <marker date="1444406563355" expanded="true" signature="3969:4078" placeholder="UPDATE acade..." />
+            <marker date="1444406563355" expanded="true" signature="4664:4725" placeholder="select year,..." />
+            <marker date="1444406563355" expanded="true" signature="5663:5753" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

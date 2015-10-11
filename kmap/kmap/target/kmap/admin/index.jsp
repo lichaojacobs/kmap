@@ -150,13 +150,13 @@ function collegeedit()
             <ul>
               <li>
                 <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="collegeadd.html" style="color:#337ab7">学院信息添加</a></li>
+                <a href="#" style="color:#337ab7">学院信息添加</a></li>
               <li>
                 <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="gradeadd.html">年级信息添加</a></li>
+                <a href="admin/gradeadd.jsp">年级信息添加</a></li>
               <li>
                 <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="majoradd.html">专业信息添加</a></li>
+                <a href="admin/majoradd.html">专业信息添加</a></li>
             </ul>
           </div>
           <div class="div2">
@@ -166,16 +166,16 @@ function collegeedit()
             <ul>
               <li>
                 <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="courseadd.html">专业课程添加</a></li>
+                <a href="admin/courseadd.html">专业课程添加</a></li>
               <li>
                 <div class="college"><span class="glyphicon glyphicon-search"></span></div>
-                <a href="courseplansearch.html">课程计划查看</a></li>
+                <a href="admin/courseplansearch.html">课程计划查看</a></li>
               <li>
                 <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="courseplanadd.html">课程计划添加</a></li>
+                <a href="admin/courseplanadd.html">课程计划添加</a></li>
 				<li>
                 <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="pointadd.html">课程知识添加</a></li>
+                <a href="admin/pointadd.html">课程知识添加</a></li>
             </ul>
           </div>
         </div>

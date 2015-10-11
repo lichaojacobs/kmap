@@ -1,3 +1,5 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -12,7 +14,7 @@
 <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/bootstrap-treeview.js"></script>
-<script src="js/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table.js"></script>
 <script src="js/jquery.spinner.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -24,17 +26,7 @@ $(document).ready(function(){
 </script>
 <script type="text/javascript">
 $(document).ready(function(){
-/*
-		$("#allchoose").click(function(){ 
-		if($(this).is(":checked"))
-		{
-		$(".belong :checkbox").attr("checked", true);
-		}
-		else
-		{
-		$(".belong :checkbox").attr("checked", false);
-		}
-		});*/
+
 		$("#allchoose").bind("click", function () {
                 if($(this).is(":checked"))
 		{
@@ -73,7 +65,7 @@ $(document).ready(function(){
                 <a href="collegeadd.html">学院信息添加</a></li>
               <li>
                 <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="gradeadd.html" style="color:#337ab7">年级信息添加</a></li>
+                <a href="gradeadd.jsp" style="color:#337ab7">年级信息添加</a></li>
               <li>
                 <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
                 <a href="majoradd.html">专业信息添加</a></li>
@@ -143,37 +135,37 @@ $(document).ready(function(){
                   <label for="collegebelong" style="margin-left: 7px">所属学院</label>
 				  <div class="contain">
                   <div class="belong">
-				  <input type="checkbox" name="collegebelong" /><label>管理与经济学部</label>
+				  <input type="checkbox" name="collegebelong" value="209" /><label>管理与经济学部</label>
 				  </div>
 				  <div class="belong">
-				  <input type="checkbox" name="collegebelong" /><label>建筑学院</label>
+				  <input type="checkbox" name="collegebelong" value="213" /><label>建筑学院</label>
 				  </div>
 				  <div class="belong">
-				  <input type="checkbox" name="collegebelong" /><label>自动化学院</label>
+				  <input type="checkbox" name="collegebelong" value="214" /><label>自动化学院</label>
 				  </div>
 				  <div class="belong">
-				  <input type="checkbox" name="collegebelong" /><label>材料学院</label>
+				  <input type="checkbox" name="collegebelong" value="211" /><label>材料学院</label>
 				  </div>
 				  <div class="belong">
-				  <input type="checkbox" name="collegebelong" /><label>文法学院</label>
+				  <input type="checkbox" name="collegebelong" value="212" /><label>文法学院</label>
 				  </div>
 				  <div class="belong">
-				  <input type="checkbox" name="collegebelong" /><label>精仪学院</label>
+				  <input type="checkbox" name="collegebelong" value="" /><label>精仪学院</label>
 				  </div>
 				  <div class="belong">
-				  <input type="checkbox" name="collegebelong" /><label>化工学院</label>
+				  <input type="checkbox" name="collegebelong" value="" /><label>化工学院</label>
 				  </div>
 				  <div class="belong">
-				  <input type="checkbox" name="collegebelong" /><label>建工学院</label>
+				  <input type="checkbox" name="collegebelong" value="" /><label>建工学院</label>
 				  </div>
 				  <div class="belong">
-				  <input type="checkbox" name="collegebelong" /><label>生命科学学院</label>
+				  <input type="checkbox" name="collegebelong" value="" /><label>生命科学学院</label>
 				  </div>
 				  <div class="allchoose">
 				  <input type="checkbox" name="allchoose" id="allchoose" /><label style="color:#286090">全选</label></div>
 				  </div>
                 </div>
-				<button type="submit" class="btn btn-primary">添加年级</button>
+				<button  onclick="submitToAdd()" class="btn btn-primary">添加年级</button>
               </form>
             </div>
           </div>
@@ -185,5 +177,36 @@ $(document).ready(function(){
   <div class="row" id="footer"></div>
   -->
 </div>
+<script type="text/javascript">
+	function submitToAdd(){
+		//获取下拉选项
+		var gradeyear= $("#gradeid").find("option:selected").text();
+		//获取所属学院
+		var collegeid;
+		$("input[name=collegebelong]").each(function(){
+			if(this.checked==true){
+				collegeid =this.value;
+			}
+		})
+		//ajax函数
+		$.post("/kmap/API/Academy/addGrade.do",{"collegeid":collegeid,"gradeyear":gradeyear},function(data,status){
+
+			if(data.status=='1'){
+
+				alert(data.detail);
+			}
+			else
+			{
+				alert(data.detail);
+			}
+		})
+
+
+
+
+	}
+</script>
+
+
 </body>
 </html>

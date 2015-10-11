@@ -2,6 +2,7 @@ package org.andy.kmap.model.dao.apiDao;
 
 import org.andy.kmap.model.entity.Academy;
 import org.andy.kmap.model.entity.CommonResult;
+import org.andy.kmap.model.entity.Grade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
@@ -164,5 +165,61 @@ public class APIAcademyDaoImpl implements APIAcademyDao {
     }
 
 
+    /**
+     * 为学院添加年级
+     * @param grade
+     * @return
+     */
+    public CommonResult gradeAdd(final Grade grade){
+
+        //定义返回的结果
+        CommonResult commonResult=new CommonResult();
+
+        try {
+            //拿到之后首先检查该记录是否重了
+            String sql="select year,academyid FROM grade where year=? AND academyid=?";
+            List< Grade> result=  jdbcTemplate.query(sql, new Object[]{grade.getYear(),grade.getAcademyid()}, new RowMapper<Grade>() {
+                @Override
+                public Grade  mapRow(ResultSet resultSet, int i) throws SQLException {
+                    if(resultSet.next()) {
+                        Grade grade1 = new Grade();
+                        grade1.setYear(resultSet.getString("year"));
+                        grade1.setAcademyid(resultSet.getInt("academyid"));
+                        return grade1;
+                    }else
+                        return null;
+                }
+            });
+            //说明添加了重复的元素
+            if(result!=null&&result.size()>0)
+            {
+                commonResult.setStatus(-1);
+                commonResult.setDetail("禁止重复添加！");
+
+                return commonResult;
+
+            }else
+            {
+                //插入数据
+                jdbcTemplate.update("INSERT INTO grade(year,academyid) VALUES('"+grade.getYear()+"','"+grade.getAcademyid()+"')");
+
+                commonResult.setStatus(1);
+                commonResult.setDetail("添加成功");
+                return commonResult;
+
+            }
+
+
+
+        }catch (Exception ex){
+
+            commonResult.setDetail(ex.getMessage());
+            commonResult.setStatus(-1);
+            return commonResult;
+
+
+        }
+
+    }
 
 }

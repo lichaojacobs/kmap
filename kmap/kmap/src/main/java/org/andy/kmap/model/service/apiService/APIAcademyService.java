@@ -3,6 +3,7 @@ package org.andy.kmap.model.service.apiService;
 import org.andy.kmap.model.dao.apiDao.APIAcademyDao;
 import org.andy.kmap.model.entity.Academy;
 import org.andy.kmap.model.entity.CommonResult;
+import org.andy.kmap.model.entity.Grade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -47,6 +48,12 @@ public class APIAcademyService {
 
     }
 
+
+    public CommonResult gradeAdd(Grade grade){
+
+        return apiAcademyDao.gradeAdd(grade);
+
+    }
 
 
 
