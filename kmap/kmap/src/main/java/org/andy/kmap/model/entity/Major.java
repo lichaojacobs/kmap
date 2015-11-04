@@ -6,7 +6,15 @@ public class Major {
     private int year;
     private String name;
     private String info;
+    private int academyId;
 
+    public int getAcademyId() {
+        return academyId;
+    }
+
+    public void setAcademyId(int academyId) {
+        this.academyId = academyId;
+    }
 
     public Major(int year, String name) {
 

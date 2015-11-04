@@ -7,30 +7,23 @@ import org.andy.kmap.model.entity.*;
 import org.andy.kmap.model.map.CourseMap;
 
 import com.google.gson.Gson;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
+@Service("CourseService")
 public class CourseService {
 
+    @Autowired
+    @Qualifier("CourseDaoImpl")
     private CourseDao courseDao;
+    @Autowired
+    @Qualifier("CategoryDaoImpl")
     private CategoryDao categoryDao;
+    @Autowired
+    @Qualifier("PropertyDaoImpl")
     private PropertyDao propertyDao;
 
-
-    public void setCourseDao(CourseDao courseDao) {
-
-        this.courseDao = courseDao;
-    }
-
-
-    public void setCategoryDao(CategoryDao categoryDao) {
-
-        this.categoryDao = categoryDao;
-    }
-
-
-    public void setPropertyDao(PropertyDao propertyDao) {
-
-        this.propertyDao = propertyDao;
-    }
 
 
     private List<Course> setCategory(List<Course> courses) {
@@ -93,8 +86,8 @@ public class CourseService {
                 }
             }
         }
-
         return new Gson().toJson(map);
+
     }
 
 

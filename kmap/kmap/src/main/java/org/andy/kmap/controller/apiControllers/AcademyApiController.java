@@ -22,6 +22,13 @@ public class AcademyApiController {
     @Autowired
     APIAcademyService academyService;
 
+    @RequestMapping("Index")
+    public String academyIndex(){
+
+        return "admin/index";
+
+    }
+
     @RequestMapping("getAllAcademies")
     public @ResponseBody Object getAllAcademies(){
 
@@ -101,6 +108,17 @@ public class AcademyApiController {
 
     }
 
+    /**
+     * 年级添加页面
+     * @param request
+     * @return
+     */
+    @RequestMapping("addGradePage")
+    public String addGradeIndex(HttpServletRequest request){
+
+        return "/admin/gradeadd";
+
+    }
 
     /**
      * 单个添加年级
@@ -132,5 +150,7 @@ public class AcademyApiController {
 
 
     }
+
+
 
 }

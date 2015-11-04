@@ -1,22 +1,23 @@
-
+<%@ page import="org.andy.kmap.model.entity.LoginViewModel" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>年级添加</title>
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap-spinner.css">
-<link rel="stylesheet" href="css/style-main.css">
-<link rel="stylesheet" href="css/bootstrap-treeview.css">
-<link rel="stylesheet" href="css/bootstrap-table.min.css">
-<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/bootstrap-treeview.js"></script>
-<script src="js/bootstrap-table.js"></script>
-<script src="js/jquery.spinner.min.js"></script>
-<script type="text/javascript">
+	<link rel="stylesheet" href="/kmap/admin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/kmap/admin/css/bootstrap-spinner.css">
+	<link rel="stylesheet" href="/kmap/admin/css/style-main.css">
+	<link rel="stylesheet" href="/kmap/admin/css/bootstrap-treeview.css">
+	<link rel="stylesheet" href="/kmap/admin/css/bootstrap-table.min.css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+	<script src="/kmap/admin/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="/kmap/admin/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/kmap/admin/js/bootstrap-treeview.js"></script>
+	<script src="/kmap/admin/js/bootstrap-table.js"></script>
+	<script src="/kmap/admin/js/jquery.spinner.min.js"></script>
+
+	<script type="text/javascript">
 $(document).ready(function(){
 		$(".div2").click(function(){ 
 			$(this).next("div").slideToggle("slow")  
@@ -51,54 +52,57 @@ $(document).ready(function(){
 	<span>天津大学知识地图信息管理系统</span> </div>
   </div>
   <div class="row" id="maincontent" style="height:80%">
-    <!--start of content-->
-    <div class="col-md-2" style=" background-color: rgba(194, 190, 190, 0.3); height:100%">
-      <div class="content">
-        <div class="div1">
-          <div class="div2">
-            <div class="college"><span class="glyphicon glyphicon-user"></span></div>
-            学院信息</div>
-          <div class="div3" id="collegeinfo">
-            <ul>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="collegeadd.html">学院信息添加</a></li>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="gradeadd.jsp" style="color:#337ab7">年级信息添加</a></li>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="majoradd.html">专业信息添加</a></li>
-            </ul>
-          </div>
-          <div class="div2">
-            <div class="college"><span class="glyphicon glyphicon-book"></span></div>
-            课程信息</div>
-          <div class="div3">
-            <ul>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="courseadd.html">专业课程添加</a></li>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-search"></span></div>
-                <a href="courseplansearch.html">课程计划查看</a></li>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="courseplanadd.html">课程计划添加</a></li>
-				<li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="pointadd.html">课程知识添加</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--end of content-->
+
+	  <!--start of content-->
+	  <div class="col-md-2" style=" background-color: rgba(194, 190, 190, 0.3); height:100%">
+		  <div class="content">
+			  <div class="div1">
+				  <div class="div2">
+					  <div class="college"><span class="glyphicon glyphicon-user"></span></div>
+					  学院信息</div>
+				  <div class="div3" id="collegeinfo">
+					  <ul>
+						  <li>
+							  <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+							  <a href="/kmap/API/Academy/Index.do" style="color:#337ab7">学院信息添加</a></li>
+						  <li>
+							  <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+							  <a href="/kmap/API/Academy/addGradePage.do">年级信息添加</a></li>
+						  <li>
+							  <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+							  <a href="/kmap/API/Major/Index.do">专业信息添加</a></li>
+					  </ul>
+				  </div>
+				  <div class="div2">
+					  <div class="college"><span class="glyphicon glyphicon-book"></span></div>
+					  课程信息</div>
+				  <div class="div3">
+					  <ul>
+						  <li>
+							  <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+							  <a href="/kmap/API/Course/Index.do">专业课程添加</a></li>
+						  <li>
+							  <div class="college"><span class="glyphicon glyphicon-search"></span></div>
+							  <a href="/kmap/API/Course/CoursePlanSearch.do">课程计划查看</a></li>
+						  <li>
+							  <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+							  <a href="/kmap/API/Course/CoursePlanAdd.do">课程计划添加</a></li>
+						  <li>
+							  <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+							  <a href="/kmap/API/Course/CourseKnowledgeAdd.do">课程知识添加</a></li>
+					  </ul>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+	  <!--end of content-->
+
+
     <div class="col-md-10" style="height:100%">
-      <div class="row navigation">
-        <!--<div class="three"></div>-->
-        <div class="flagword">您现在所在的位置：学院信息 》年级信息添加</div>
-      </div>
+		<div class="row navigation">
+			<!--<div class="three"></div>-->
+			<div class="flagword">欢迎 <%=((LoginViewModel)request.getSession().getAttribute("userRole")).getUserEmail()%>现在所在的位置：学院信息 》添加年级</div>
+		</div>
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
           <div class="search">
@@ -165,7 +169,7 @@ $(document).ready(function(){
 				  <input type="checkbox" name="allchoose" id="allchoose" /><label style="color:#286090">全选</label></div>
 				  </div>
                 </div>
-				<button  onclick="submitToAdd()" class="btn btn-primary">添加年级</button>
+				<a role="button"  onclick="submitToAdd()" class="btn btn-primary">添加年级</a>
               </form>
             </div>
           </div>
@@ -206,7 +210,6 @@ $(document).ready(function(){
 
 	}
 </script>
-
 
 </body>
 </html>

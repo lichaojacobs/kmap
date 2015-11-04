@@ -6,15 +6,18 @@ import java.util.ArrayList;
 import javax.sql.DataSource;
 
 import org.andy.kmap.model.entity.*;
+import org.apache.commons.dbcp2.BasicDataSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 
+
+@Repository("DetailDaoImpl")
 public class DetailDaoImpl implements DetailDao {
 
-    private DataSource dataSource;
-
-
-    public DetailDaoImpl(DataSource dataSource) {
-        this.dataSource = dataSource;
-    }
+    @Autowired
+    @Qualifier("dataSource")
+    private BasicDataSource dataSource;
 
 
     /**

@@ -5,6 +5,16 @@ public class Course {
     private int id;
     private String name;
     private String info;
+    private int academyId;
+
+    public int getAcademyId() {
+        return academyId;
+    }
+
+    public void setAcademyId(int academyId) {
+        this.academyId = academyId;
+    }
+
 
     private double mark;
     private double credit;

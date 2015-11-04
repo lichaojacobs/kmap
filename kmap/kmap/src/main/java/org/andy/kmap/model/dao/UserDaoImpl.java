@@ -3,7 +3,9 @@ package org.andy.kmap.model.dao;
 import java.sql.*;
 import javax.sql.DataSource;
 
+import org.andy.kmap.model.entity.CommonResult;
 import org.andy.kmap.model.entity.User;
+import org.andy.kmap.tools.SendEmailTools;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,25 +22,82 @@ public class UserDaoImpl implements UserDao {
      * This method adds a user.
      * @param user
      */
-    public void addUser(User user) {
+    public CommonResult addUser(User user) {
+
+        CommonResult commonResult=new CommonResult();
 
         Connection connection = null;
         PreparedStatement statement = null;
         SQLException exception = null;
 
         try {
+
+
             connection = this.dataSource.getConnection();
-            statement = connection.prepareStatement("INSERT INTO user(name, email, passwd) VALUES(?, ?, ?)");
+            //插入之前先查查邮箱是否唯一
+            statement = connection.prepareStatement("SELECT id, name, email, passwd FROM user WHERE user.email = ?");
 
-            statement.setString(1, user.getName());
-            statement.setString(2, user.getEmail());
-            statement.setString(3, user.getPassword());
+            statement.setString(1, user.getEmail());
 
-            statement.executeUpdate();
-        } catch (SQLException ex) {
+            ResultSet result = statement.executeQuery();
+            if(!result.first()){
+                //插入语句
+                statement = connection.prepareStatement("INSERT INTO user(name, email, passwd) VALUES(?, ?, ?)");
+                statement.setString(1, user.getName());
+                statement.setString(2, user.getEmail());
+                statement.setString(3, user.getPassword());
+                statement.executeUpdate();
+                //角色表
+                statement = connection.prepareStatement("INSERT INTO roles(userid, role) VALUES(?, ?)");
+                statement.setString(1,user.getEmail());
+                statement.setString(2,"用户");
+                statement.executeUpdate();
+
+                try {
+
+                    SendEmailTools.sendMail(user.getEmail(),"邮箱激活","This is keng（坑）","html");
+
+
+                }catch (Exception ex){
+
+                    ex.printStackTrace();
+                    commonResult.setStatus(-1);
+                    commonResult.setDetail("发送邮箱失败，请确保邮箱有效！");
+                    return commonResult;
+                }
+
+                //注册成功
+                commonResult.setDetail("注册成功，请前往邮箱激活！");
+                commonResult.setStatus(1);
+                return commonResult;
+
+
+            }
+            else
+            {
+                commonResult.setDetail("该邮箱已经注册过了！");
+                commonResult.setStatus(-1);
+                return commonResult;
+
+            }
+
+        }catch (SQLException ex){
             exception = ex;
+            commonResult.setStatus(-1);
+            commonResult.setDetail("数据库服务器异常！");
+            return commonResult;
+
+        }
+        catch (Exception ex) {
+
+            commonResult.setStatus(-1);
+            commonResult.setDetail("服务器内部错误！");
+            return commonResult;
+
         } finally {
-            ConnectionCloser.close(connection, statement, exception);
+
+            ConnectionCloser.close(connection,statement,exception);
+
         }
     }
 
@@ -101,7 +160,6 @@ public class UserDaoImpl implements UserDao {
         } finally {
             ConnectionCloser.close(connection, statement, exception);
         }
-
 
         return role;
 

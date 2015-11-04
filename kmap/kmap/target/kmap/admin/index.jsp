@@ -5,19 +5,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>学院添加</title>
-<link rel="stylesheet" href="admin/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="admin/css/bootstrap-spinner.css">
-<link rel="stylesheet" href="admin/css/style-main.css">
-<link rel="stylesheet" href="admin/css/bootstrap-treeview.css">
-<link rel="stylesheet" href="admin/css/bootstrap-table.min.css">
+<link rel="stylesheet" href="/kmap/admin/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/kmap/admin/css/bootstrap-spinner.css">
+<link rel="stylesheet" href="/kmap/admin/css/style-main.css">
+<link rel="stylesheet" href="/kmap/admin/css/bootstrap-treeview.css">
+<link rel="stylesheet" href="/kmap/admin/css/bootstrap-table.min.css">
 <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!--script start-->
+    <script src="/kmap/admin/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="/kmap/admin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/kmap/admin/js/bootstrap-treeview.js"></script>
+    <script src="/kmap/admin/js/bootstrap-table.js"></script>
+    <script src="/kmap/admin/js/jquery.spinner.min.js"></script>
+
 <script type="text/javascript">
-$(document).ready(function(){
-		$(".div2").click(function(){ 
-			$(this).next("div").slideToggle("slow")  
-			.siblings(".div3:visible").slideUp("slow");
-		});
-	});
+    $(document).ready(function(){
+        $(".div2").click(function(){
+            $(this).next("div").slideToggle("slow")
+                    .siblings(".div3:visible").slideUp("slow");
+        });
+    });
 </script>
 <script>
 var collegeactionid;
@@ -62,7 +69,7 @@ function collegedelete(e)
 {
 //alert(collegeactionid);
     //ajax函数
-    $.post("API/Academy/deleteAcademy.do",{"collegeid":collegeactionid},function(data,status){
+    $.post("/kmap/API/Academy/deleteAcademy.do",{"collegeid":collegeactionid},function(data,status){
 
         if(data.status=='1'){
             alert(data.detail);
@@ -86,7 +93,7 @@ function collegeadd()
 var insertcollegeid=$("#myModal input:first").val();
 var insertcollegename=$("#myModal input:eq(1)").val();
     //ajax函数
-    $.post("API/Academy/addAcademy.do",{"collegeid":insertcollegeid,"collegename":insertcollegename},function(data,status){
+    $.post("/kmap/API/Academy/addAcademy.do",{"collegeid":insertcollegeid,"collegename":insertcollegename},function(data,status){
 
         if(data.status=='1'){
             alert(data.detail);
@@ -111,7 +118,7 @@ function collegeedit()
     var updateCollegeid= $("#editModal .modal-body input:first").val();
     var updateName= $("#editModal .modal-body input:eq(1)").val();
     //ajax函数
-    $.post("API/Academy/editAcademy.do",{"collegeid":updateCollegeid,"collegename":updateName},function(data,status){
+    $.post("/kmap/API/Academy/editAcademy.do",{"collegeid":updateCollegeid,"collegename":updateName},function(data,status){
 
         if(data.status=='1'){
             alert(data.detail);
@@ -136,52 +143,54 @@ function collegeedit()
 
 <div class="container-fluid" id="container">
   <div class="row">
-    <div class="title"><span><img src="admin/images/logo1.png" /></span> <span>天津大学知识地图信息管理系统</span> </div>
+    <div class="title"><span><img src="/kmap/admin/images/logo1.png" /></span> <span>天津大学知识地图信息管理系统</span> </div>
   </div>
   <div class="row" id="maincontent" style="height:80%">
-    <!--start of content-->
-    <div class="col-md-2" style=" background-color: rgba(194, 190, 190, 0.3); height:100%">
-      <div class="content">
-        <div class="div1">
-          <div class="div2">
-            <div class="college"><span class="glyphicon glyphicon-user"></span></div>
-            学院信息</div>
-          <div class="div3" id="collegeinfo">
-            <ul>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="#" style="color:#337ab7">学院信息添加</a></li>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="admin/gradeadd.jsp">年级信息添加</a></li>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="admin/majoradd.html">专业信息添加</a></li>
-            </ul>
+
+      <!--start of content-->
+      <div class="col-md-2" style=" background-color: rgba(194, 190, 190, 0.3); height:100%">
+          <div class="content">
+              <div class="div1">
+                  <div class="div2">
+                      <div class="college"><span class="glyphicon glyphicon-user"></span></div>
+                      学院信息</div>
+                  <div class="div3" id="collegeinfo">
+                      <ul>
+                          <li>
+                              <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+                              <a href="/kmap/API/Academy/Index.do" style="color:#337ab7">学院信息添加</a></li>
+                          <li>
+                              <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+                              <a href="/kmap/API/Academy/addGradePage.do">年级信息添加</a></li>
+                          <li>
+                              <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+                              <a href="/kmap/API/Major/Index.do">专业信息添加</a></li>
+                      </ul>
+                  </div>
+                  <div class="div2">
+                      <div class="college"><span class="glyphicon glyphicon-book"></span></div>
+                      课程信息</div>
+                  <div class="div3">
+                      <ul>
+                          <li>
+                              <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+                              <a href="/kmap/API/Course/Index.do">专业课程添加</a></li>
+                          <li>
+                              <div class="college"><span class="glyphicon glyphicon-search"></span></div>
+                              <a href="/kmap/API/Course/CoursePlanSearch.do">课程计划查看</a></li>
+                          <li>
+                              <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+                              <a href="/kmap/API/Course/CoursePlanAdd.do">课程计划添加</a></li>
+                          <li>
+                              <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
+                              <a href="/kmap/API/Course/CourseKnowledgeAdd.do">课程知识添加</a></li>
+                      </ul>
+                  </div>
+              </div>
           </div>
-          <div class="div2">
-            <div class="college"><span class="glyphicon glyphicon-book"></span></div>
-            课程信息</div>
-          <div class="div3">
-            <ul>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="admin/courseadd.html">专业课程添加</a></li>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-search"></span></div>
-                <a href="admin/courseplansearch.html">课程计划查看</a></li>
-              <li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="admin/courseplanadd.html">课程计划添加</a></li>
-				<li>
-                <div class="college"><span class="glyphicon glyphicon-plus"></span></div>
-                <a href="admin/pointadd.html">课程知识添加</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
-    </div>
-    <!--end of content-->
+      <!--end of content-->
+
     <div class="col-md-10" style="height:100%">
       <div class="row navigation">
         <!--<div class="three"></div>-->
@@ -195,7 +204,7 @@ function collegeedit()
 			  <div class="btn_add">
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">添加学院</button></div>
 
-              <table data-toggle="table" id="collegetable" data-height="430" data-toolbar="#get"  data-url="API/Academy/getAllAcademies.do">
+              <table data-toggle="table" id="collegetable" data-height="430" data-toolbar="#get"  data-url="/kmap/API/Academy/getAllAcademies.do">
                 <thead>
                   <tr>
                     <th data-field="collegename" data-align="center">学院名称</th>
@@ -251,10 +260,7 @@ function collegeedit()
                           <label for="collegename">学院名称</label>
                           <input type="text" id="collegename" name="collegename" class="form-control upline" />
                         </div>
-						<!--
-						<div style="text-align:center">
-                        <button type="submit" id="collegesubmit" class="btn btn-primary" >提交</button></div>-->
-                      <!--</form>-->
+
                     </div>
 					<div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
@@ -299,11 +305,6 @@ function collegeedit()
                 <!-- /.modal-dialog -->
               </div>
               <!-- /.modal -->
-<!--script start-->
-<script src="admin/js/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="admin/bootstrap/js/bootstrap.min.js"></script>
-<script src="admin/js/bootstrap-treeview.js"></script>
-<script src="admin/js/bootstrap-table.js"></script>
-<script src="admin/js/jquery.spinner.min.js"></script>
+
 </body>
 </html>

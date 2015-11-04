@@ -4,16 +4,16 @@ import java.util.List;
 
 import org.andy.kmap.model.entity.Major;
 import org.andy.kmap.model.dao.MajorDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
+@Service("MajorService")
 public class MajorService {
 
+    @Autowired
+    @Qualifier("MajorDaoImpl")
     private MajorDao majorDao;
-
-
-    public MajorService(MajorDao majorDao) {
-        this.majorDao = majorDao;
-    }
-
 
     public void addMajor(Major major) {
         this.majorDao.addMajor(major);

@@ -6,16 +6,17 @@ import java.util.ArrayList;
 import javax.sql.DataSource;
 
 import org.andy.kmap.model.entity.Major;
+import org.apache.commons.dbcp2.BasicDataSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 
+@Repository("MajorDaoImpl")
 public class MajorDaoImpl implements MajorDao {
 
-    private DataSource dataSource;
-
-
-    public MajorDaoImpl(DataSource dataSource) {
-        this.dataSource = dataSource;
-    }
-
+    @Autowired
+    @Qualifier("dataSource")
+    private BasicDataSource dataSource;
 
     /**
      * This method adds a major object into the database.

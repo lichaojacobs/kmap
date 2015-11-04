@@ -1,10 +1,12 @@
 package org.andy.kmap.model.service;
 
+import org.andy.kmap.model.entity.CommonResult;
 import org.andy.kmap.model.entity.User;
 import org.andy.kmap.model.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 
 @Service("UserService")
@@ -19,9 +21,11 @@ public class UserService {
      * This method adds a user to the database.
      * @param user
      */
-    public void addUser(User user) {
+    @Transactional()
+    public CommonResult addUser(User user) {
 
-        userDao.addUser(user);
+       return  userDao.addUser(user);
+
     }
 
 

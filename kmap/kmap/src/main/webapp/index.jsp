@@ -60,41 +60,42 @@ $(".registerbox").addClass("change");
 </script>
 <script type="text/javascript">
 
-&(document).ready(function(){
+$(document).ready(function(){
 $.validator.setDefaults({ 
         debug:true
     });
 $("#login").validate({
 
-}
+})
 });
-
 });
 </script>
 <script type="text/javascript">
 $(document).ready(function(){
-$("#register").validate({
-rules:{
-confirm_password: {
-                equalTo: "#passwordr"
-            }
-},
-messages:
-{
-usernamer:'请输入用户名',
-emailr:
-{
-    required: "请输入email地址",
-    email: "请输入正确的email地址"
-},
-passwordr:'请输入密码',
-confirm_password:
-{
-required: "请输入确认密码",
-equalTo: "两次输入密码不一致"
-}
-}
-})
+
+	$("#register").validate({
+		rules:{
+			confirm_password: {
+				equalTo: "#passwordr"
+			}
+		},
+		messages:
+		{
+			usernamer:'请输入用户名',
+			emailr:
+			{
+				required: "请输入email地址",
+				email: "请输入正确的email地址"
+			},
+			passwordr:'请输入密码',
+			confirm_password:
+			{
+				required: "请输入确认密码",
+				equalTo: "两次输入密码不一致"
+			}
+		}
+	})
+
 });
 </script>
 <script type="text/javascript">
@@ -104,6 +105,49 @@ if(ua.match(/msie/) != null){$("#footer").css('marginTop','61px');}
 if(ua.match(/firefox/) != null){$("#footer").css('marginTop','106px');}
 if(ua.match(/chrome/) != null){$("#footer").css('marginTop','66px');}
 });
+	function register(){
+
+		var username=$("#usernamer")[0].value;
+		var email=$("#emailr")[0].value;
+		var password=$("#passwordr")[0].value;
+		var confirm_password=$("#confirm_password")[0].value;
+
+		if(username==null||email==null||password==null)
+		{
+			alert("此字段必须！");
+			return;
+		}
+		if(password!=password)
+		{
+			alert("俩次密码不一致！");
+			return;
+		}
+		var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(!filter.test(email)){
+			alert("邮箱格式不符");
+			return;
+		}
+		//ajax方法
+		$.post("/kmap/register.do",{"username":username,"email":email,"password":password},function(data,status){
+
+			if(status=="success"){
+
+				if(data.status==1){
+
+					alert(data.detail);
+
+				}else{
+
+					alert(data.detail)
+
+				}
+
+			}else {
+				alert("网络故障,请稍后再试！")
+			}
+		})
+
+	}
 </script>
 </head>
 <body>
@@ -148,7 +192,7 @@ if(ua.match(/chrome/) != null){$("#footer").css('marginTop','66px');}
 	  <!--loginbox-->
 	  <div class="registerbox change" style="height:375px">
 	  <span class="registerclose glyphicon glyphicon-remove"></span>
-	  <form id="register" name="register" method="get" action="register.do">
+	  <%--<form id="register" name="register"  action="#">--%>
 	  <div class="loginspace"><span style="font-size:30px">注  册</span></div>
 	  <div class="loginspace">
 	  <label for="usernamer">用户名</label>
@@ -167,9 +211,9 @@ if(ua.match(/chrome/) != null){$("#footer").css('marginTop','66px');}
 	  <input type="password" id="confirm_password" name="confirm_password" class="form-control" style="width:68%; display:inline-block" required/>
 	  </div>
 	  <div class="loginspace" style="padding-left:40px">
-	  <button class="btn-primary btn" type="submit" style="width:75%">提  交</button>
+	  <button class="btn-primary btn" onclick="register()"  style="width:75%">提  交</button>
 	  </div>
-	  </form>
+	  <%--</form>--%>
 	  </div>
 	  <!--registerbox-->
       </div>

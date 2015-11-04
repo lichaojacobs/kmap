@@ -4,16 +4,19 @@ import java.sql.*;
 import javax.sql.DataSource;
 
 import org.andy.kmap.model.entity.*;
+import org.apache.commons.dbcp2.BasicDataSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 
+
+@Repository("PropertyDaoImpl")
 public class PropertyDaoImpl implements PropertyDao {
 
-    private DataSource dataSource;
+    @Autowired
+    @Qualifier("dataSource")
+    private BasicDataSource dataSource;
 
-
-    public PropertyDaoImpl(DataSource dataSource) {
-
-        this.dataSource = dataSource;
-    }
 
 
     /**

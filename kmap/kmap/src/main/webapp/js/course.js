@@ -131,7 +131,7 @@
 
           return false;
         });
-      },
+      }
     };
 
     return that;
@@ -175,10 +175,10 @@
       },
 
       selectMap: function(map_id) {
-        var url = "/kmap/course";
-        $.getJSON(url, function(data) {
-          var nodes = data.nodes;
+        var url = "/kmap/course.do";
+        $.get(url,null, function(data,status) {
 
+          var nodes = data.nodes;
           $.each(nodes, function(name, info) {
             info.label = name;
           });

@@ -10,6 +10,29 @@ public class CourseMap {
     private Map<String, Course> nodes;
     private Map<String, Map<String, Course>> edges;
 
+    public Major getMajor() {
+        return major;
+    }
+
+    public void setMajor(Major major) {
+        this.major = major;
+    }
+
+    public Map<String, Course> getNodes() {
+        return nodes;
+    }
+
+    public void setNodes(Map<String, Course> nodes) {
+        this.nodes = nodes;
+    }
+
+    public Map<String, Map<String, Course>> getEdges() {
+        return edges;
+    }
+
+    public void setEdges(Map<String, Map<String, Course>> edges) {
+        this.edges = edges;
+    }
 
     public CourseMap(Major major) {
 

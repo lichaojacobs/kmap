@@ -9,32 +9,37 @@ import javax.servlet.http.HttpServletResponse;
 import org.andy.kmap.model.entity.*;
 
 import org.andy.kmap.model.service.DetailService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-public class DetailServlet extends HttpServlet {
+@Controller
+@RequestMapping("/")
+public class DetailServlet  {
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-        throws ServletException, IOException {
+    @Autowired
+    private DetailService detailService;
 
-        DetailService detailService = (DetailService) getServletContext().getAttribute("detailService");
+
+    @RequestMapping("detail")
+    public void getDetail(HttpServletResponse response){
 
         Course course = new Course(13, "应用统计学");
-
         response.setContentType("application/json;charset=UTF-8");
         response.setHeader("Cache-Control", "no-cache");
-        response.getWriter().write(detailService.getDetailMap(course));
+        try {
+
+            response.getWriter().write(detailService.getDetailMap(course));
+
+        }catch (Exception ex){
+
+            ex.printStackTrace();
+        }
+
+
     }
 
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
 
-        processRequest(request, response);
-    }
-
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-        processRequest(request, response);
-    }
 }

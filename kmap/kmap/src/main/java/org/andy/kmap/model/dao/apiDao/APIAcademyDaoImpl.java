@@ -49,7 +49,6 @@ public class APIAcademyDaoImpl implements APIAcademyDao {
         return academies;
     }
 
-
     /**
      * 添加
      * @param academy
@@ -117,7 +116,6 @@ public class APIAcademyDaoImpl implements APIAcademyDao {
         CommonResult commonResult=new CommonResult();
 
         try {
-
             //先不考虑外键
             jdbcTemplate.update("DELETE FROM academy WHERE codeNumber="+collegeid);
             commonResult.setStatus(1);

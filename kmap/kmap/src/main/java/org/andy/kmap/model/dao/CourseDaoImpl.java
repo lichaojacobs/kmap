@@ -6,17 +6,17 @@ import java.util.ArrayList;
 import javax.sql.DataSource;
 
 import org.andy.kmap.model.entity.*;
+import org.apache.commons.dbcp2.BasicDataSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 
+@Repository("CourseDaoImpl")
 public class CourseDaoImpl implements CourseDao {
 
-    private DataSource dataSource;
-
-
-    public CourseDaoImpl(DataSource dataSource) {
-
-        this.dataSource = dataSource;
-    }
-
+    @Autowired
+    @Qualifier("dataSource")
+    private BasicDataSource dataSource;
 
     /**
      * This method gets a list of courses belonging to a certain major.

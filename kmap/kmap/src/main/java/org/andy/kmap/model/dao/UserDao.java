@@ -1,5 +1,6 @@
 package org.andy.kmap.model.dao;
 
+import org.andy.kmap.model.entity.CommonResult;
 import org.andy.kmap.model.entity.User;
 
 
@@ -9,7 +10,7 @@ public interface UserDao {
      * This method adds a user.
      * @param user
      */
-    void addUser(User user);
+    CommonResult addUser(User user);
 
 
     /**

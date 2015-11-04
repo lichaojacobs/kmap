@@ -2,6 +2,8 @@ package org.andy.kmap.model.dao;
 
 import org.andy.kmap.model.entity.*;
 
+
+
 public interface CategoryDao {
 
     /**

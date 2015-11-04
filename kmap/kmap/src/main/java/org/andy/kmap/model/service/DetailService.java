@@ -7,9 +7,15 @@ import org.andy.kmap.model.entity.*;
 import org.andy.kmap.model.map.DetailMap;
 
 import com.google.gson.Gson;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
+@Service("DetailService")
 public class DetailService {
 
+    @Autowired
+    @Qualifier("DetailDaoImpl")
     private DetailDao detailDao;
 
 
@@ -17,7 +23,6 @@ public class DetailService {
 
         this.detailDao = detailDao;
     }
-
 
     public String getDetailMap(Course course) {
 
@@ -44,4 +49,5 @@ public class DetailService {
 
         return new Gson().toJson(map);
     }
+
 }
