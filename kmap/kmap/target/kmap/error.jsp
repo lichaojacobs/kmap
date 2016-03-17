@@ -11,9 +11,8 @@
     <title>错误页面</title>
 </head>
 <body>
-
     <div style="word-wrap: normal;margin: 0 auto">
-      <h2>Error! 网络出错</h2>
+      <h2>Error! 应用程序错误</h2>
     </div>
 </body>
 </html>

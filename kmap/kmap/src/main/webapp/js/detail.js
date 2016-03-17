@@ -1,12 +1,13 @@
-(function() {
-
+var Renderer_out;
+(function($) {
   Renderer = function(canvas) {
-    canvas = $(canvas).get(0);
-
-    var ctx = canvas.getContext("2d");
-    var particleSystem = null;
-
-    var that = {
+      var dom = $(canvas)
+      var canvas = dom.get(0)
+      //canvas = $(canvas).get(0);
+      var ctx = canvas.getContext("2d");
+      var gfx = arbor.Graphics(canvas);
+      var particleSystem = null;
+      var that = {
       init: function(system) {
         particleSystem = system;
         particleSystem.screen({padding: [100, 60, 60, 60], step: 0.02});
@@ -74,31 +75,41 @@
             pt.x = Math.floor(pt.x);
             pt.y = Math.floor(pt.y);
           } else {
-            label = null;
+              label = null;
           }
+              //顶级节点颜色不同
+            var courseName=$("#courseName").val();
+            if(node.name==courseName) {
+                gfx.oval(pt.x - w / 2, pt.y - w / 2, w, w, {fill: "red", alpha: 0.9});
+            }else
+            {
+                gfx.oval(pt.x - w / 2, pt.y - w / 2, w, w, {fill: "#b2b19d", alpha: 0.9});
+            }
+              //尾部节点
 
-          ctx.clearRect(pt.x - w / 2, pt.y - 7, w, 14);
+            var width = w / 10;
+            function print(width, name) {
+                if (name.length > width * 2) {
+                    name = name.substring(0, width * 2);
+                }
+                if (name.length > width) {
+                    gfx.text(name.substring(0, width), pt.x, pt.y, {color: "white", align: "center", font: "Arial", size: 11});
+                    gfx.text(name.substring(width), pt.x, pt.y + 12, {color: "white", align: "center", font: "Arial", size: 11});
+                } else {
+                    gfx.text(name, pt.x, pt.y + 6, {color: "white", align: "center", font: "Arial", size: 11});
+                }
+            }
+            print(width, node.name);
 
-          // Draw the text.
-          if (label) {
-            ctx.font = "bold 11px Arial";
-            ctx.textAlign = "center";
-
-            ctx.fillStyle = "#888888";
-            ctx.fillText(label || "", pt.x, pt.y + 4);
-          }
         });
       },
 
       resize: function() {
         var w = $(window).width();
         var h = $(window).height();
-
-        canvas.width  = w;
-        canvas.height = h;
-
-        particleSystem.screenSize(w, h);
-        that.redraw();
+        canvas.width = w; canvas.height = 650; // resize the canvas element to fill the screen
+        particleSystem.screenSize(w,650); // inform the system so it can map coords for us
+        that.redraw()
       },
 
       initMouseHandling: function() {
@@ -138,82 +149,73 @@
             dragged.node.p = {x: p.x, y: p.y};
           }
         });
-
         $(window).bind('mouseup', function(e) {
           if (dragged === null || dragged.node === undefined) {
             return;
           }
-
           dragged.node.fixed = false;
           dragged.node.tempMass = 100;
           dragged = null;
           selected = null;
-
           return false;
         });
-      },
+      }
     };
-
+    Renderer_out=Renderer;
     return that;
   };
 
-  var Maps = function(elt) {
+  var Maps = function(elt,coursename) {
     var sys = arbor.ParticleSystem(4000, 500, 0.5, 45);
     sys.renderer = Renderer("#viewport");
-
     var dom = $(elt);
     var _links = dom.find('ul');
-
     var _maps = {
       detail: {title: "Detail", p: {stiffness: 400}}
     };
-
     var that = {
       init: function() {
-        $.each(_maps, function(stub, map) {
-          _links.append("<li><a href='#/" + stub + "' class='" + stub + "'>" + map.title + "</a></li>");
-        });
-
-        _links.find('li > a').click(that.mapClick);
-        _links.find('.detail').click();
-
+          //调用selectMap函数
+        that.selectMap(coursename);
+       // _links.find('li > a').click(that.mapClick);
+       // _links.find('.detail').click();
         return that;
       },
 
       mapClick: function(e) {
         var selected = $(e.target);
         var newMap = selected.attr('class');
-
         if (newMap in _maps) {
           that.selectMap(newMap);
         }
-
         _links.find('li > a').removeClass('active');
         selected.addClass('active');
-
         return false;
       },
 
       selectMap: function(map_id) {
-        var url = "/kmap/detail";
+        var url = "/kmap/detail.do?courseId="+map_id;
         $.getJSON(url, function(data) {
           var nodes = data.nodes;
-
           $.each(nodes, function(name, info) {
             info.label = name;
           });
-
           sys.merge({nodes: nodes, edges: data.edges});
           sys.parameters(_maps[map_id].p);
         });
       }
     };
-
     return that.init();
   }
-
   $(document).ready(function() {
-    var mcp = Maps("#maps");
+      var CLR = {
+          branch:"#b2b19d",
+          code:"orange",
+          doc:"#922E00",
+          demo:"#a7af00"
+      }
+      var courseId= $("#courseId").valueOf();
+      var mcp = Maps("#maps",courseId);
   });
 
-})();
+})(this.jQuery);

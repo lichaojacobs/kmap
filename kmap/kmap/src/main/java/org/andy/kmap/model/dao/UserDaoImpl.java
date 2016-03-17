@@ -10,6 +10,7 @@ import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository("UserDaoImpl")
 public class UserDaoImpl implements UserDao {
@@ -22,6 +23,7 @@ public class UserDaoImpl implements UserDao {
      * This method adds a user.
      * @param user
      */
+    @Transactional
     public CommonResult addUser(User user) {
 
         CommonResult commonResult=new CommonResult();
@@ -52,11 +54,9 @@ public class UserDaoImpl implements UserDao {
                 statement.setString(1,user.getEmail());
                 statement.setString(2,"用户");
                 statement.executeUpdate();
-
                 try {
 
-                    SendEmailTools.sendMail(user.getEmail(),"邮箱激活","This is keng（坑）","html");
-
+                    SendEmailTools.sendMail(user.getEmail(),"邮箱激活","code验证码","html");
 
                 }catch (Exception ex){
 
@@ -65,13 +65,10 @@ public class UserDaoImpl implements UserDao {
                     commonResult.setDetail("发送邮箱失败，请确保邮箱有效！");
                     return commonResult;
                 }
-
                 //注册成功
                 commonResult.setDetail("注册成功，请前往邮箱激活！");
                 commonResult.setStatus(1);
                 return commonResult;
-
-
             }
             else
             {
@@ -112,12 +109,10 @@ public class UserDaoImpl implements UserDao {
         Connection connection = null;
         PreparedStatement statement = null;
         SQLException exception = null;
-
         User user = null;
-
         try {
             connection = this.dataSource.getConnection();
-            statement = connection.prepareStatement("SELECT id, name, email, passwd FROM user WHERE user.email = ?");
+            statement = connection.prepareStatement("SELECT id,name, email, passwd,eid,epasswd,major FROM user WHERE user.email = ?");
 
             statement.setString(1, email);
 
@@ -126,6 +121,15 @@ public class UserDaoImpl implements UserDao {
             if (result.next()) {
                 user = new User(result.getString(2), result.getString(3), result.getString(4));
                 user.setId(result.getInt(1));
+                if(result.getObject(5)!=null&&result.getObject(6)!=null)
+                {
+                    user.setEid(result.getInt("eid"));
+                    user.setEpassword(result.getString("epasswd"));
+                }
+                if(result.getObject(7)!=null)
+                {
+                    user.setMajorId(result.getInt(7));
+                }
             }
         } catch (SQLException ex) {
             exception = ex;
@@ -136,7 +140,11 @@ public class UserDaoImpl implements UserDao {
         return user;
     }
 
-
+    /**
+     * 获取用户角色
+     * @param email
+     * @return
+     */
     public String getUserRole(String email){
 
         Connection connection = null;

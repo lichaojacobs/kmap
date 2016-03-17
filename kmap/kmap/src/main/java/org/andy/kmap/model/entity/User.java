@@ -9,9 +9,16 @@ public class User {
 
     private int eid;
     private String epassword;
-
+    private int majorId;
     private Major major;
 
+    public int getMajorId() {
+        return majorId;
+    }
+
+    public void setMajorId(int majorId) {
+        this.majorId = majorId;
+    }
 
     public User(String email, String password) {
 
@@ -25,6 +32,8 @@ public class User {
         this.name = name;
         this.email = email;
         this.password = password;
+        this.majorId=0;
+        this.eid=0;
     }
 
 

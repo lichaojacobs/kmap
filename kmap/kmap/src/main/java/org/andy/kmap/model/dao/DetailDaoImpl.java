@@ -30,9 +30,7 @@ public class DetailDaoImpl implements DetailDao {
         Connection connection = null;
         PreparedStatement statement = null;
         SQLException exception = null;
-
         List<Detail> details = new ArrayList<>();
-
         try {
             connection = this.dataSource.getConnection();
             statement = connection.prepareStatement("SELECT detail.id, detail.name FROM detail WHERE detail.course = ?");
@@ -49,7 +47,6 @@ public class DetailDaoImpl implements DetailDao {
         } finally {
             ConnectionCloser.close(connection, statement, exception);
         }
-
 
         return details;
     }
@@ -106,7 +103,6 @@ public class DetailDaoImpl implements DetailDao {
         try {
             connection = this.dataSource.getConnection();
             statement = connection.prepareStatement("SELECT detail.id, detail.name FROM detail WHERE detail.id IN (SELECT dd.tail FROM dd WHERE dd.head = ?)");
-
 
             statement.setInt(1, head.getId());
 

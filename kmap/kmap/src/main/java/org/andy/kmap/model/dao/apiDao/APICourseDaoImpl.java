@@ -78,7 +78,7 @@ public class APICourseDaoImpl implements APICourseDao {
         try {
 
             //拿到之后首先检查该记录是否重了
-            String sql="select courseCode,name FROM course where courseCode=? or name=?";
+            String sql="select courseCode,name FROM course where courseCode=? AND name=?";
             List< Course> result=  jdbcTemplate.query(sql, new Object[]{course.getId(),course.getName()}, new RowMapper<Course>() {
                 @Override
                 public Course mapRow(ResultSet resultSet, int i) throws SQLException {
@@ -94,21 +94,19 @@ public class APICourseDaoImpl implements APICourseDao {
             {
                 commonResult.setStatus(-1);
                 commonResult.setDetail("禁止重复添加！");
-
                 return commonResult;
 
             }else
             {
                 //插入数据
-                String updateSql="INSERT INTO course(courseCode,name,credit,academyId) VALUES(?,?,?,?)";
-                jdbcTemplate.update(updateSql,new Object[]{course.getId(),course.getName(),course.getCredit(),course.getAcademyId()});
+                String updateSql="INSERT INTO course(courseCode,name,credit,academyId,category,property) VALUES(?,?,?,?,?,?)";
+                jdbcTemplate.update(updateSql,new Object[]{course.getId(),course.getName(),course.getCredit(),course.getAcademyId(),course.getCategoryId(),
+                course.getPropertyId()});
                 commonResult.setStatus(1);
                 commonResult.setDetail("添加成功");
                 return commonResult;
 
             }
-
-
 
         }catch (Exception ex){
 
@@ -123,15 +121,11 @@ public class APICourseDaoImpl implements APICourseDao {
 
         //定义返回的结果
         CommonResult commonResult=new CommonResult();
-
         try{
-
             jdbcTemplate.update("DELETE FROM course WHERE courseCode="+course.getId());
             commonResult.setStatus(1);
             commonResult.setDetail("已删除");
-
             return commonResult;
-
 
         }catch (Exception ex){
 

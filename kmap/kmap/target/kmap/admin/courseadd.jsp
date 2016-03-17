@@ -16,6 +16,7 @@
     <script src="/kmap/admin/js/bootstrap-treeview.js"></script>
     <script src="/kmap/admin/js/bootstrap-table.js"></script>
     <script src="/kmap/admin/js/jquery.spinner.min.js"></script>
+    <script src="/kmap/admin/js/MessageBox.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 		$(".div2").click(function(){ 
@@ -72,22 +73,20 @@ $("#coursetable").bootstrapTable('remove', {
                 values: [courseactionid]
             });
 };
-
 //添加方法
 function courseadd()
 {
     var id=$("#addcourseModal .modal-body input:first").val();
     var name=$("#addcourseModal .modal-body input:eq(1)").val();
     var credit=$("#addcourseModal .modal-body input:eq(2)").val();
+    var category=$("#coursecategory").val();
+    var property=$("#courseproperty").val();
     var html;
     //ajax方法
-    $.post("/kmap/API/Course/addCourse.do",{"courseid":id,"coursename":name,"coursecredit":credit,"academyId":courseactionid},function(data,status){
-
+    $.post("/kmap/API/Course/addCourse.do",{"courseid":id,"coursename":name,"coursecredit":credit,"academyId":courseactionid,"category":category,"property":property},function(data,status){
         if(status=="success"){
-
             if(data.status==1){
-
-                alert(data.detail);
+                $.MsgBox.alert("提示",data.detail);
                 //伪动态代码
                 html=detailadd(courseactionindex,id,  name,credit);
                 var istable=html.indexOf('<table');
@@ -101,17 +100,14 @@ function courseadd()
                     $("#coursetable tbody .detail-view table").append(html);
 
                 }
-                alert("添加成功！");
 
             }else{
 
-                alert(data.detail)
+                $.MsgBox.alert("错误",data.detail);
 
             }
-
-
         }else {
-            alert("网络故障,请稍后再试！")
+            $.MsgBox.alert("错误","网络故障");
         }
     });
 };
@@ -171,12 +167,12 @@ function detailadd(index,id,name,credit)
 		var l=false;
 		if(!l)
 		{
-		html.push('<table data-toggle='+'table'+'><tr><td style='+'width:'+detailwid+'></td><td style='+'width:'+idwid+';'+'padding-left:15px'+'>'+id+'</td><td style='+'width:'+namewid+';'+'padding-left:15px'+'>'+name+'</td><td style='+'width:'+idwid+'>'+credit+'</td><td style='+'padding-left:15px'+'>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="edit ml10" href="javascript:void(0)" title="Edit" onclick="anycourseedit($(this))">'+'<i class="glyphicon glyphicon-edit"></i>'+'</a></span>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="remove ml10" href="javascript:void(0)" onclick="anycourseremove($(this))" title="Remove">'+'<i class="glyphicon glyphicon-remove"></i>'+'</a><span>'+'</td></tr></table>');
+		html.push('<table data-toggle='+'table'+'><tr><td style='+'width:'+idwid+';'+'padding-left:15px'+'>'+id+'</td><td style='+'width:'+namewid+';'+'padding-left:15px'+'>'+name+'</td><td style='+'width:'+idwid+'>'+credit+'</td><td style='+'padding-left:15px'+'>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="edit ml10" href="javascript:void(0)" title="Edit" onclick="anycourseedit($(this))">'+'<i class="glyphicon glyphicon-edit"></i>'+'</a></span>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="remove ml10" href="javascript:void(0)" onclick="anycourseremove($(this))" title="Remove">'+'<i class="glyphicon glyphicon-remove"></i>'+'</a><span>'+'</td></tr></table>');
 		istable=true;
 		}
 		else
 		{
-		html.push('<tr><td style='+'width:'+detailwid+'></td><td style='+'width:'+idwid+';'+'padding-left:15px'+'>'+id+'</td style='+'width:'+namewid+';'+'padding-left:15px'+'><td>'+name+'</td><td style='+'width:'+idwid+'>'+credit+'</td><td style='+'padding-left:15px'+'>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="edit ml10" href="javascript:void(0)" title="Edit" onclick="anycourseedit($(this))">'+'<i class="glyphicon glyphicon-edit"></i>'+'</a></span>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="remove ml10" href="javascript:void(0)" title="Remove" onclick="anycourseremove($(this))">'+'<i class="glyphicon glyphicon-remove"></i>'+'</a></span>'+'</td></tr>');
+		html.push('<tr><td style='+'width:'+idwid+';'+'padding-left:15px'+'>'+id+'</td><td style='+'width:'+namewid+';'+'padding-left:15px'+'>'+name+'</td><td style='+'width:'+idwid+'>'+credit+'</td><td style='+'padding-left:15px'+'>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="edit ml10" href="javascript:void(0)" title="Edit" onclick="anycourseedit($(this))">'+'<i class="glyphicon glyphicon-edit"></i>'+'</a></span>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="remove ml10" href="javascript:void(0)" title="Remove" onclick="anycourseremove($(this))">'+'<i class="glyphicon glyphicon-remove"></i>'+'</a></span>'+'</td></tr>');
 		istable=false;
 		}
 		return html.join('');
@@ -209,20 +205,18 @@ anycourseactionname=actiontr.parent().parent().parent("tr").children("td:eq(1)")
     $.post("/kmap/API/Course/deleteCourse.do",{"courseid":anycourseactionid,"coursename":anycourseactionname},function(data,status){
         if(status=="success"){
             if(data.status==1){
-                alert(data.detail);
+                $.MsgBox.alert("提示",data.detail);
                 //伪动态操作
                 actiontr.parent().parent().parent("tr").remove();
             }
             else
             {
-                alert(data.detail);
+                $.MsgBox.alert("错误",data.detail);
             }
 
         }else
         {
-
-            alert("网络故障，请稍后再试！")
-
+            $.MsgBox.alert("错误","网络异常");
         }
     });
 }
@@ -252,22 +246,19 @@ function courseedit()
 
         if(status=="success"){
             if(data.status==1){
-
-                alert(data.detail);
+                $.MsgBox.alert("提示",data.detail);
                 actiontr.parent().parent().parent("tr").children("td:eq(1)").html(name);
                 actiontr.parent().parent().parent("tr").children("td:eq(2)").html(credit);
             }
             else
             {
-                alert(data.detail);
+                $.MsgBox.alert("错误",data.detail);
             }
 
 
         }else
         {
-
-            alert("网络故障，请稍后再试！")
-
+            $.MsgBox.alert("错误","网络异常");
         }
     });
 }
@@ -279,7 +270,7 @@ function courseedit()
 <body>
 <div class="container-fluid" id="container">
   <div class="row">
-    <div class="title"><span><img src="images/logo1.png" /></span> <span>天津大学知识地图信息管理系统</span> </div>
+    <div class="title"><span><img src="/kmap/admin/images/logo1.png" /></span> <span>天津大学知识地图信息管理系统</span> </div>
   </div>
   <div class="row" id="maincontent" style="height:80%">
       <!--start of content-->
@@ -329,6 +320,10 @@ function courseedit()
       <div class="row navigation">
         <!--<div class="three"></div>-->
         <div class="flagword">您现在所在的位置：课程信息 》专业课程添加</div>
+          <div class="login_info">
+              欢迎: <%=((LoginViewModel)request.getSession().getAttribute("userRole")).getUserName()%>
+              <a href="/kmap/quit.do">注销</a>
+          </div>
       </div>
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -460,10 +455,43 @@ function courseedit()
                           <label for="coursebelongcollege">所属学院</label>
                           <input type="text" id="coursebelongcollege" name="coursebelongcollege" readonly="readonly" class="form-control upline" />
                         </div>
-						<!--
-						<div style="text-align:center">
-                        <button type="submit" id="collegesubmit" class="btn btn-primary" >提交</button></div>-->
-                      <!--</form>-->
+                        <!--课程属性-->
+                        <div class="space">
+                            <label for="coursecategory">课程类别</label>
+                            <select id="coursecategory" name="coursecategory">
+                                <option value="1">人文与社会科学类</option>
+                                <option value="2">训练与健康类</option>
+                                <option value="3">数学与自然科学类</option>
+                                <option value="4">学科基础类</option>
+                                <option value="5">专业类</option>
+                                <option value="6">集中实践类</option>
+                                <option value="7">创新与研修类</option>
+                            </select>
+                        </div>
+                        <div class="space">
+                            <label for="courseproperty" name="courseproperty">课程属性</label>
+                            <select id="courseproperty">
+                                <option value="1">思想政治理论</option>
+                                <option value="2">外语</option>
+                                <option value="3">文化素质教育</option>
+                                <option value="4">体育</option>
+                                <option value="5">军事</option>
+                                <option value="6">健康教育</option>
+                                <option value="7">数学</option>
+                                <option value="8">物理</option>
+                                <option value="9">计算机</option>
+                                <option value="10">学科基础</option>
+                                <option value="11">专业核心</option>
+                                <option value="12">专业选修</option>
+                                <option value="13">课程设计</option>
+                                <option value="14">实习</option>
+                                <option value="15">毕业设计(论文)</option>
+                                <option value="16">研究与创新</option>
+                                <option value="17">跨学科选修</option>
+                                <option value="18">学生创新实践计划(PSIP)</option>
+                            </select>
+                        </div>
+
                     </div>
 					<div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>

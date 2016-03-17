@@ -74,4 +74,32 @@ public class MajorDaoImpl implements MajorDao {
 
         return majors;
     }
+   public Major getMajorByUserId(String email){
+       Major major=null;
+       Connection connection = null;
+       PreparedStatement statement = null;
+       SQLException exception = null;
+       try {
+           connection = this.dataSource.getConnection();
+           statement = connection.prepareStatement("SELECT major from user where email=?");
+           statement.setString(1,email);
+           ResultSet result = statement.executeQuery();
+           int majorId=0;
+           while(result.next()) {
+               majorId=result.getInt(1);
+           }
+           statement=connection.prepareStatement("SELECT * FROM major where id=?");
+           statement.setInt(1,majorId);
+           result=statement.executeQuery();
+           while (result.next()){
+               major = new Major(Integer.valueOf(result.getString(2)), result.getString(3));
+               major.setId(result.getInt(1));
+           }
+       } catch (SQLException ex) {
+           exception = ex;
+       } finally {
+           ConnectionCloser.close(connection, statement, exception);
+       }
+       return major;
+   }
 }

@@ -33,7 +33,6 @@ public class CourseDaoImpl implements CourseDao {
 
         try {
             connection = this.dataSource.getConnection();
-
             statement = connection.prepareStatement("SELECT course.id, course.name, mc.credit FROM course, mc WHERE mc.major = ? AND mc.course = course.id");
             statement.setInt(1, major.getId());
 
@@ -57,8 +56,8 @@ public class CourseDaoImpl implements CourseDao {
     /**
      * This method gets a list of successors of a certain course.
      * @param major
-     * @param course
-     * @return
+     * @param
+     * @returnds
      */
     public List<Course> getHeads(Major major, Course tail) {
 
@@ -68,15 +67,12 @@ public class CourseDaoImpl implements CourseDao {
         Connection connection = null;
         PreparedStatement statement = null;
         SQLException exception = null;
-
         try {
             connection = this.dataSource.getConnection();
 
             statement = connection.prepareStatement("SELECT cc.head FROM cc WHERE cc.tail = ?");
             statement.setInt(1, tail.getId());
-
             ResultSet result = statement.executeQuery();
-
             while (result.next()) {
                 Course head = new Course(result.getInt(1));
                 heads.add(courses.get(courses.indexOf(head)));
@@ -104,9 +100,7 @@ public class CourseDaoImpl implements CourseDao {
             connection = this.dataSource.getConnection();
             statement = connection.prepareStatement("SELECT cc.tail FROM cc WHERE cc.head = ?");
             statement.setInt(1, head.getId());
-
             ResultSet result = statement.executeQuery();
-
             while (result.next()) {
                 Course tail = new Course(result.getInt(1));
                 tails.add(courses.get(courses.indexOf(tail)));
@@ -116,8 +110,62 @@ public class CourseDaoImpl implements CourseDao {
         } finally {
             ConnectionCloser.close(connection, statement, exception);
         }
-
         return tails;
+    }
+
+    @Override
+    public Course getCourseById(int id) {
+        Course course=null;
+        Connection connection=null;
+        PreparedStatement statement=null;
+        SQLException exception = null;
+        try {
+            connection = this.dataSource.getConnection();
+            statement = connection.prepareStatement("SELECT * FROM course WHERE id = ?");
+            statement.setInt(1, id);
+            ResultSet result = statement.executeQuery();
+            if (result.next()) {
+                course=new Course(result.getInt("id"),result.getString("name"));
+            }
+        } catch (SQLException ex) {
+            exception = ex;
+        } finally {
+            ConnectionCloser.close(connection, statement, exception);
+        }
+
+        return course;
+    }
+
+    public Course getCourse(String courseName,String academy)
+    {
+        Course course=null;
+        Connection connection = null;
+        PreparedStatement statement = null;
+        SQLException exception = null;
+        int academyId=0;
+        try {
+            connection = this.dataSource.getConnection();
+
+            statement = connection.prepareStatement("SELECT codeNumber FROM academy WHERE name = ?");
+            statement.setString(1,academy);
+            ResultSet result = statement.executeQuery();
+            while (result.next()) {
+                academyId=result.getInt("codeNumber");
+            }
+            statement=connection.prepareStatement("SELECT * FROM course WHERE name=? and academyId=?");
+            statement.setString(1,courseName);
+            statement.setInt(2,academyId);
+            result=statement.executeQuery();
+            if (result.next()) {
+                course=new Course(result.getInt("id"),result.getString("name"));
+            }
+
+        } catch (SQLException ex) {
+            exception = ex;
+        } finally {
+            ConnectionCloser.close(connection, statement, exception);
+        }
+        return course;
     }
 
 

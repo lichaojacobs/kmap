@@ -18,4 +18,6 @@ public interface MajorDao {
      * @return A list of major objects in the system.
      */
     List<Major> getMajor();
+
+    Major getMajorByUserId(String email);
 }

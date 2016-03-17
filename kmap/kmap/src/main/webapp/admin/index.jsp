@@ -194,7 +194,11 @@ function collegeedit()
     <div class="col-md-10" style="height:100%">
       <div class="row navigation">
         <!--<div class="three"></div>-->
-        <div class="flagword">欢迎 <%=((LoginViewModel)request.getSession().getAttribute("userRole")).getUserEmail()%>现在所在的位置：学院信息 》学院信息添加</div>
+        <div class="flagword">现在所在的位置：学院信息 》学院信息添加</div>
+          <div class="login_info">
+              欢迎: <%=((LoginViewModel)request.getSession().getAttribute("userRole")).getUserName()%>
+              <a href="/kmap/quit.do">注销</a>
+          </div>
       </div>
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -305,6 +309,5 @@ function collegeedit()
                 <!-- /.modal-dialog -->
               </div>
               <!-- /.modal -->
-
 </body>
 </html>

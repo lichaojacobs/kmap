@@ -316,7 +316,7 @@
 				string+='/';
 				}
 			    };
-						if(level==3||level==2){
+						if(level==3||level==2||level==4){
 						for(var j=0;j<=level-1;j++)
 					{
 						treeItem.attr('data-'+j,levelt[j]);

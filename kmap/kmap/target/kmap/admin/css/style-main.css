@@ -143,6 +143,13 @@ list-style:none;
  top: 20px;
  left: 60px;
  }
+ .login_info
+ {
+     display: inline-block;
+     position: absolute;
+     top: 20px;
+     right: 20px;
+ }
  .horizen
  {
  border-right:3px double #999999;
@@ -210,6 +217,7 @@ margin-left: 15px;
 font-family: "Microsoft Yahei";
 font-size: 15px;
 font-weight: 300;
+ text-align: left;
 }
 .space
 {

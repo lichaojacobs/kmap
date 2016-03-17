@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.andy.kmap.model.entity.*;
 
 import org.andy.kmap.model.service.CourseService;
+import org.andy.kmap.model.service.MajorService;
+import org.andy.kmap.model.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,15 +24,38 @@ public class CourseServlet extends HttpServlet {
     @Autowired
     private CourseService courseService;
 
+    @Autowired
+    private MajorService majorService;
+    @Autowired
+    private UserService userService;
 
+    @RequestMapping("Course/Index")
+    public String CoursePage(HttpServletRequest request){
+        LoginViewModel login= (LoginViewModel)request.getSession().getAttribute("userRole");
+        if(login!=null) {
+            if (login.getUserRole().equals("普通用户")) {
+                //判断用户是否基本信息完备
+                if(userService.getUser(login.getUserEmail()).getMajorId()==0)
+                {
+                    return "/info";
+                }
+                else
+                    return "/course";
+            }
+            else
+            {
+                return "/course";
+            }
+        }else
+        {
+            return "/index";
+        }
+    }
     @RequestMapping("course")
-   public void getCourse(HttpServletResponse response){
-
-        Major major = new Major(2011, "电子商务");
-        major.setId(2);
-
-        //写死
-        User user = new User("aishuo2357@126.com", "asvc9851");
+    public void getCourse(HttpServletResponse response,HttpServletRequest request){
+        LoginViewModel login= (LoginViewModel)request.getSession().getAttribute("userRole");
+        Major major = majorService.getMajorByUserId(login.getUserEmail());
+        User user = new User(login.getUserEmail(),"");
         user.setId(1);
         user.setMajor(major);
         response.setContentType("application/json;charset=UTF-8");

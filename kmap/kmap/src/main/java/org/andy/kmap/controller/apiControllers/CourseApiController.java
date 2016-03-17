@@ -1,6 +1,7 @@
 package org.andy.kmap.controller.apiControllers;
 
 import org.andy.kmap.model.entity.Course;
+import org.andy.kmap.model.entity.LoginViewModel;
 import org.andy.kmap.model.service.apiService.APICourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,9 +26,9 @@ public class CourseApiController {
      * @return
      */
     @RequestMapping("Index")
-    public String academyIndex(){
+    public String academyIndex(HttpServletRequest request){
 
-        return "admin/courseadd";
+        return loginFilter(request,"/admin/courseadd");
 
     }
 
@@ -36,9 +37,9 @@ public class CourseApiController {
      * @return
      */
     @RequestMapping("CoursePlanSearch")
-    public String courseSearchPage(){
+    public String courseSearchPage(HttpServletRequest request){
 
-        return "admin/courseplansearch";
+        return loginFilter(request,"/admin/courseplansearch");
 
     }
 
@@ -47,15 +48,15 @@ public class CourseApiController {
      * @return
      */
     @RequestMapping("CoursePlanAdd")
-    public String coursePlanAdd(){
+    public String coursePlanAdd(HttpServletRequest request){
 
-        return  "admin/courseplanadd";
+        return loginFilter(request,"/admin/courseplanadd") ;
     }
 
     @RequestMapping("CourseKnowledgeAdd")
-    public String CourseknowledgeAdd(){
+    public String CourseknowledgeAdd(HttpServletRequest request){
 
-        return "admin/pointadd";
+        return loginFilter(request,"/admin/pointadd");
     }
 
 
@@ -73,11 +74,13 @@ public class CourseApiController {
         String coursename=request.getParameter("coursename");
         double coursecredit=Double.valueOf( request.getParameter("coursecredit"));
         int courseacademyid=Integer.valueOf(request.getParameter("academyId"));
-
+        int category=Integer.valueOf(request.getParameter("category").trim());
+        int property=Integer.valueOf(request.getParameter("property").trim());
         Course course=new Course(courseid,coursename);
         course.setCredit(coursecredit);
         course.setAcademyId(courseacademyid);
-
+        course.setCategoryId(category);
+        course.setPropertyId(property);
         //调用方法
         return apiCourseService.addCourse(course);
 
@@ -105,6 +108,25 @@ public class CourseApiController {
         course.setCredit(coursecredit);
         return apiCourseService.editCourse(course);
 
+    }
+
+    /**
+     * 登录拦截方法
+     * @param request
+     * @param returnPath
+     * @return
+     */
+    public String loginFilter(HttpServletRequest request,String returnPath){
+        LoginViewModel loginViewModel= (LoginViewModel)request.getSession().getAttribute("userRole");
+        if(loginViewModel!=null) {
+            if (loginViewModel.getUserRole().equals("管理员")) {
+                return returnPath;
+            } else {
+                return "/index";
+            }
+        }else{
+            return "/index";
+        }
     }
 
 }

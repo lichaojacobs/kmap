@@ -33,20 +33,17 @@ public class DetailService {
             Detail tail = details.get(i);
             List<Detail> heads = this.detailDao.getHeads(tail);
             List<Detail> tails = this.detailDao.getTails(tail);
-
             map.addNode(tail);
-
             if (tails.size() == 0) {
                 map.addEdge(tail);
             }
-
+            //说明有尾节点
             if (heads.size() > 0) {
                 for (Detail head : heads) {
                     map.addEdge(tail, head);
                 }
             }
         }
-
         return new Gson().toJson(map);
     }
 

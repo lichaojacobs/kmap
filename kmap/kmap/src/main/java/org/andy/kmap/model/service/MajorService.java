@@ -19,8 +19,11 @@ public class MajorService {
         this.majorDao.addMajor(major);
     }
 
-
     public List<Major> getMajor() {
         return this.majorDao.getMajor();
     }
+
+    public Major getMajorByUserId(String email){
+        return this.majorDao.getMajorByUserId(email);
+    };
 }

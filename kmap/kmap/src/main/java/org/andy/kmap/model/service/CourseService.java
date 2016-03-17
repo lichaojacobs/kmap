@@ -79,7 +79,6 @@ public class CourseService {
             if (heads.size() > 0 || tails.size() > 0) {
                 map.addNode(tail);
             }
-
             if (heads.size() > 0) {
                 for (Course head : heads) {
                     map.addEdge(tail, head);
@@ -90,7 +89,14 @@ public class CourseService {
 
     }
 
+     public Course getCourseById(int id){
+         return courseDao.getCourseById(id);
+     }
 
+     public Course getCourse(String courseName,String academy)
+     {
+       return this.courseDao.getCourse(courseName,academy);
+     }
     /**
      * This method gets a course map with user information.
      * @param user

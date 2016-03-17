@@ -1,5 +1,6 @@
 package org.andy.kmap.controller.apiControllers;
 
+import org.andy.kmap.filter.AuthPassport;
 import org.andy.kmap.model.entity.Major;
 import org.andy.kmap.model.service.apiService.APIMajorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,11 +20,21 @@ public class MajorApiController {
     @Autowired
     private APIMajorService apiMajorService;
 
+    @AuthPassport
     @RequestMapping("Index")
-    public String academyIndex(){
+    public String academyIndex(HttpServletRequest request){
 
+//        LoginViewModel loginViewModel= (LoginViewModel)request.getSession().getAttribute("userRole");
+//        if(loginViewModel!=null) {
+//            if (loginViewModel.getUserRole().equals("管理员")) {
+//                return "/admin/majoradd";
+//            } else {
+//                return "/index";
+//            }
+//        }else{
+//            return "/index";
+//        }
         return "admin/majoradd";
-
     }
 
     @RequestMapping("GetMajorsPerGrade")

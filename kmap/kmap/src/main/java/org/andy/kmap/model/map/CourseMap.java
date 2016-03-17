@@ -41,14 +41,12 @@ public class CourseMap {
         this.edges = new HashMap<>();
     }
 
-
     public void addNode(Course course) {
 
         if (!this.nodes.containsValue(course)) {
             this.nodes.put(course.getName(), course);
         }
     }
-
 
     public void addEdge(Course source, Course target) {
 
@@ -59,4 +57,5 @@ public class CourseMap {
             this.edges.get(source.getName()).put(target.getName(), target);
         }
     }
+
 }

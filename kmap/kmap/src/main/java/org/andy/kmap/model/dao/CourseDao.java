@@ -38,4 +38,9 @@ public interface CourseDao {
      * @return The course with the mark property.
      */
     Course setMark(User user, Course course);
+
+    Course getCourseById(int id);
+
+    Course getCourse(String courseName,String academy);
+
 }

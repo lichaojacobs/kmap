@@ -5,12 +5,7 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
     version="3.0">
 
-    <!-- Listener Configuration -->
-    <!--<listener>-->
-        <!--<listener-class>org.andy.kmap.listener.DataSourceListener</listener-class>-->
-    <!--</listener>-->
-
-    <!--spring核心配置-->
+    <!--SpringMvc核心配置-->
     <servlet>
         <servlet-name>spring-mvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -25,6 +20,23 @@
     </servlet-mapping>
     <!--spring核心配置结束-->
 
+    <!-- 设置根目录 -->
+    <context-param>
+        <param-name>webAppRootKey</param-name>
+        <param-value>webapp.root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>classpath:log4j.properties</param-value>
+    </context-param>
+    <!-- 3000表示 开一条watchdog线程每60秒扫描一下配置文件的变化;这样便于日志存放位置的改变 -->
+    <context-param>
+        <param-name>log4jRefreshInterval</param-name>
+        <param-value>3000</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
     <!--欢迎界面-->
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>

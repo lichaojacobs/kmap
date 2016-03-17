@@ -1,5 +1,6 @@
 package org.andy.kmap.controller.apiControllers;
 
+import org.andy.kmap.filter.AuthPassport;
 import org.andy.kmap.model.entity.Academy;
 import org.andy.kmap.model.entity.CommonResult;
 import org.andy.kmap.model.entity.Grade;
@@ -22,18 +23,17 @@ public class AcademyApiController {
     @Autowired
     APIAcademyService academyService;
 
+    @AuthPassport
     @RequestMapping("Index")
-    public String academyIndex(){
+    public String academyIndex(HttpServletRequest request){
 
-        return "admin/index";
-
+        return "/admin/index";
     }
 
     @RequestMapping("getAllAcademies")
     public @ResponseBody Object getAllAcademies(){
 
         return academyService.getAllAcademies();
-
     }
 
     @RequestMapping("addAcademy")
@@ -47,7 +47,6 @@ public class AcademyApiController {
             CommonResult commonResult=new CommonResult();
             commonResult.setDetail("网络异常，稍后再试！");
             commonResult.setStatus(-1);
-
             return  commonResult;
 
         }else
@@ -58,7 +57,6 @@ public class AcademyApiController {
             return academyService.addAcademies(academy);
 
         }
-
     }
 
     @RequestMapping("deleteAcademy")
@@ -79,9 +77,7 @@ public class AcademyApiController {
             return academyService.deleteAcademies(Integer.valueOf(collegeid));
 
         }
-
     }
-
     @RequestMapping("editAcademy")
     public @ResponseBody Object editAcademy(HttpServletRequest request){
         //获取参数
@@ -103,9 +99,6 @@ public class AcademyApiController {
 
         }
 
-
-
-
     }
 
     /**
@@ -113,11 +106,11 @@ public class AcademyApiController {
      * @param request
      * @return
      */
+    @AuthPassport
     @RequestMapping("addGradePage")
     public String addGradeIndex(HttpServletRequest request){
 
         return "/admin/gradeadd";
-
     }
 
     /**
@@ -127,7 +120,6 @@ public class AcademyApiController {
      */
     @RequestMapping("addGrade")
     public @ResponseBody Object addGrade(HttpServletRequest request){
-
 
         String collegeid=request.getParameter("collegeid");
         String gradeyear=request.getParameter("gradeyear");

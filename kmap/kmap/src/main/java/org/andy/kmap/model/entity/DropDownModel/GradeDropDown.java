@@ -10,11 +10,16 @@ public class GradeDropDown {
     private String text;
     private String href;
     private List<String> tags;
-
+    private List<CourseDropDown> nodes;
+    public List<CourseDropDown> getNodes() {
+        return nodes;
+    }
+    public void setNodes(List<CourseDropDown> nodes) {
+        this.nodes = nodes;
+    }
     public String getText() {
         return text;
     }
-
     public void setText(String text) {
         this.text = text;
     }

@@ -15,8 +15,26 @@ public class Course {
         this.academyId = academyId;
     }
 
-
+    private int categoryId;
+    private int propertyId;
     private double mark;
+
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public int getPropertyId() {
+        return propertyId;
+    }
+
+    public void setPropertyId(int propertyId) {
+        this.propertyId = propertyId;
+    }
+
     private double credit;
 
     private Category category;

@@ -17,7 +17,7 @@
 <div class="container-fluid" id="container">
   <div class="row">
     <div class="title"> 
-	<span><img src="images/logo1.png" /></span>
+	<span><img src="/kmap/admin/images/logo1.png" /></span>
 	<span>天津大学知识地图信息管理系统</span> </div>
   </div>
   <div class="row" id="maincontent" style="height:80%">
@@ -68,6 +68,10 @@
       <div class="row navigation">
         <!--<div class="three"></div>-->
         <div class="flagword">您现在所在的位置：学院信息 》专业信息添加</div>
+          <div class="login_info">
+              欢迎: <%=((LoginViewModel)request.getSession().getAttribute("userRole")).getUserName()%>
+              <a href="/kmap/quit.do">注销</a>
+          </div>
       </div>
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -212,6 +216,7 @@
 <script src="/kmap/admin/js/bootstrap-treeview.js"></script>
 <script src="/kmap/admin/js/bootstrap-table.js"></script>
 <script src="/kmap/admin/js/jquery.spinner.min.js"></script>
+<script src="/kmap/admin/js/MessageBox.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
 
@@ -282,7 +287,7 @@
 
                 if(data.status==1){
 
-                    alert(data.detail);
+                    $.MsgBox.Alert("提示",data.detail);
                     //伪动态代码
                     html=detailadd(majoractionindex,name,year,info);
                     var istable=html.indexOf('<table');
@@ -297,13 +302,13 @@
 
                 }else{
 
-                    alert(data.detail)
+                    $.MsgBox.Alert("提示",data.detail);
 
                 }
 
 
             }else {
-                alert("网络故障,请稍后再试！")
+                $.MsgBox.Alert("提示","网络故障");
             }
         })
 
@@ -339,21 +344,21 @@
             if(status=="success"){
                 if(data.status==1){
 
-                    alert(data.detail);
+                    $.MsgBox.Alert("提示",data.detail);
                     //伪动态操作
                     actiontr.parent().parent().parent("tr").remove();
 
                 }
                 else
                 {
-                    alert(data.detail);
+                    $.MsgBox.Alert("错误",data.detail);
                 }
 
 
             }else
             {
 
-                alert("网络故障，请稍后再试！")
+                $.MsgBox.Alert("提示","网络故障");
 
             }
         });
@@ -415,11 +420,11 @@ function detailadd(index,name,year,info)
 		var l=false;
 		if(!l)
 		{
-		html.push('<table data-toggle='+'table'+'><tr><td style='+'width:'+detailwid+'></td><td style='+'width:'+idwid+';'+'padding-left:15px'+'>'+id+'</td><td style='+'width:'+idwid+'>'+year+'</td><td style='+'width:'+namewid+';'+'padding-left:15px'+'>'+name+'</td><td style='+'padding-left:15px'+'>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="edit ml10" href="javascript:void(0)" title="Edit" onclick="anymajoredit($(this))">'+'<i class="glyphicon glyphicon-edit"></i>'+'</a></span>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="remove ml10" href="javascript:void(0)" title="Remove" onclick="anymajorremove($(this))">'+'<i class="glyphicon glyphicon-remove"></i>'+'</a><span>'+'</td></tr></table>');
+		html.push('<table data-toggle='+'table'+'><tr><td style='+'width:'+detailwid+'></td><td style='+'width:'+idwid+'>'+year+'</td><td style='+'width:'+namewid+';'+'padding-left:15px'+'>'+name+'</td><td style='+'padding-left:15px'+'>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="edit ml10" href="javascript:void(0)" title="Edit" onclick="anymajoredit($(this))">'+'<i class="glyphicon glyphicon-edit"></i>'+'</a></span>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="remove ml10" href="javascript:void(0)" title="Remove" onclick="anymajorremove($(this))">'+'<i class="glyphicon glyphicon-remove"></i>'+'</a><span>'+'</td></tr></table>');
 		}
 		else
 		{
-		html.push('<tr><td style='+'width:'+detailwid+'></td><td style='+'width:'+idwid+';'+'padding-left:15px'+'>'+id+'</td><td style='+'width:'+idwid+'>'+year+'</td><td style='+'width:'+namewid+';'+'padding-left:15px'+'><td>'+name+'</td><td style='+'padding-left:15px'+'>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="edit ml10" href="javascript:void(0)" title="Edit" onclick="anymajoredit($(this))">'+'<i class="glyphicon glyphicon-edit"></i>'+'</a></span>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="remove ml10" href="javascript:void(0)" title="Remove" onclick="anymajorremove($(this))">'+'<i class="glyphicon glyphicon-remove"></i>'+'</a></span>'+'</td></tr>');
+		html.push('<tr><td style='+'width:'+detailwid+'></td><td style='+'width:'+idwid+'>'+year+'</td><td style='+'width:'+namewid+';'+'padding-left:15px'+'><td>'+name+'</td><td style='+'padding-left:15px'+'>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="edit ml10" href="javascript:void(0)" title="Edit" onclick="anymajoredit($(this))">'+'<i class="glyphicon glyphicon-edit"></i>'+'</a></span>'+'<span style='+'width:15%;'+'display:inline-block>'+'<a class="remove ml10" href="javascript:void(0)" title="Remove" onclick="anymajorremove($(this))">'+'<i class="glyphicon glyphicon-remove"></i>'+'</a></span>'+'</td></tr>');
 		}
 		return html.join('');
 }
