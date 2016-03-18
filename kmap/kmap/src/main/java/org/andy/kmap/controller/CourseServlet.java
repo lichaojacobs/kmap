@@ -12,6 +12,7 @@ import org.andy.kmap.model.entity.*;
 import org.andy.kmap.model.service.CourseService;
 import org.andy.kmap.model.service.MajorService;
 import org.andy.kmap.model.service.UserService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/")
 public class CourseServlet extends HttpServlet {
+
+    private static Logger logger = Logger.getLogger(CourseServlet.class);
 
     @Autowired
     private CourseService courseService;
@@ -66,7 +69,7 @@ public class CourseServlet extends HttpServlet {
         }catch (Exception ex)
         {
 
-            ex.printStackTrace();
+            logger.error(ex);
         }
 
     }

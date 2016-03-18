@@ -304,10 +304,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="method#login#0;class#LoginServlet#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -317,11 +316,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-              <folding>
-                <element signature="method#CoursePage#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#getCourse#0;class#CourseServlet#0" expanded="false" />
-              </folding>
+              <caret line="24" column="73" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="73" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -329,21 +325,9 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogInitServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/log/LogInitServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -352,23 +336,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/log/LogTestServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.75">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-              <folding>
-                <element signature="n#mvc:annotation-driven#0;n#beans#0;n#!!top" expanded="false" />
-                <element signature="n#bean#0;n#beans#0;n#!!top" expanded="false" />
-              </folding>
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -376,8 +345,8 @@
       <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0877863">
-              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.61555076">
+              <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -386,7 +355,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
               <folding />
             </state>
@@ -398,9 +367,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -480,15 +447,15 @@
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/filter/LogFilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/info.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/log/LogInitServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/log/LogTestServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/log/LogInitServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
       </list>
     </option>
@@ -520,7 +487,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="725" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -659,11 +626,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1576,26 +1603,28 @@
       <workItem from="1458113152369" duration="5277000" />
       <workItem from="1458124115256" duration="526000" />
       <workItem from="1458138867551" duration="4524000" />
+      <workItem from="1458309333715" duration="3457000" />
+      <workItem from="1458313996643" duration="83000" />
+      <workItem from="1458314192583" duration="149000" />
+      <workItem from="1458314729768" duration="56000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="703043000" />
+    <option name="totallyTimeSpent" value="706788000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="725" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1280" height="717" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09908537" sideWeight="0.478125" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.55792683" sideWeight="0.35859376" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24228396" sideWeight="0.37421876" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55792683" sideWeight="0.64140624" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277439" sideWeight="0.10625" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1606,14 +1635,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38379815" sideWeight="0.6953125" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38379815" sideWeight="0.6953125" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290938" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09908537" sideWeight="0.478125" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.55725193" sideWeight="0.62578124" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262195" sideWeight="0.496875" order="1" side_tool="false" content_ui="tabs" />
@@ -1702,7 +1733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1764,13 +1794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
-          <folding>
-            <marker date="1450161179000" expanded="true" signature="1038:1103" placeholder="SELECT detai..detail..." />
-            <marker date="1450161179000" expanded="true" signature="2043:2146" placeholder="SELECT detai..detail..." />
-            <marker date="1450161179000" expanded="true" signature="2105:2145" placeholder="SELECT dd.he..dd..." />
-            <marker date="1450161179000" expanded="true" signature="3079:3182" placeholder="SELECT detai..detail..." />
-            <marker date="1450161179000" expanded="true" signature="3141:3181" placeholder="SELECT dd.ta..dd..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1785,44 +1808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="165" column="9" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="9" />
-          <folding>
-            <element signature="method#getMajorDropDown#0;class#APICoursePlanDaoImpl#0" expanded="false" />
-            <element signature="method#getGradeDropDown#0;class#APICoursePlanDaoImpl#0" expanded="false" />
-            <element signature="e#5710#6228#0" expanded="false" />
-            <element signature="e#6227#6228#0" expanded="false" />
-            <element signature="method#getCategoryName#0;class#APICoursePlanDaoImpl#0" expanded="false" />
-            <element signature="method#AddCoursePlan#0;class#APICoursePlanDaoImpl#0" expanded="false" />
-            <element signature="e#9237#9453#0" expanded="false" />
-            <element signature="e#9452#9453#0" expanded="false" />
-            <element signature="method#getSearchResults#0;class#APICoursePlanDaoImpl#0" expanded="false" />
-            <marker date="1457878146000" expanded="true" signature="1606:1641" placeholder="select codeN..academy..." />
-            <marker date="1457878146000" expanded="true" signature="2785:2832" placeholder="select id,ye..." />
-            <marker date="1457878146000" expanded="true" signature="4045:4079" placeholder="select year ..." />
-            <marker date="1457878146000" expanded="true" signature="4045:4080" placeholder="select year ..." />
-            <marker date="1457878146000" expanded="true" signature="4045:4082" placeholder="select year ..." />
-            <marker date="1457878146000" expanded="true" signature="4045:4089" placeholder="select year ..." />
-            <marker date="1457878146000" expanded="true" signature="4045:4091" placeholder="select year ..." />
-            <marker date="1457878146000" expanded="true" signature="5119:5154" placeholder="select cours..mc..." />
-            <marker date="1457878146000" expanded="true" signature="5553:5587" placeholder="select name ..course..." />
-            <marker date="1457878146000" expanded="true" signature="6643:6686" placeholder="select codeN..academy..." />
-            <marker date="1457878146000" expanded="true" signature="7092:7159" placeholder="select cours..course..." />
-            <marker date="1457878146000" expanded="true" signature="7092:7160" placeholder="select cours..course..." />
-            <marker date="1457878146000" expanded="true" signature="8069:8105" placeholder="select name ..category..." />
-            <marker date="1457878146000" expanded="true" signature="8698:8742" placeholder="select id fr..major..." />
-            <marker date="1457878146000" expanded="true" signature="9104:9147" placeholder="select codeN..academy..." />
-            <marker date="1457878146000" expanded="true" signature="9534:9575" placeholder="select id fr..course..." />
-            <marker date="1457878146000" expanded="true" signature="9534:9579" placeholder="select id,cr..course..." />
-            <marker date="1457878146000" expanded="true" signature="9534:9591" placeholder="select id,cr..course..." />
-            <marker date="1457878146000" expanded="true" signature="10239:10288" placeholder="insert into mc..." />
-            <marker date="1457878146000" expanded="true" signature="10319:10362" placeholder="select * fro..mc..." />
-            <marker date="1457878146000" expanded="true" signature="11558:11605" placeholder="insert into cc..." />
-            <marker date="1457878146000" expanded="true" signature="12122:12162" placeholder="select * fro..mc..." />
-            <marker date="1457878146000" expanded="true" signature="12122:12176" placeholder="select * fro..cc..." />
-            <marker date="1457878146000" expanded="true" signature="13744:13787" placeholder="select codeN..academy..." />
-            <marker date="1457878146000" expanded="true" signature="14188:14232" placeholder="select id fr..major..." />
-            <marker date="1457878146000" expanded="true" signature="14625:14660" placeholder="select id fr..mc..." />
-            <marker date="1457878146000" expanded="true" signature="15071:15115" placeholder="SELECT id,cr..course..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1844,12 +1829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2380#2381#0" expanded="false" />
-            <element signature="e#2432#2433#0" expanded="false" />
-            <element signature="method#getCourseMap#1;class#CourseService#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1864,21 +1843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#getCourse#0;class#CourseDaoImpl#0" expanded="false" />
-            <element signature="method#setMark#0;class#CourseDaoImpl#0" expanded="false" />
-            <marker date="1457879912000" expanded="true" signature="1082:1183" placeholder="SELECT cours..course..." />
-            <marker date="1457879912000" expanded="true" signature="2283:2323" placeholder="SELECT cc.he..cc..." />
-            <marker date="1457879912000" expanded="true" signature="3207:3247" placeholder="SELECT cc.ta..cc..." />
-            <marker date="1457879912000" expanded="true" signature="4047:4080" placeholder="SELECT * FRO..course..." />
-            <marker date="1457879912000" expanded="true" signature="4869:4914" placeholder="SELECT codeN..academy..." />
-            <marker date="1457879912000" expanded="true" signature="5175:5201" placeholder="SELECT * FRO..course..." />
-            <marker date="1457879912000" expanded="true" signature="5175:5202" placeholder="SELECT * FRO..course..." />
-            <marker date="1457879912000" expanded="true" signature="5175:5207" placeholder="SELECT * FRO..course..." />
-            <marker date="1457879912000" expanded="true" signature="5175:5224" placeholder="SELECT * FRO..course..." />
-            <marker date="1457879912000" expanded="true" signature="5989:6038" placeholder="SELECT mark ..uc..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1907,9 +1871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-          <folding>
-            <element signature="method#GetDetailLevel#0;class#APIPointService#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2025,60 +1986,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="142" column="7" selection-start-line="142" selection-start-column="7" selection-end-line="142" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#addUser#0;class#UserDaoImpl#0" expanded="false" />
-            <element signature="method#getUser#0;class#UserDaoImpl#0" expanded="false" />
-            <element signature="method#getUserRole#0;class#UserDaoImpl#0" expanded="false" />
-            <marker date="1458119333000" expanded="true" signature="1128:1189" placeholder="SELECT id, n..user..." />
-            <marker date="1458119333000" expanded="true" signature="1418:1471" placeholder="INSERT INTO user..." />
-            <marker date="1458119333000" expanded="true" signature="1770:1814" placeholder="INSERT INTO roles..." />
-            <marker date="1458119333000" expanded="true" signature="3542:3620" placeholder="SELECT id, n..user..." />
-            <marker date="1458119333000" expanded="true" signature="4862:4901" placeholder="SELECT role ..roles..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#login#0;class#LoginServlet#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.125">
-          <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.75">
+        <state vertical-scroll-proportion="-0.2735849">
           <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
             <element signature="n#mvc:annotation-driven#0;n#beans#0;n#!!top" expanded="false" />
@@ -2087,49 +2000,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/log/LogTestServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-          <folding>
-            <element signature="method#CoursePage#0;class#CourseServlet#0" expanded="false" />
-            <element signature="method#getCourse#0;class#CourseServlet#0" expanded="false" />
-          </folding>
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/log/LogInitServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/log/LogTestServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.394636">
+          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="73" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0877863">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.61555076">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
           <folding />
         </state>
       </provider>

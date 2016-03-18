@@ -18,12 +18,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/")
 public class LoginServlet  {
 
+    private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(CourseServlet.class);
     @Autowired
     UserService userService;
 
     @RequestMapping("login")
     public @ResponseBody LoginResult login(HttpServletRequest request,HttpServletResponse response){
-
+        logger.info("System Restart");
         response.setContentType("");
         LoginResult loginResult=new LoginResult();
         try {
@@ -96,6 +97,7 @@ public class LoginServlet  {
             loginResult.setStatus(0);
             loginResult.setIsAdmin(0);
             loginResult.setDetail(ex.getMessage());
+            logger.error(ex);
             return loginResult;
         }
 

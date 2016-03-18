@@ -37,9 +37,7 @@ public class LogInitServlet extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         System.out.println("Log4JInitServlet 正在初始化 log4j日志设置信息");
         String log4jLocation = config.getInitParameter("log4j-properties-location");
-
         ServletContext sc = config.getServletContext();
-
         if (log4jLocation == null) {
             System.err.println("*** 没有 log4j-properties-location 初始化的文件, 所以使用 BasicConfigurator初始化");
             BasicConfigurator.configure();
