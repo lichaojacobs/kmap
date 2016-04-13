@@ -130,6 +130,10 @@ public class UserDaoImpl implements UserDao {
                 {
                     user.setMajorId(result.getInt(7));
                 }
+                else
+                {
+                    user.setMajorId(0);
+                }
             }
         } catch (SQLException ex) {
             exception = ex;

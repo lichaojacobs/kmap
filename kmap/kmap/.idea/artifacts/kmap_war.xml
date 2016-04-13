@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="kmap:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="kmap.war">
-      <element id="artifact" artifact-name="kmap:war exploded" />
-    </root>
-  </artifact>
-</component>

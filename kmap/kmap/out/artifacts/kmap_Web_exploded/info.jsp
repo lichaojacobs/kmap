@@ -44,22 +44,22 @@
 <div class="info_form">
 <div class="input-group">
   <span class="input-group-addon" id="basic-addon1">用户名称</span>
-  <input type="text" id="username" class="form-control" placeholder="用户名" aria-describedby="basic-addon1">
+  <input type="text" class="form-control" placeholder="用户名" aria-describedby="basic-addon1">
 </div>
 <br/>
 <div class="input-group">
   <span class="input-group-addon" id="basic-addon2">专业名称</span>
-  <input type="text" id="major" class="form-control" placeholder="专业名称" aria-describedby="basic-addon2">
+  <input type="text" class="form-control" placeholder="专业名称" aria-describedby="basic-addon2">
 </div>
 <br/>
 <div class="input-group">
   <span class="input-group-addon">办公网账号</span>
-  <input type="text" id="eid" class="form-control" placeholder="办公网账号">
+  <input type="text" class="form-control" placeholder="办公网账号">
 </div>
 <br/>
 <div class="input-group">
   <span class="input-group-addon">办公网密码</span>
-  <input type="password" id="epassword" class="form-control" placeholder="办公网密码" >
+  <input type="password" class="form-control" placeholder="办公网密码" >
 </div>
 <br/>
 <div class="info_button">
@@ -70,52 +70,5 @@
 <script src="/kmap/lib/jquery/jquery-1.6.1.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="/kmap/admin/js/MessageBox.js"></script>
-<script type="text/javascript">
-	var completeInfo ={
-		init: function(){},
-		submit:function(){
-			var email=$("#email")[0].value;
-			var password=$("#password")[0].value;
-			var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-			if(!filter.test(email)){
-				$.MsgBox.Alert("提示","邮箱格式不正确");
-				return;
-			}
-			if(password.length<=6)
-			{
-				$.MsgBox.Alert("提示","密码长度小于6");
-				return;
-			}
-			//提交登录请求
-			//ajax函数
-			$.ajax({
-				url: "/kmap/login.do",
-				data:{"email":email,"password":password},
-				type: "POST",
-				success:function(data,status){
-					if(data.status==1){
-						//登录成功
-						$.MsgBox.Alert("提示",data.detail+"正在跳转...");
-						setInterval(function (){
-							if(data.isAdmin==1)
-								location.href=data.redirectUrl;
-							else
-								location.href=data.redirectUrl;
-						},3000);
-
-					}else{
-						$.MsgBox.Alert("登录失败",data.detail);
-					}
-				},
-				error:function(data,status){
-					$.MsgBox.Alert("提示","网络不通");
-				}
-			});
-
-		}
-	}
-	completeInfo.init();
-</script>
 </body>
 </html>

@@ -64,54 +64,63 @@
           <groupId>org.springframework</groupId>
           <artifactId>spring-core</artifactId>
           <version>${spring.version}</version>
+          <scope>compile</scope>
       </dependency>
 
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-web</artifactId>
           <version>${spring.version}</version>
+          <scope>compile</scope>
       </dependency>
 
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-oxm</artifactId>
           <version>${spring.version}</version>
+          <scope>compile</scope>
       </dependency>
 
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-tx</artifactId>
           <version>${spring.version}</version>
+          <scope>compile</scope>
       </dependency>
 
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-jdbc</artifactId>
           <version>${spring.version}</version>
+          <scope>compile</scope>
       </dependency>
 
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-webmvc</artifactId>
           <version>${spring.version}</version>
+          <scope>compile</scope>
       </dependency>
 
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-context-support</artifactId>
           <version>${spring.version}</version>
+          <scope>compile</scope>
       </dependency>
 
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-aop</artifactId>
           <version>${spring.version}</version>
+          <scope>compile</scope>
       </dependency>
 
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-test</artifactId>
           <version>${spring.version}</version>
+          <scope>compile</scope>
       </dependency>
 
       <!-- springframe end -->
@@ -121,11 +130,13 @@
           <groupId>org.codehaus.jackson</groupId>
           <artifactId>jackson-core-asl</artifactId>
           <version>1.9.13</version>
+          <scope>compile</scope>
       </dependency>
       <dependency>
           <groupId>org.codehaus.jackson</groupId>
           <artifactId>jackson-mapper-asl</artifactId>
           <version>1.9.13</version>
+          <scope>compile</scope>
       </dependency>
       <dependency>
           <groupId>com.fasterxml.jackson.core</groupId>
@@ -137,16 +148,19 @@
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-core</artifactId>
           <version>2.1.0</version>
+          <scope>compile</scope>
       </dependency>
       <dependency>
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-databind</artifactId>
           <version>2.1.0</version>
+          <scope>compile</scope>
       </dependency>
       <dependency>
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-annotations</artifactId>
           <version>2.1.0</version>
+          <scope>compile</scope>
       </dependency>
 
 
@@ -154,12 +168,14 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.27</version>
+      <scope>compile</scope>
     </dependency>
 
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
       <version>2.3.1</version>
+        <scope>compile</scope>
     </dependency>
 
     <dependency>
@@ -175,12 +191,14 @@
           <groupId>org.mybatis</groupId>
           <artifactId>mybatis</artifactId>
           <version>${mybatis.version}</version>
+          <scope>compile</scope>
       </dependency>
       <!--mybatis/spring包-->
       <dependency>
           <groupId>org.mybatis</groupId>
           <artifactId>mybatis-spring</artifactId>
           <version>1.2.3</version>
+          <scope>compile</scope>
       </dependency>
 
       <!--数据连接池包-->
@@ -188,18 +206,21 @@
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-dbcp2</artifactId>
           <version>2.1.1</version>
+          <scope>compile</scope>
       </dependency>
 
       <dependency>
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-pool2</artifactId>
           <version>2.4.2</version>
+          <scope>compile</scope>
       </dependency>
 
       <dependency>
           <groupId>commons-logging</groupId>
           <artifactId>commons-logging</artifactId>
           <version>1.2</version>
+          <scope>compile</scope>
       </dependency>
 
       <!--Json字符串解析包-->
@@ -207,11 +228,13 @@
           <groupId>org.json</groupId>
           <artifactId>json</artifactId>
           <version>20140107</version>
+          <scope>compile</scope>
       </dependency>
       <dependency>
           <groupId>log4j</groupId>
           <artifactId>log4j</artifactId>
           <version>1.2.17</version>
+          <scope>compile</scope>
       </dependency>
   </dependencies>
 

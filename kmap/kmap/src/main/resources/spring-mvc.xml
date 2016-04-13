@@ -128,6 +128,23 @@
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
           p:dataSource-ref="dataSource"/>
+
+    <!-- 申明JavaMailSenderImpl对象 -->
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="defaultEncoding" value="UTF-8" />
+        <property name="host" value="smtp.163.com" />
+        <property name="username" value="Echo_rejoice@163.com" />
+        <property name="password" value="wanglu19940905" />
+        <property name="port" value="25"/>
+        <property name="javaMailProperties">
+            <props>
+                <!-- 设置认证开关 -->
+                <prop key="mail.smtp.auth">true</prop>
+                <!-- 设置发送延时 -->
+                <prop key="mail.smtp.timeout">25000</prop>
+            </props>
+        </property>
+    </bean>
     <!-- enables scanning for @Transactional annotations -->
     <tx:annotation-driven transaction-manager="transactionManager" />
 
