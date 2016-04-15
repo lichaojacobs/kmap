@@ -44,31 +44,62 @@
 <div class="info_form">
 <div class="input-group">
   <span class="input-group-addon" id="basic-addon1">用户名称</span>
-  <input type="text" class="form-control" placeholder="用户名" aria-describedby="basic-addon1">
+  <input type="text" id="username" class="form-control" placeholder="用户名" aria-describedby="basic-addon1">
 </div>
 <br/>
 <div class="input-group">
   <span class="input-group-addon" id="basic-addon2">专业名称</span>
-  <input type="text" class="form-control" placeholder="专业名称" aria-describedby="basic-addon2">
+  <input type="text" id="major" class="form-control" placeholder="专业名称" aria-describedby="basic-addon2">
+  <div class="input-group-btn">
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" >搜索</button>
+  </div><!-- /btn-group -->
 </div>
 <br/>
 <div class="input-group">
   <span class="input-group-addon">办公网账号</span>
-  <input type="text" class="form-control" placeholder="办公网账号">
+  <input type="text" id="eid" class="form-control" placeholder="办公网账号">
 </div>
 <br/>
 <div class="input-group">
   <span class="input-group-addon">办公网密码</span>
-  <input type="password" class="form-control" placeholder="办公网密码" >
+  <input type="password" id="epassword" class="form-control" placeholder="办公网密码" >
 </div>
 <br/>
 <div class="info_button">
-    <input class="btn btn-primary lg" type="button" value="提交"/>
+    <input class="btn btn-primary lg" type="button" onclick="completeInfo.submit()" value="提交"/>
 </div>
 </div>
-<body>
-<script src="/kmap/lib/jquery/jquery-1.6.1.min.js"></script>
+
+<!--modal-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">添加专业信息</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="majorinfo" class="control-label">专业年级与名称:</label>
+            <select type="text" class="drop" id="majorinfo" name="majorinfo">
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" id="selectMajor" class="btn btn-primary">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/kmap/admin/js/MessageBox.js"></script>
+<script src="/kmap/js/info.js"></script>
+
 </body>
 </html>

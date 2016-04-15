@@ -22,5 +22,7 @@ public interface UserDao {
 
     String getUserRole(String email);
 
+    CommonResult addUserInfo(User user);
+
 
 }

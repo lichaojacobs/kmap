@@ -41,7 +41,11 @@ public class MajorApiController {
     public @ResponseBody Object GetMajorsPerGrade(HttpServletRequest request){
 
         return apiMajorService.GetMajorsPerGrade();
+    }
 
+    @RequestMapping("GetMajors")
+    public @ResponseBody Object GetMajors(HttpServletRequest request){
+        return  apiMajorService.getMajors();
     }
 
     @RequestMapping("addMajor")

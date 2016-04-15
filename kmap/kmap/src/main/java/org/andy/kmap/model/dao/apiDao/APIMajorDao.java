@@ -15,6 +15,7 @@ public interface APIMajorDao {
     public CommonResult addMajor(Major major);
     public CommonResult editMajor(Major updateMajor,Major pastMajor);
     public CommonResult deleteMajor(Major major);
+    public List<Major> getMajors();
 
 
 

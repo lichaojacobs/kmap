@@ -68,13 +68,10 @@ public class test {
 
     }
 
-
-
-
-
-
-
-
-
-
+    @Test
+    public void Transfer(){
+        String eid="301220904";
+        int eidForInt=Integer.valueOf(eid);
+        System.out.println(eidForInt);
+    }
 }

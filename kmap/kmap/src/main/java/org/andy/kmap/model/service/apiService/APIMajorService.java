@@ -32,6 +32,10 @@ public class APIMajorService {
 
     }
 
+    public List<Major> getMajors(){
+        return apiMajorDao.getMajors();
+    }
+
     /**
      * 修改专业信息
      * @param

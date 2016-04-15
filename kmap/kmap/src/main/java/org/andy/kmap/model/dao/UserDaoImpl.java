@@ -123,7 +123,7 @@ public class UserDaoImpl implements UserDao {
                 user.setId(result.getInt(1));
                 if(result.getObject(5)!=null&&result.getObject(6)!=null)
                 {
-                    user.setEid(result.getInt("eid"));
+                    user.setEid(result.getString("eid"));
                     user.setEpassword(result.getString("epasswd"));
                 }
                 if(result.getObject(7)!=null)
@@ -175,6 +175,57 @@ public class UserDaoImpl implements UserDao {
 
         return role;
 
+    }
+
+    /**
+     * 完善用户信息
+     * @param user
+     * @return
+     */
+    public CommonResult addUserInfo(User user){
+        CommonResult commonResult=new CommonResult();
+
+        Connection connection = null;
+        PreparedStatement statement = null;
+        SQLException exception = null;
+
+        try {
+
+
+            connection = this.dataSource.getConnection();
+            //插入之前先查查邮箱是否唯一
+            statement = connection.prepareStatement("UPDATE user SET eid=?, epasswd=?, major=?  WHERE email = ?");
+
+            statement.setString(1, user.getEid());
+            statement.setString(2,user.getEpassword());
+            statement.setInt(3,user.getMajorId());
+            statement.setString(4,user.getEmail());
+
+
+            statement.executeUpdate();
+            commonResult.setDetail("信息更新成功");
+            commonResult.setStatus(1);
+            return commonResult;
+
+
+        }catch (SQLException ex){
+            exception = ex;
+            commonResult.setStatus(-1);
+            commonResult.setDetail("数据库服务器异常！");
+            return commonResult;
+
+        }
+        catch (Exception ex) {
+
+            commonResult.setStatus(-1);
+            commonResult.setDetail("服务器内部错误！");
+            return commonResult;
+
+        } finally {
+
+            ConnectionCloser.close(connection,statement,exception);
+
+        }
     }
 
 }

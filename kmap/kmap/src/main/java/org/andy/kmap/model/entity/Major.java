@@ -16,9 +16,9 @@ public class Major {
         this.academyId = academyId;
     }
 
-    public Major(int year, String name) {
+    public Major(int id, String name) {
 
-        this.year = year;
+        this.id = id;
         this.name = name;
     }
 

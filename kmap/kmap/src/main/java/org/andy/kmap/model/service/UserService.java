@@ -60,5 +60,15 @@ public class UserService {
 
     }
 
+
+    /**
+     * 完善个人信息
+     * @param user
+     * @return
+     */
+    public CommonResult addUserInfo(User user){
+        return userDao.addUserInfo(user);
+    }
+
 }
 

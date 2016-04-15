@@ -9,8 +9,18 @@ public class CommonResult {
 
     private String detail;
 
+    private String redirectUrl;
+
     public int getStatus() {
         return status;
+    }
+
+    public String getRedirectUrl() {
+        return redirectUrl;
+    }
+
+    public void setRedirectUrl(String redirectUrl) {
+        this.redirectUrl = redirectUrl;
     }
 
     public void setStatus(int status) {

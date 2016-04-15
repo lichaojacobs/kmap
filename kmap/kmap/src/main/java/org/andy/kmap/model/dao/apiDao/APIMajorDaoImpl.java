@@ -4,6 +4,7 @@ import org.andy.kmap.model.entity.Academy;
 import org.andy.kmap.model.entity.AddMajorViewModel;
 import org.andy.kmap.model.entity.CommonResult;
 import org.andy.kmap.model.entity.Major;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -19,6 +20,8 @@ import java.util.List;
  */
 @Repository("APIMajorDaoImpl")
 public class APIMajorDaoImpl implements APIMajorDao {
+
+    private static Logger logger = Logger.getLogger(APIMajorDao.class);
 
     @Autowired
     JdbcTemplate jdbcTemplate;
@@ -176,6 +179,30 @@ public class APIMajorDaoImpl implements APIMajorDao {
 
 
     }
+
+    /**
+     * 获取所有专业
+     * @return
+     */
+    public List<Major> getMajors(){
+
+        List<Major> majors=new ArrayList<>();
+        try {
+            String sqlForMajors="select id,year,name from major";
+            majors.addAll(jdbcTemplate.query(sqlForMajors, new RowMapper() {
+                @Override
+                public Major mapRow(ResultSet resultSet, int i) throws SQLException {
+                    Major major = new Major(resultSet.getInt("id"), resultSet.getString("name"));
+                    major.setYear(resultSet.getInt("year"));
+                    return major;
+                }
+            }));
+        }catch (Exception ex){
+            logger.error("getMajors error,ex is:",ex);
+        }
+        return majors;
+    }
+
 
 
 }

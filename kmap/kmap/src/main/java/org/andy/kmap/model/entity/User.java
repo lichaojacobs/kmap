@@ -7,7 +7,7 @@ public class User {
     private String email;
     private String password;
 
-    private int eid;
+    private String eid;
     private String epassword;
     private int majorId;
     private Major major;
@@ -33,7 +33,6 @@ public class User {
         this.email = email;
         this.password = password;
         this.majorId=0;
-        this.eid=0;
     }
 
 
@@ -77,19 +76,18 @@ public class User {
         this.password = password;
     }
 
-    public int getEid() {
-
-        return this.eid;
-    }
-
-    public void setEid(int eid) {
-
-        this.eid = eid;
-    }
 
     public String getEpassword() {
 
         return this.epassword;
+    }
+
+    public String getEid() {
+        return eid;
+    }
+
+    public void setEid(String eid) {
+        this.eid = eid;
     }
 
     public void setEpassword(String epassword) {

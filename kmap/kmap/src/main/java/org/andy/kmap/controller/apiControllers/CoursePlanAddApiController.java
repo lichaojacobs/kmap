@@ -1,24 +1,18 @@
 package org.andy.kmap.controller.apiControllers;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import org.andy.kmap.model.entity.CommonResult;
-import org.andy.kmap.model.map.CourseMap;
 import org.andy.kmap.model.map.CourseRelations;
 import org.andy.kmap.model.service.apiService.APICoursePlanService;
-import org.json.JSONString;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import org.json.JSONArray;
-import org.json.JSONObject;
 /**
  * Created by li on 2015/10/30.
  */

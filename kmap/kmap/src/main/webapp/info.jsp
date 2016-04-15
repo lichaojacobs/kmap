@@ -50,6 +50,9 @@
 <div class="input-group">
   <span class="input-group-addon" id="basic-addon2">专业名称</span>
   <input type="text" id="major" class="form-control" placeholder="专业名称" aria-describedby="basic-addon2">
+  <div class="input-group-btn">
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" >搜索</button>
+  </div><!-- /btn-group -->
 </div>
 <br/>
 <div class="input-group">
@@ -63,59 +66,40 @@
 </div>
 <br/>
 <div class="info_button">
-    <input class="btn btn-primary lg" type="button" value="提交"/>
+    <input class="btn btn-primary lg" type="button" onclick="completeInfo.submit()" value="提交"/>
 </div>
 </div>
-<body>
-<script src="/kmap/lib/jquery/jquery-1.6.1.min.js"></script>
+
+<!--modal-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">添加专业信息</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="majorinfo" class="control-label">专业年级与名称:</label>
+            <select type="text" class="drop" id="majorinfo" name="majorinfo">
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" id="selectMajor" class="btn btn-primary">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="/kmap/admin/js/MessageBox.js"></script>
-<script type="text/javascript">
-	var completeInfo ={
-		init: function(){},
-		submit:function(){
-			var email=$("#email")[0].value;
-			var password=$("#password")[0].value;
-			var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-			if(!filter.test(email)){
-				$.MsgBox.Alert("提示","邮箱格式不正确");
-				return;
-			}
-			if(password.length<=6)
-			{
-				$.MsgBox.Alert("提示","密码长度小于6");
-				return;
-			}
-			//提交登录请求
-			//ajax函数
-			$.ajax({
-				url: "/kmap/login.do",
-				data:{"email":email,"password":password},
-				type: "POST",
-				success:function(data,status){
-					if(data.status==1){
-						//登录成功
-						$.MsgBox.Alert("提示",data.detail+"正在跳转...");
-						setInterval(function (){
-							if(data.isAdmin==1)
-								location.href=data.redirectUrl;
-							else
-								location.href=data.redirectUrl;
-						},3000);
+<script src="/kmap/js/info.js"></script>
 
-					}else{
-						$.MsgBox.Alert("登录失败",data.detail);
-					}
-				},
-				error:function(data,status){
-					$.MsgBox.Alert("提示","网络不通");
-				}
-			});
-
-		}
-	}
-	completeInfo.init();
-</script>
 </body>
 </html>
