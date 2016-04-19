@@ -38,6 +38,7 @@ public class UserInfoController {
         user.setMajorId(majorId);
         user.setEid(eid);
         user.setEpassword(epassword);
+        user.setName(userName);
 
         logger.info("addUserInfo: user is:"+ new Gson().toJson(user));
 

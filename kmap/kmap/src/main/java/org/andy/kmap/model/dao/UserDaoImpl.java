@@ -3,10 +3,12 @@ package org.andy.kmap.model.dao;
 import java.sql.*;
 import javax.sql.DataSource;
 
+import org.andy.kmap.enums.RolesEnum;
 import org.andy.kmap.model.entity.CommonResult;
 import org.andy.kmap.model.entity.User;
 import org.andy.kmap.tools.SendEmailTools;
 import org.apache.commons.dbcp2.BasicDataSource;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
@@ -14,6 +16,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Repository("UserDaoImpl")
 public class UserDaoImpl implements UserDao {
+
+    private static Logger logger = Logger.getLogger(UserDaoImpl.class);
 
     @Autowired
     @Qualifier("dataSource")
@@ -52,7 +56,7 @@ public class UserDaoImpl implements UserDao {
                 //角色表
                 statement = connection.prepareStatement("INSERT INTO roles(userid, role) VALUES(?, ?)");
                 statement.setString(1,user.getEmail());
-                statement.setString(2,"用户");
+                statement.setString(2, RolesEnum.NORMAL_USER.getRoleName());
                 statement.executeUpdate();
                 try {
 
@@ -137,6 +141,7 @@ public class UserDaoImpl implements UserDao {
             }
         } catch (SQLException ex) {
             exception = ex;
+            logger.info("UserDaoImpl getUser error:",ex);
         } finally {
             ConnectionCloser.close(connection, statement, exception);
         }
@@ -194,12 +199,13 @@ public class UserDaoImpl implements UserDao {
 
             connection = this.dataSource.getConnection();
             //插入之前先查查邮箱是否唯一
-            statement = connection.prepareStatement("UPDATE user SET eid=?, epasswd=?, major=?  WHERE email = ?");
+            statement = connection.prepareStatement("UPDATE user SET eid=?, epasswd=?, major=?,name=?  WHERE email = ?");
 
             statement.setString(1, user.getEid());
             statement.setString(2,user.getEpassword());
             statement.setInt(3,user.getMajorId());
-            statement.setString(4,user.getEmail());
+            statement.setString(4,user.getName());
+            statement.setString(5,user.getEmail());
 
 
             statement.executeUpdate();

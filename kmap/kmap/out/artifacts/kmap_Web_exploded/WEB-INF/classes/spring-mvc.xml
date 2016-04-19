@@ -124,11 +124,6 @@
     <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"-->
           <!--p:basePackage="org.andy.kmap.model.dao"-->
           <!--p:sqlSessionFactoryBeanName="sqlSessionFactory"/>-->
-    <!-- 对数据源进行事务管理 -->
-    <bean id="transactionManager"
-          class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
-          p:dataSource-ref="dataSource"/>
-
     <!-- 申明JavaMailSenderImpl对象 -->
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
         <property name="defaultEncoding" value="UTF-8" />
@@ -147,6 +142,11 @@
     </bean>
     <!-- enables scanning for @Transactional annotations -->
     <tx:annotation-driven transaction-manager="transactionManager" />
+
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+          p:dataSource-ref="dataSource"/>
+
 
     <!--配置俩个视图解析器-->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"

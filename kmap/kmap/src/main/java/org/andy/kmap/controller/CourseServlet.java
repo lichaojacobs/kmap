@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.andy.kmap.enums.RolesEnum;
 import org.andy.kmap.model.entity.*;
 
 import org.andy.kmap.model.service.CourseService;
@@ -36,10 +37,11 @@ public class CourseServlet extends HttpServlet {
     public String CoursePage(HttpServletRequest request){
         LoginViewModel login= (LoginViewModel)request.getSession().getAttribute("userRole");
         if(login!=null) {
-            if (login.getUserRole().equals("普通用户")) {
+            if (login.getUserRole().equals(RolesEnum.NORMAL_USER.getRoleName())) {
                 //判断用户是否基本信息完备
                 if(userService.getUser(login.getUserEmail()).getMajorId()==0)
                 {
+                    logger.info("当前用户暂无专业信息"+login.getUserName());
                     return "/info";
                 }
                 else

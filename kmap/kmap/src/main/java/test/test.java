@@ -1,14 +1,20 @@
 package test;
 
+import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import jdk.nashorn.internal.parser.JSONParser;
 import org.andy.kmap.model.entity.Academy;
+import org.andy.kmap.model.entity.DropDownModel.CourseDropDown;
+import org.andy.kmap.model.entity.DropDownModel.GradeDropDown;
 import org.andy.kmap.model.service.apiService.APIAcademyService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowCallbackHandler;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.test.context.ContextConfiguration;
@@ -18,6 +24,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.mail.internet.MimeMessage;
 import javax.swing.tree.TreeNode;
 import java.io.File;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -34,8 +43,13 @@ public class test {
 //    @Qualifier("APIAcademyService")
 //    private APIAcademyService apiAcademyService;
 
+    private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(test.class);
+
     @Autowired
     private JavaMailSenderImpl javaMailSender;
+
+    @Autowired
+    JdbcTemplate jdbcTemplate;
 
 
     @Test
@@ -69,9 +83,26 @@ public class test {
     }
 
     @Test
-    public void Transfer(){
-        String eid="301220904";
-        int eidForInt=Integer.valueOf(eid);
-        System.out.println(eidForInt);
+    public void sqlTest(){
+        final List<GradeDropDown> gradeDropDowns=new ArrayList<GradeDropDown>();
+
+        String sqlForGrades="select year from major where name='电子商务'";
+
+        jdbcTemplate.query(sqlForGrades,  new RowCallbackHandler() {
+            @Override
+            public void processRow(ResultSet resultSet) throws SQLException {
+
+                GradeDropDown gradeDropDown=new GradeDropDown();
+                logger.info("获取下拉列表年级为"+resultSet.getInt(1));
+                gradeDropDown.setText(String.valueOf(resultSet.getInt("year")));
+                gradeDropDown.setHref("#grandchild1");
+                gradeDropDown.setTags(null);
+                //添加知识点的下拉列表
+                gradeDropDowns.add(gradeDropDown);
+
+            }
+        });
+
+        logger.info("获取下拉列表,年级:"+new Gson().toJson(gradeDropDowns));
     }
 }

@@ -1,5 +1,6 @@
 package org.andy.kmap.model.dao.apiDao;
 
+import com.google.gson.Gson;
 import org.andy.kmap.model.entity.*;
 import org.andy.kmap.model.entity.CoursePlanAddModels.CourseViewModel;
 import org.andy.kmap.model.entity.CoursePlanSearchModel.CoursePlanSearchModel;
@@ -23,6 +24,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 /**
  * Created by li on 2015/10/30.
@@ -31,6 +33,7 @@ import java.util.Map;
 @Repository("APICoursePlanDaoImpl")
 public class APICoursePlanDaoImpl implements APICoursePlanDao {
 
+    private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(APICoursePlanDaoImpl.class);
     @Autowired
     JdbcTemplate jdbcTemplate;
 
@@ -60,6 +63,7 @@ public class APICoursePlanDaoImpl implements APICoursePlanDao {
                 dropDownViewModels.add(dropDownViewModel);
             }
         });
+        logger.info("获取下拉列表,学院:"+new Gson().toJson(dropDownViewModels));
         //循环添加专业
         for (DropDownViewModel dropDownViewModel:dropDownViewModels){
             dropDownViewModel.setNodes(getMajorDropDown(dropDownViewModel.getId(),type));
@@ -89,12 +93,17 @@ public class APICoursePlanDaoImpl implements APICoursePlanDao {
                     majorDropDown.setHref("#child1");
                     majorDropDown.setText(resultSet.getString("name"));
                     majorDropDown.setId(resultSet.getInt("id"));
-                    majorDropDown.setNodes(getGradeDropDown(resultSet.getString("name"), resultSet.getInt("id"), type));
                     majorDropDowns.add(majorDropDown);
                 }
 
             }
         });
+
+        for (MajorDropDown majorDropDown:majorDropDowns){
+            majorDropDown.setNodes(getGradeDropDown(majorDropDown.getText(),majorDropDown.getId(),type));
+        }
+
+        logger.info("获取下拉列表, 学院 "+academyId+"专业:"+new Gson().toJson(majorDropDowns));
         return majorDropDowns;
     }
 
@@ -106,16 +115,18 @@ public class APICoursePlanDaoImpl implements APICoursePlanDao {
 
         final List<GradeDropDown> gradeDropDowns=new ArrayList<GradeDropDown>();
 
-        String sqlForGrades="select year from major where name='"+name+"'";
+        String sqlForGrades="select year from major where name=?";
 
-        jdbcTemplate.query(sqlForGrades,  new RowCallbackHandler() {
+        jdbcTemplate.query(sqlForGrades,new Object[]{name},  new RowCallbackHandler() {
             @Override
             public void processRow(ResultSet resultSet) throws SQLException {
 
                 GradeDropDown gradeDropDown=new GradeDropDown();
-                gradeDropDown.setText(resultSet.getString("year"));
+                logger.info("获取下拉列表年级为"+resultSet.getInt(1));
+                gradeDropDown.setText(String.valueOf(resultSet.getInt("year")));
                 gradeDropDown.setHref("#grandchild1");
                 gradeDropDown.setTags(tags);
+                //添加知识点的下拉列表
                 if(type==0) {
                     List<CourseDropDown> courseDropDowns = getCourseDropDown(majorId);
                     if (courseDropDowns != null)
@@ -126,6 +137,7 @@ public class APICoursePlanDaoImpl implements APICoursePlanDao {
             }
         });
 
+        logger.info("获取下拉列表, 专业 "+majorId+"年级:"+new Gson().toJson(gradeDropDowns));
         return gradeDropDowns;
 
 
@@ -158,9 +170,9 @@ public class APICoursePlanDaoImpl implements APICoursePlanDao {
                         courseDropDowns.add(courseDropDown);
                     }
                 });
-
             }
 
+            logger.info("获取下拉列表, 专业 "+majorId+"课程:"+new Gson().toJson(courseDropDowns));
             return courseDropDowns;
         }catch (Exception ex)
         {
