@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository("UserDaoImpl")
@@ -27,7 +28,7 @@ public class UserDaoImpl implements UserDao {
      * This method adds a user.
      * @param user
      */
-    @Transactional
+    @Transactional(propagation = Propagation.REQUIRED)
     public CommonResult addUser(User user) {
 
         CommonResult commonResult=new CommonResult();
@@ -37,7 +38,6 @@ public class UserDaoImpl implements UserDao {
         SQLException exception = null;
 
         try {
-
 
             connection = this.dataSource.getConnection();
             //插入之前先查查邮箱是否唯一

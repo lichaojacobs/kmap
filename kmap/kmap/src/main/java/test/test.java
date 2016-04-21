@@ -30,6 +30,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.LinkedBlockingDeque;
 
 /**
  * Created by Mtime on 2015/9/17.
@@ -50,7 +53,6 @@ public class test {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
-
 
     @Test
     public void sendMailTest(){
@@ -84,25 +86,6 @@ public class test {
 
     @Test
     public void sqlTest(){
-        final List<GradeDropDown> gradeDropDowns=new ArrayList<GradeDropDown>();
 
-        String sqlForGrades="select year from major where name='电子商务'";
-
-        jdbcTemplate.query(sqlForGrades,  new RowCallbackHandler() {
-            @Override
-            public void processRow(ResultSet resultSet) throws SQLException {
-
-                GradeDropDown gradeDropDown=new GradeDropDown();
-                logger.info("获取下拉列表年级为"+resultSet.getInt(1));
-                gradeDropDown.setText(String.valueOf(resultSet.getInt("year")));
-                gradeDropDown.setHref("#grandchild1");
-                gradeDropDown.setTags(null);
-                //添加知识点的下拉列表
-                gradeDropDowns.add(gradeDropDown);
-
-            }
-        });
-
-        logger.info("获取下拉列表,年级:"+new Gson().toJson(gradeDropDowns));
     }
 }

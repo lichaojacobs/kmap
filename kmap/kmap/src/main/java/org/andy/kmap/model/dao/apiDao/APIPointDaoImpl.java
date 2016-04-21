@@ -131,9 +131,12 @@ public class APIPointDaoImpl implements APIPointDao {
                 }
                 if(!pointbehind.equals("0")&&!pointforward.equals("0"))
                 {
+
                     int tail=Integer.valueOf(pointbehind);
                     int head=Integer.valueOf(pointforward);
                     String sqlForDD="insert into dd(tail,head) values(?,?)";
+                    String deleteForDD="delete from dd where tail=? and head=?";
+                    jdbcTemplate.update(deleteForDD,new Object[]{head,tail});
                     jdbcTemplate.update(sqlForDD,new Object[]{detailId,tail});
                     jdbcTemplate.update(sqlForDD,new Object[]{head,detailId});
                 }
