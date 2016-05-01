@@ -117,6 +117,11 @@
             if (!nearest.node) return false;
             return false
           },
+            dbclicked:function (e) {
+                if(nearest!=null){
+                    window.location.href="/kmap/detail/index.do?courseId="+nearest.node.data.id+"&courseName="+nearest.node.data.name;
+                }
+            },
           clicked:function(e){
             selected = (nearest.distance < 20) ? nearest : null
             if(selected===null){
@@ -134,6 +139,7 @@
             $(window).bind('mouseup', handler.dropped)
             return false
           },
+
           dragged:function(e){
             var old_nearest = nearest && nearest.node._id
             var pos = $(canvas).offset();
@@ -176,19 +182,20 @@
             $(canvas).bind('mousemove', handler.moved);
             dragged = null;
             _mouseP = null;
-            selected = null
+            selected = null;
             return false
           }
         }
+          //绑定双击事件
+          $(canvas).dblclick(handler.dbclicked);
         $(canvas).mousedown(handler.clicked);
         $(canvas).mousemove(handler.moved);
       }
     };
-
     return that;
   };
 
-  var Maps = function(elt) {
+    var Maps = function(elt) {
     //里面传了参数4000, 500, 0.5, 45 repulsion为斥力
     var sys = arbor.ParticleSystem({stiffness:900, repulsion:30000, gravity:true, dt:0.015,precision:0.8});
     sys.renderer = Renderer("#viewport");
@@ -209,7 +216,6 @@
         _links.find('.course').click();
         return that;
       },
-
       mapClick: function(e) {
         var selected = $(e.target);
         var newMap = selected.attr('class');
@@ -235,8 +241,8 @@
     };
     return that.init();
   }
-  $(document).ready(function() {
-    var mcp = Maps("#maps");
-  });
+    $(document).ready(function() {
+        var mcp = Maps("#maps");
+    });
 
 })();

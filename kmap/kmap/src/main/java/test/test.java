@@ -11,6 +11,9 @@ import org.andy.kmap.model.service.apiService.APIAcademyService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.core.env.SystemEnvironmentPropertySource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
@@ -86,6 +89,8 @@ public class test {
 
     @Test
     public void sqlTest(){
+        ClassPathXmlApplicationContext classPathXmlApplicationContext=new ClassPathXmlApplicationContext("classpath:spring-mvc.xml");
+        System.out.print(classPathXmlApplicationContext.getApplicationName());
 
     }
 }
