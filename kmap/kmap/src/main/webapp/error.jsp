@@ -11,6 +11,8 @@
     <title>错误页面</title>
 </head>
 <body>
+<!--导航栏目-->
+    <jsp:include page="navagation.jsp"/>
     <div style="word-wrap: normal;margin: 0 auto">
       <h2>Error! 应用程序错误</h2>
     </div>

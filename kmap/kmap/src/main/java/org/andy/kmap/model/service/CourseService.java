@@ -25,7 +25,6 @@ public class CourseService {
     private PropertyDao propertyDao;
 
 
-
     private List<Course> setCategory(List<Course> courses) {
 
         for (int i = 0; i < courses.size(); i++) {
@@ -60,6 +59,7 @@ public class CourseService {
 
     /**
      * This method gets a course map without user informaton.
+     *
      * @param major
      * @return
      */
@@ -89,16 +89,17 @@ public class CourseService {
 
     }
 
-     public Course getCourseById(int id){
-         return courseDao.getCourseById(id);
-     }
+    public Course getCourseById(int id) {
+        return courseDao.getCourseById(id);
+    }
 
-     public Course getCourse(String courseName,String academy)
-     {
-       return this.courseDao.getCourse(courseName,academy);
-     }
+    public Course getCourse(String courseName, String academy) {
+        return this.courseDao.getCourse(courseName, academy);
+    }
+
     /**
      * This method gets a course map with user information.
+     *
      * @param user
      * @return
      */
