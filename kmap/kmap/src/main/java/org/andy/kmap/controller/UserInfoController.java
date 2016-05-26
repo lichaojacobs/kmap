@@ -27,6 +27,12 @@ public class UserInfoController {
     UserService userService;
 
     @AuthPassport
+    @RequestMapping("userInfo")
+    public String UserInfo(){
+        return "/info";
+    }
+
+    @AuthPassport
     @RequestMapping("addUserInfo")
     public @ResponseBody Object addUserInfo(HttpServletRequest request){
         //"username":username,"eid":eid,"epassword":epassword,"majorid":majorId}

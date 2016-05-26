@@ -118,47 +118,101 @@ var Renderer_out;
 
         var dragged = null;
         var oldmass = 1;
+          var ppoint = null;
+          //定义一系列处理函数
+          var _section = null;
 
-        $(canvas).mousedown(function(e) {
-          var pos = $(this).offset();
-          var p = {x: e.pageX - pos.left, y: e.pageY - pos.top};
+          var handler = {
+              moved: function (e) {
+                  var pos = $(canvas).offset();
+                  _mouseP = arbor.Point(e.pageX - pos.left, e.pageY - pos.top)
+                  nearest = particleSystem.nearest(_mouseP);
+                  if (!nearest.node) return false;
+                  return false
+              },
+              dbclicked: function (e) {
+                  selected = (nearest.distance < 20) ? nearest : null
+                  if (selected != null) {
+                      window.location.href = "/kmap/detail/index.do?courseId=" + nearest.node.data.id + "&courseName=" + nearest.node.data.name;
+                  }
+              },
+              clicked: function (e) {
+                  selected = (nearest.distance < 20) ? nearest : null
+                  if (selected === null) {
+                      //点击空白区域使得浮动框消失
+                      $(".list-group").attr("style", "display:none");
+                      return false;
+                  }
+                  var pos = $(canvas).offset();
+                  _mouseP = arbor.Point(e.pageX - pos.left, e.pageY - pos.top)
+                  ppoint = _mouseP;
+                  nearest = dragged = particleSystem.nearest(_mouseP);
+                  if (dragged && dragged.node !== null) dragged.node.fixed = true
+                  $(canvas).unbind('mousemove', handler.moved);
+                  $(canvas).bind('mousemove', handler.dragged);
+                  $(window).bind('mouseup', handler.dropped);
+                  return false;
+              },
 
-          selected = nearest = dragged = particleSystem.nearest(p);
+              dragged: function (e) {
+                  var old_nearest = nearest && nearest.node._id
+                  var pos = $(canvas).offset();
+                  var s = arbor.Point(e.pageX - pos.left, e.pageY - pos.top)
 
-          if (selected.node !== null) {
-            dragged.node.tempMass = 50;
-            dragged.node.fixed = true;
+                  if (!nearest) return
+                  if (dragged !== null && dragged.node !== null) {
+                      var p = particleSystem.fromScreen(s)
+                      dragged.node.p = p
+                  }
+                  return false
+              },
+              dropped: function (e) {
+                  if (dragged === null || dragged.node === undefined) {
+                      return false;
+                  }
+                  if (dragged.node !== null) dragged.node.fixed = false
+                  dragged.node.tempMass = 1000
+                  var popup;//
+                  var pos = $(canvas).offset();
+                  var s = arbor.Point(e.pageX - pos.left, e.pageY - pos.top);
+                  moveleft = ppoint.x - s.x;
+                  moveright = ppoint.y - s.y;
+                  if (Math.abs(moveleft) < 5 && nearest.node.name != _section && nearest.node === selected.node) {
+                      // _section = nearest.node.name
+                      // that.switchSection(_section)
+                      //alert($(".float_combox").html());
+                      //  $(".float_combox").attr("style","position:absolute;top:"+e.pageY+"px;left:"+e.pageX+"px");
+                      //alert(selected.node.label)
+                      // var cell=document.getElementById("relstable").rows[0].cells;
+                      //cell[0].innerHTML="<input readonly='true' id='graphid' value='udh'/>"
+                      var showlike=$("#modal a:eq(0)");
+                      showlike.text(nearest.node.likeCount);
+                      var modal = $("#modal a:eq(1)");
+                      modal.text("给个赞");
+                      ///kmap/detail/like" + nearest.node.data.id
+                      modal.attr("href", "#");
+                      $(".list-group").attr("style", ";position:absolute;top:" + e.pageY + "px;left:" + e.pageX + "px");
+                      modal.click(function () {
+                          var modal1=$("#modal a:first");
+                          count=parseInt(modal1.text().trim());
+                          modal1.text(count+1);
+                          modal.text("已赞")
+                          modal.attr("disabled","disabled");
+                      })
+                  }
+                  $(canvas).unbind('mousemove', handler.dragged)
+                  $(window).unbind('mouseup', handler.dropped)
+                  $(canvas).bind('mousemove', handler.moved);
+                  dragged = null;
+                  _mouseP = null;
+                  selected = null;
+                  return false
+              }
           }
 
-          return false;
-        });
+          $(canvas).mousedown(handler.clicked);
+          $(canvas).mousemove(handler.moved);
 
-        $(canvas).mousemove(function(e) {
-          var old_nearest = nearest && nearest.node._id;
-          var pos = $(this).offset();
-          var s = {x: e.pageX - pos.left, y: e.pageY - pos.top};
-
-          nearest = particleSystem.nearest(s);
-
-          if (!nearest) {
-            return;
-          }
-
-          if (dragged !== null && dragged.node !== null) {
-            var p = particleSystem.fromScreen(s);
-            dragged.node.p = {x: p.x, y: p.y};
-          }
-        });
-        $(window).bind('mouseup', function(e) {
-          if (dragged === null || dragged.node === undefined) {
-            return;
-          }
-          dragged.node.fixed = false;
-          dragged.node.tempMass = 100;
-          dragged = null;
-          selected = null;
-          return false;
-        });
       }
     };
     Renderer_out=Renderer;

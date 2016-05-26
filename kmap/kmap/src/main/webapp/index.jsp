@@ -233,7 +233,7 @@
 				$.MsgBox.Alert("提示","邮箱格式不正确");
 				return;
 			}
-			if(password.length<=6)
+			if(password.length<6)
 			{
 				$.MsgBox.Alert("提示","密码长度小于6");
 				return;

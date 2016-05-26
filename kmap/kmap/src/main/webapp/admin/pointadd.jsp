@@ -233,7 +233,7 @@ $("#secondstep").removeClass("change");
                 </div>
                 <!--right-->
               </div>
-              <!--first-->
+              <!--second-->
               <div id="secondstep" class="vis">
                 <div class="querytip stepfirst" style="background-color:rgb(51, 153, 204)">②知识点信息</div>
                 <div class="quickaddplan">
@@ -262,15 +262,30 @@ $("#secondstep").removeClass("change");
                   <!--right-->
                 </div>
               </div>
-              <!--second-->
+              <!--third-->
               <div id="thirdstep" class="vis">
                 <div class="querytip stepfirst" style="background-color:rgb(51, 153, 204)">③知识点关系</div>
                 <div class="quickaddplan">
                   <div class="point" style="margin-bottom:0px; margin-left:10px"> <span class="glyphicon glyphicon-map-marker" style="color:red; font-size:16px; margin-right:3px"></span><span></span></div>       
 
                 </div>
+
                 <!--quickaddplan-->
                 <div class="queryform" style="margin-left: 80px; height:460px">
+                    <!--start of point-->
+                    <div class="row" style="margin-right:0px">
+                        <div class="col-md-offset-1 col-md-10">
+                            <div class="pointspace">
+                                <label for="pointname">知识点名称</label>
+                                <input type="text" id="pointname" name="pointname" class="form-control" style="display:inline-block; width:85%" /></div>
+                            <div class="pointspace">
+                                <label for="pointdescription" style="position:relative; top:-120px;">知识点描述</label>
+                                <textarea class="form-control" id="pointdescription" name="pointdescription" style="display:inline-block; width:85%; height:250px; resize: none;"></textarea>
+                            </div><!--pointspace-->
+                        </div><!--col-->
+                    </div>
+                    <!--end of point-->
+
                   <!--start of relation-->
                   <div class="row" style="margin-right:0px">
 				  <div class="col-md-offset-1 col-md-10">

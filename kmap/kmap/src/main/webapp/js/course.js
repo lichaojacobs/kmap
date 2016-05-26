@@ -39,10 +39,14 @@
                         //使边缘稍微明显一点
                         ctx.arc(pt.x, pt.y, w * 0.55, 0, percent * Math.PI);
                         ctx.lineTo(pt.x, pt.y);
-                        ctx.fillStyle = node.data.category.color;
+                        if(node.data.category.color!=null) {
+                            ctx.fillStyle = node.data.category.color;
+                        }
                         ctx.globalAlpha = 0.5;
                         ctx.fill();
-                        ctx.strokeStyle = node.data.category.color;
+                        if(node.data.category.color!=null) {
+                            ctx.strokeStyle = node.data.category.color;
+                        }
                         ctx.stroke();
                         ctx.restore();
                     }
@@ -80,9 +84,14 @@
             resize: function () {
                 var w = $(window).width(),
                     h = $(window).height();
-                canvas.width = w;
-                canvas.height = 650; // resize the canvas element to fill the screen
-                particleSystem.screenSize(w, 650); // inform the system so it can map coords for us
+                if(canvas.width!=400){
+                    canvas.width=w;
+                }
+                else {
+                    canvas.width=canvas.width;
+                }
+                canvas.height = canvas.height; // resize the canvas element to fill the screen
+                particleSystem.screenSize(canvas.width, canvas.height); // inform the system so it can map coords for us
                 _vignette = null
                 that.redraw()
             },
@@ -104,7 +113,8 @@
                         return false
                     },
                     dbclicked: function (e) {
-                        if (nearest != null) {
+                        selected = (nearest.distance < 20) ? nearest : null
+                        if (selected != null) {
                             window.location.href = "/kmap/detail/index.do?courseId=" + nearest.node.data.id + "&courseName=" + nearest.node.data.name;
                         }
                     },
@@ -174,20 +184,8 @@
                                 div.style.height = '400px';
                                 $(".list-group").attr("style", "display:none");
                                 $(".loading")[0].style.display="block";
-                                ajaxToServerByGet("/kmap/course.do", null,
-                                    //success
-                                    function () {
-
-                                    },
-                                    //error
-                                    function () {
-
-                                    },
-                                    //callback
-                                    function () {
-                                        $(".loading")[0].style.display="none";
-                                        div.style.background="#ffffff";
-                                    });
+                                //调用绘制函数
+                                PartialLoad.selectMap(nearest.node.data.id,div);
                             })
                         }
                         $(canvas).unbind('mousemove', handler.dragged)
@@ -229,8 +227,31 @@
         };
         return that.init();
     }
+
+    var sysPartial;
+    var PartialLoad={
+
+        init:function () {
+            //里面传了参数4000, 500, 0.5, 45 repulsion为斥力
+            sysPartial = arbor.ParticleSystem({stiffness: 900, repulsion: 30000, gravity: true, dt: 0.015, precision: 0.8});
+            sysPartial.renderer = Renderer("#partialviewport");
+        },
+        selectMap: function (courseid,div) {
+            var url = "/kmap/course.do";
+                $.post(url, {"courseid":courseid}, function (data, status) {
+                    var nodes = data.nodes;
+                    $.each(nodes, function (name, info) {
+                        info.label = name;
+                    });
+                    sysPartial.merge({nodes: nodes, edges: data.edges});
+                    $(".loading")[0].style.display="none";
+                    div.style.background="#ffffff";
+                });
+            }
+    }
     $(document).ready(function () {
         //初始化
+        PartialLoad.init();
         Maps();
     });
 

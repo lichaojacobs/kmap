@@ -13,7 +13,13 @@ public interface CourseDao {
      */
     List<Course> getCourses(Major major);
 
-
+    /**
+     * 获取局部加载课程
+     * @param major
+     * @param courseId
+     * @return
+     */
+    List<Course> getCourses(Major major,int courseId);
     /**
      * This method gets a list of successors of a certain course.
      * @param major
@@ -42,5 +48,9 @@ public interface CourseDao {
     Course getCourseById(int id);
 
     Course getCourse(String courseName,String academy);
+
+    List<Course> getTails(Major major,Course head,List<Integer> courseIds);
+
+    List<Course> getHeads(Major major, Course tail,List<Integer> courseIds);
 
 }

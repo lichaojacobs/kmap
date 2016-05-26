@@ -66,8 +66,16 @@ public class CourseServlet extends HttpServlet {
         response.setContentType("application/json;charset=UTF-8");
         response.setHeader("Cache-Control", "no-cache");
         try {
+            //获取couseid
+            String courseId=request.getParameter("courseid");
             PrintWriter printWriter=response.getWriter();
-            printWriter.print(courseService.getCourseMap(user));
+            if(courseId==null){
+                printWriter.print(courseService.getCourseMap(user));
+            }
+            else {
+                printWriter.print(courseService.getCourseMap(user,Integer.valueOf(courseId)));
+            }
+
         }catch (Exception ex)
         {
 
@@ -75,6 +83,7 @@ public class CourseServlet extends HttpServlet {
         }
 
     }
+
 
 
 }

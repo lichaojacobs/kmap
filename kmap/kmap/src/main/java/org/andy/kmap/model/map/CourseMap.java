@@ -43,7 +43,7 @@ public class CourseMap {
 
     public void addNode(Course course) {
 
-        if (!this.nodes.containsValue(course)) {
+        if (!this.nodes.containsKey(course.getName())) {
             this.nodes.put(course.getName(), course);
         }
     }

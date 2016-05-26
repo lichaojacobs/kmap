@@ -22,9 +22,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
             <ul class="nav navbar-nav">
-                <li><a href="/kamp/Course/Index.do">首页</a></li>
+                <li><a href="/kmap/Course/Index.do">首页</a></li>
                 <li><a href="#">详情图</a></li>
-                <li><a href="#">信息录入</a></li>
+                <li><a href="/kmap/userInfo.do">信息录入</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right hidden-sm">
                 <li><a href="#" class="active">欢迎,<%=((LoginViewModel)request.getSession().getAttribute("userRole")).getUserName()%></a></li>

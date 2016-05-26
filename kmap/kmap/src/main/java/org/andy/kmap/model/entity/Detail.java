@@ -6,6 +6,16 @@ public class Detail {
     private String name;
     private String info;
 
+    private int likeCount;
+
+    public int getLikeCount() {
+        return likeCount;
+    }
+
+    public void setLikeCount(int likeCount) {
+        this.likeCount = likeCount;
+    }
+
     private Course course;
 
 

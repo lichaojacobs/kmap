@@ -13,6 +13,10 @@
 <!--导航栏目-->
 <jsp:include page="navagation.jsp"/>
 
+<div id="modal" class="list-group" style="display:none;">
+    <a href="#" class="list-group-item">50</a>
+    <a href="#" class="list-group-item">赞一下</a>
+</div>
 <input id="courseName" type="hidden" value="<%=request.getSession().getAttribute("courseName")%>">
 <!--导航栏结束-->
 <div id="maps"><a href="/">back</a><ul></ul></div>
