@@ -5,11 +5,10 @@ import org.andy.kmap.model.entity.*;
 import org.andy.kmap.model.entity.CoursePlanAddModels.CourseViewModel;
 import org.andy.kmap.model.entity.CoursePlanSearchModel.CoursePlanSearchModel;
 import org.andy.kmap.model.entity.DropDownModel.CourseDropDown;
-import org.andy.kmap.model.entity.DropDownModel.DropDownViewModel;
+import org.andy.kmap.model.entity.DropDownModel.CommonDropDown;
 import org.andy.kmap.model.entity.DropDownModel.GradeDropDown;
 import org.andy.kmap.model.entity.DropDownModel.MajorDropDown;
 import org.andy.kmap.model.map.CourseRelations;
-import org.andy.kmap.model.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
@@ -19,12 +18,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.logging.Logger;
 
 /**
  * Created by li on 2015/10/30.
@@ -44,9 +39,9 @@ public class APICoursePlanDaoImpl implements APICoursePlanDao {
      * 下拉列表对象
      * @return
      */
-    public List<DropDownViewModel> getDropDownModels(int type){
+    public List<CommonDropDown> getDropDownModels(int type){
         //定义结果集
-        final List<DropDownViewModel> dropDownViewModels=new ArrayList<DropDownViewModel>();
+        final List<CommonDropDown> commonDropDowns =new ArrayList<CommonDropDown>();
         //获取全部学院
         String sql="select codeNumber,name FROM academy";
 
@@ -54,21 +49,21 @@ public class APICoursePlanDaoImpl implements APICoursePlanDao {
             @Override
             public void processRow(ResultSet resultSet) throws SQLException {
 
-                DropDownViewModel dropDownViewModel=new DropDownViewModel();
-                dropDownViewModel.setId(resultSet.getInt("codeNumber"));
-                dropDownViewModel.setText(resultSet.getString("name"));
-                dropDownViewModel.setHref("#parent1");
-                dropDownViewModel.setSelectable(false);
-                dropDownViewModel.setTags(tags);
-                dropDownViewModels.add(dropDownViewModel);
+                CommonDropDown commonDropDown =new CommonDropDown();
+                commonDropDown.setId(resultSet.getInt("codeNumber"));
+                commonDropDown.setText(resultSet.getString("name"));
+                commonDropDown.setHref("#parent1");
+                commonDropDown.setSelectable(false);
+                commonDropDown.setTags(tags);
+                commonDropDowns.add(commonDropDown);
             }
         });
-        logger.info("获取下拉列表,学院:"+new Gson().toJson(dropDownViewModels));
+        logger.info("获取下拉列表,学院:"+new Gson().toJson(commonDropDowns));
         //循环添加专业
-        for (DropDownViewModel dropDownViewModel:dropDownViewModels){
-            dropDownViewModel.setNodes(getMajorDropDown(dropDownViewModel.getId(),type));
+        for (CommonDropDown commonDropDown : commonDropDowns){
+            commonDropDown.setNodes(getMajorDropDown(commonDropDown.getId(),type));
         }
-        return dropDownViewModels;
+        return commonDropDowns;
     }
 
 

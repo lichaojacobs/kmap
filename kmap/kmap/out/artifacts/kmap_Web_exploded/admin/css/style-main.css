@@ -45,12 +45,13 @@ background-color: white;
 }
 .div1
 {
-text-align:center;
- width:250px; 
+ width:250px;
  padding-top:10px;
 }
 .div2
 {
+ text-align: left;
+ margin-left: 45px;
 height: 50px;
 line-height: 50px;
 cursor: pointer;

@@ -68,4 +68,11 @@ public class PointApiController {
         }
     }
 
+    @RequestMapping("GetPointDropDown")
+    public @ResponseBody Object getPointDropDown(HttpServletRequest request){
+        String course= request.getParameter("course");
+        String academy=request.getParameter("academy");
+        return apiPointService.getPointDropDown(course,academy);
+    }
+
 }

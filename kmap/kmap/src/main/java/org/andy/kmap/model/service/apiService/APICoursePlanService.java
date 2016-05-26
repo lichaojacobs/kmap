@@ -1,11 +1,10 @@
 package org.andy.kmap.model.service.apiService;
 
-import org.andy.kmap.model.dao.apiDao.APICourseDao;
 import org.andy.kmap.model.dao.apiDao.APICoursePlanDao;
 import org.andy.kmap.model.entity.CommonResult;
 import org.andy.kmap.model.entity.CoursePlanAddModels.CourseViewModel;
 import org.andy.kmap.model.entity.CoursePlanSearchModel.CoursePlanSearchModel;
-import org.andy.kmap.model.entity.DropDownModel.DropDownViewModel;
+import org.andy.kmap.model.entity.DropDownModel.CommonDropDown;
 import org.andy.kmap.model.map.CourseRelations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -24,7 +23,7 @@ public class APICoursePlanService {
     @Qualifier("APICoursePlanDaoImpl")
     private APICoursePlanDao apiCoursePlanDao;
 
-    public List<DropDownViewModel> getDropDownModels(int type){
+    public List<CommonDropDown> getDropDownModels(int type){
 
         return apiCoursePlanDao.getDropDownModels(type);
 

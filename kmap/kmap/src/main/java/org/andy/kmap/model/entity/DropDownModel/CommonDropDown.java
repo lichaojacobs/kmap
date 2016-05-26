@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by li on 2015/10/29.
  */
-public class DropDownViewModel {
+public class CommonDropDown {
 
     private int id;
     private String text;
