@@ -1,10 +1,10 @@
 package org.andy.kmap.controller.apiControllers;
 
 import org.andy.kmap.filter.AuthPassport;
-import org.andy.kmap.model.entity.Academy;
-import org.andy.kmap.model.entity.CommonResult;
-import org.andy.kmap.model.entity.Grade;
-import org.andy.kmap.model.service.apiService.APIAcademyService;
+import org.andy.kmap.common.model.entity.Academy;
+import org.andy.kmap.common.model.entity.CommonResult;
+import org.andy.kmap.common.model.entity.Grade;
+import org.andy.kmap.common.service.apiService.APIAcademyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

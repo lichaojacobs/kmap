@@ -86,7 +86,6 @@ var Renderer_out;
                 gfx.oval(pt.x - w / 2, pt.y - w / 2, w, w, {fill: "#b2b19d", alpha: 0.9});
             }
               //尾部节点
-
             var width = w / 10;
             function print(width, name) {
                 if (name.length > width * 2) {
@@ -103,7 +102,6 @@ var Renderer_out;
 
         });
       },
-
       resize: function() {
         var w = $(window).width();
         var h = $(window).height();
@@ -111,7 +109,6 @@ var Renderer_out;
         particleSystem.screenSize(w,650); // inform the system so it can map coords for us
         that.redraw()
       },
-
       initMouseHandling: function() {
         selected = null;
         nearest  = null;

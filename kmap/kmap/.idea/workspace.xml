@@ -300,179 +300,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pointadd.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/pointadd.jsp">
+      <file leaf-file-name="CourseWikiService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/CourseWikiService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="95" column="58" selection-start-line="95" selection-start-column="58" selection-end-line="95" selection-end-column="58" />
-              <folding>
-                <element signature="e#34470#36907#0#HTML" expanded="false" />
-                <marker date="1464280675000" expanded="true" signature="2809:2920" placeholder="..." />
-                <marker date="1464280675000" expanded="true" signature="2851:2915" placeholder="..." />
-                <marker date="1464280675000" expanded="true" signature="19390:19448" placeholder="..." />
-                <marker date="1464280675000" expanded="true" signature="19408:19448" placeholder="..." />
-                <marker date="1464280675000" expanded="true" signature="20218:20276" placeholder="..." />
-                <marker date="1464280675000" expanded="true" signature="20236:20276" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="169" column="44" selection-start-line="169" selection-start-column="44" selection-end-line="169" selection-end-column="44" />
+            <state relative-caret-position="375">
+              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIPointService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/apiService/APIPointService.java">
+      <file leaf-file-name="CourseRateService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/CourseRateService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+            <state relative-caret-position="335">
+              <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
               <folding>
-                <element signature="e#1525#1533#0" expanded="true" />
-                <element signature="method#getPointSelectionsByLevel#0;class#APIPointService#0" expanded="false" />
+                <element signature="method#addComment#0;class#CourseRateService#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginInterceptors.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/filter/LoginInterceptors.java">
+      <file leaf-file-name="CourseRateDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/CourseRateDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
-              <folding>
-                <element signature="method#afterCompletion#0;class#LoginInterceptors#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthPassport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/filter/AuthPassport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="195">
+              <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PointSecondLevel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointSecondLevel.java">
+      <file leaf-file-name="coursewiki.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/coursewiki.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="416">
+              <caret line="269" column="25" selection-start-line="269" selection-start-column="25" selection-end-line="269" selection-end-column="25" />
+              <folding>
+                <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#8288#8528#0#HTML" expanded="false" />
+                <marker date="1465487014000" expanded="true" signature="10474:10486" ph="..." />
+                <marker date="1465487014000" expanded="true" signature="10502:10519" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="courseplanadd.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/courseplanadd.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="238" column="30" selection-start-line="238" selection-start-column="30" selection-end-line="238" selection-end-column="30" />
+              <folding>
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1464943452000" expanded="true" signature="1654:1685" ph="..." />
+                <marker date="1464943452000" expanded="true" signature="1847:1878" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="235" column="33" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseWikiController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseWikiController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APICoursePlanDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APICoursePlanDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1549#1565#0" expanded="false" />
-                <element signature="e#1677#2240#0" expanded="false" />
-                <element signature="e#2239#2240#0" expanded="false" />
-                <element signature="e#2912#3647#0" expanded="false" />
-                <element signature="e#3646#3647#0" expanded="false" />
-                <element signature="e#4162#4177#0" expanded="false" />
-                <element signature="e#4311#5100#0" expanded="false" />
-                <element signature="e#5099#5100#0" expanded="false" />
-                <element signature="e#5429#5445#0" expanded="false" />
-                <element signature="e#5615#5842#0" expanded="false" />
-                <element signature="e#5841#5842#0" expanded="false" />
-                <element signature="e#6074#6592#0" expanded="false" />
-                <element signature="e#6591#6592#0" expanded="false" />
-                <element signature="e#7043#7060#0" expanded="false" />
-                <element signature="e#7234#7447#0" expanded="false" />
-                <element signature="e#7446#7447#0" expanded="false" />
-                <element signature="e#7501#7510#0" expanded="false" />
-                <element signature="e#7682#8305#0" expanded="false" />
-                <element signature="e#8304#8305#0" expanded="false" />
-                <element signature="e#8586#8795#0" expanded="false" />
-                <element signature="e#8794#8795#0" expanded="false" />
-                <element signature="e#9289#9497#0" expanded="false" />
-                <element signature="e#9496#9497#0" expanded="false" />
-                <element signature="e#9689#9905#0" expanded="false" />
-                <element signature="e#9904#9905#0" expanded="false" />
-                <element signature="e#10254#10623#0" expanded="false" />
-                <element signature="e#10622#10623#0" expanded="false" />
-                <element signature="e#11269#11691#0" expanded="false" />
-                <element signature="e#11690#11691#0" expanded="false" />
-                <element signature="e#12263#12501#0" expanded="false" />
-                <element signature="e#12500#12501#0" expanded="false" />
-                <element signature="e#12826#13246#0" expanded="false" />
-                <element signature="e#13245#13246#0" expanded="false" />
-                <element signature="e#14336#14567#0" expanded="false" />
-                <element signature="e#14566#14567#0" expanded="false" />
-                <element signature="e#14781#15004#0" expanded="false" />
-                <element signature="e#15003#15004#0" expanded="false" />
-                <element signature="e#15210#15437#0" expanded="false" />
-                <element signature="e#15436#15437#0" expanded="false" />
-                <element signature="e#15757#16372#0" expanded="false" />
-                <element signature="e#16371#16372#0" expanded="false" />
-                <marker date="1464266054000" expanded="true" signature="1606:1641" placeholder="select codeN... academy" />
-                <marker date="1464266054000" expanded="true" signature="2810:2857" placeholder="select id,ye... " />
-                <marker date="1464266054000" expanded="true" signature="4211:4246" placeholder="select year " />
-                <marker date="1464266054000" expanded="true" signature="5483:5518" placeholder="select cours... mc" />
-                <marker date="1464266054000" expanded="true" signature="5917:5951" placeholder="select name course" />
-                <marker date="1464266054000" expanded="true" signature="7095:7138" placeholder="select codeN... academy" />
-                <marker date="1464266054000" expanded="true" signature="7544:7612" placeholder="select cours... course" />
-                <marker date="1464266054000" expanded="true" signature="8521:8557" placeholder="select name category" />
-                <marker date="1464266054000" expanded="true" signature="9150:9194" placeholder="select id fr... major" />
-                <marker date="1464266054000" expanded="true" signature="9556:9599" placeholder="select codeN... academy" />
-                <marker date="1464266054000" expanded="true" signature="9986:10043" placeholder="select id,cr... course" />
-                <marker date="1464266054000" expanded="true" signature="10691:10740" placeholder="insert into mc... " />
-                <marker date="1464266054000" expanded="true" signature="10771:10814" placeholder="select * fro... mc" />
-                <marker date="1464266054000" expanded="true" signature="12010:12057" placeholder="insert into cc... " />
-                <marker date="1464266054000" expanded="true" signature="12574:12628" placeholder="select * fro... cc" />
-                <marker date="1464266054000" expanded="true" signature="14196:14239" placeholder="select codeN... academy" />
-                <marker date="1464266054000" expanded="true" signature="14640:14684" placeholder="select id fr... major" />
-                <marker date="1464266054000" expanded="true" signature="15077:15112" placeholder="select cours... mc" />
-                <marker date="1464266054000" expanded="true" signature="15523:15567" placeholder="SELECT id,cr... course" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APIPointDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIPointDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-              <folding>
-                <element signature="method#getPointSelections#0;class#APIPointDaoImpl#0" expanded="false" />
-                <element signature="method#addPoint#0;class#APIPointDaoImpl#0" expanded="false" />
-                <marker date="1464268620000" expanded="true" signature="850:893" placeholder="select codeN... academy" />
-                <marker date="1464268620000" expanded="true" signature="1261:1311" placeholder="select id fr... course" />
-                <marker date="1464268620000" expanded="true" signature="1657:1722" placeholder="SELECT detai... detail" />
-                <marker date="1464268620000" expanded="true" signature="2493:2536" placeholder="select codeN... academy" />
-                <marker date="1464268620000" expanded="true" signature="2904:2954" placeholder="select id fr... course" />
-                <marker date="1464268620000" expanded="true" signature="3320:3366" placeholder="select * fro... detail" />
-                <marker date="1464268620000" expanded="true" signature="4079:4129" placeholder="insert into detail... " />
-                <marker date="1464268620000" expanded="true" signature="4496:4543" placeholder="select id fr... detail" />
-                <marker date="1464268620000" expanded="true" signature="5033:5070" placeholder="insert into dd... " />
-                <marker date="1464268620000" expanded="true" signature="5274:5311" placeholder="insert into dd... " />
-                <marker date="1464268620000" expanded="true" signature="5597:5634" placeholder="insert into dd... " />
-                <marker date="1464268620000" expanded="true" signature="5669:5707" placeholder="delete from " />
+                <element signature="e#1632#1645#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -485,8 +402,8 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Interface" />
-        <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Class" />
       </list>
@@ -503,64 +420,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIMajorDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/Major.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/CommonResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/apiControllers/CoursePlanAddApiController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/info.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APICoursePlanDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/enums/Roles.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/enums/RolesEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/test.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/error.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/info.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/app.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/lib/ajax.js" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/course.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/map/CourseMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/UserInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/navagation.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/tools/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/tools/SqlUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/CourseDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/CourseDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/course.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/detail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/Detail.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/detail.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/js/courseplanadd.js" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/CourseService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/courseplanadd.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/DetailDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/CommonPoint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointFourthLevel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/apiControllers/PointApiController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIPointDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointFirstLevel.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointSecondLevel.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointThirdLevel.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/css/style-main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/pointadd.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointDropDown.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/apiService/APIPointService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/filter/LoginInterceptors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/service/CourseWikiService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/CourseWikiService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/api/impl/APIPointDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/impl/WikiRateDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/impl/CourseRateDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/CourseCommentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/impl/CourseCommentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/CourseCommentService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/info.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/courseadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/courseplanadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/courseplansearch.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/gradeadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/majoradd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/pointadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/style/coursewiki.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/apiService/APICoursePlanService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/course.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/detail.js" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/model/CourseRate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseWiki.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/error.jsp" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/tools/MyJdbcTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/course.js" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/CourseWikiDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/model/entity/LoginViewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/navagation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/coursewiki.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/model/entity/CourseRate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/model/entity/CourseWiki.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/CourseRateDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/CourseWikiService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseWikiController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/impl/CourseRateDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/impl/CourseWikiDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/CourseRateService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/coursewiki.jsp" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -582,8 +500,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -613,6 +531,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -646,6 +565,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -775,7 +750,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="filter" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -805,14 +780,81 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -828,12 +870,12 @@
     <property name="options.lastSelected" value="preferences.lookFeel" />
     <property name="options.splitter.main.proportions" value="0.29666665" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32336017" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -845,6 +887,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/admin/images" />
       <recent name="$PROJECT_DIR$/src/main/webapp/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp/style" />
       <recent name="H:\kmap\kmap\kmap\src\main\java\org\andy\kmap\tools" />
@@ -993,6 +1036,43 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -1015,6 +1095,65 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -1099,6 +1238,15 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1301,8 +1449,7 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="kmap" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.33" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/kmap/" />
+    <configuration default="false" name="kmap" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.35" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="kmap:Web exploded">
@@ -1603,7 +1750,24 @@
       <workItem from="1462949487336" duration="613000" />
       <workItem from="1464256336303" duration="467000" />
       <workItem from="1464256863590" duration="13336000" />
-      <workItem from="1464277308510" duration="3987000" />
+      <workItem from="1464277308510" duration="4085000" />
+      <workItem from="1464318269660" duration="2154000" />
+      <workItem from="1464537889709" duration="463000" />
+      <workItem from="1464539071779" duration="407000" />
+      <workItem from="1464714788789" duration="2876000" />
+      <workItem from="1464799542434" duration="1000" />
+      <workItem from="1464801860599" duration="2704000" />
+      <workItem from="1464869779566" duration="670000" />
+      <workItem from="1464877594886" duration="6235000" />
+      <workItem from="1464923248507" duration="9866000" />
+      <workItem from="1464961303093" duration="156000" />
+      <workItem from="1464971810711" duration="65000" />
+      <workItem from="1465038326105" duration="8944000" />
+      <workItem from="1465126339676" duration="206000" />
+      <workItem from="1465140815247" duration="57000" />
+      <workItem from="1465181615516" duration="423000" />
+      <workItem from="1465272507312" duration="27000" />
+      <workItem from="1465371557371" duration="26719000" />
     </task>
     <servers />
   </component>
@@ -1640,43 +1804,45 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="833999000" />
+    <option name="totallyTimeSpent" value="896070000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="false" />
     <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.46875" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45804676" sideWeight="0.3" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26560426" sideWeight="0.7" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29308325" sideWeight="0.7" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277439" sideWeight="0.10625" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29296875" sideWeight="0.49920508" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2923611" sideWeight="0.49920508" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21428572" sideWeight="0.5007949" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32590857" sideWeight="0.496875" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.65234375" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.65234375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290938" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262195" sideWeight="0.496875" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1725,7 +1891,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="186" />
+      <option name="time" value="192" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1734,548 +1900,540 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/js/coursePreview.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="105">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/info.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/enums/RolesEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.27/mysql-connector-java-5.1.27.jar!/com/mysql/jdbc/AbandonedConnectionCleanupThread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.7.RELEASE/spring-aop-4.1.7.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6060">
-          <caret line="453" column="0" selection-start-line="453" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar!/org/springframework/beans/factory/xml/XmlBeanDefinitionReader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="276">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1168">
-          <caret line="525" column="13" selection-start-line="525" selection-start-column="13" selection-end-line="525" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/UserInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/navagation.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/tools/SqlUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding />
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/map/CourseMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/course.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="21" column="6" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/Detail.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/filter/AuthPassport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/course.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/apiService/APICoursePlanService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="203" column="10" selection-start-line="203" selection-start-column="10" selection-end-line="203" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="203" column="62" selection-start-line="203" selection-start-column="62" selection-end-line="203" selection-end-column="62" />
+        <state relative-caret-position="360">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/js/courseplanadd.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1645">
-          <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+        <state relative-caret-position="363">
+          <caret line="242" column="20" selection-start-line="242" selection-start-column="20" selection-end-line="242" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/CourseService.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="84" column="7" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
+        <state relative-caret-position="448">
+          <caret line="237" column="19" selection-start-line="232" selection-start-column="6" selection-end-line="237" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="11" selection-start-line="12" selection-start-column="0" selection-end-line="33" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/apiControllers/CoursePlanAddApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="57" column="82" selection-start-line="57" selection-start-column="82" selection-end-line="57" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/apiControllers/PointApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/apiControllers/MajorApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/MajorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="119" column="46" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-885">
+          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/apiService/APIPointService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="111" column="7" selection-start-line="111" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
           <folding>
-            <element signature="method#getCourseMap#2;class#CourseService#0" expanded="false" />
-            <element signature="method#commonBuildCourseMap#0;class#CourseService#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1282#1290#0" expanded="false" />
+            <element signature="method#buildPointThirdLevels#0;class#APIPointService#0" expanded="false" />
+            <element signature="method#buildPointFourthLevels#0;class#APIPointService#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/CourseDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/apiService/APICourseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="175" column="27" selection-start-line="175" selection-start-column="27" selection-end-line="175" selection-end-column="27" />
+        <state relative-caret-position="135">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
-            <element signature="method#preparePlaceHolders#0;class#CourseDaoImpl#0" expanded="false" />
-            <element signature="method#getTails#1;class#CourseDaoImpl#0" expanded="false" />
-            <element signature="method#getCourseById#0;class#CourseDaoImpl#0" expanded="false" />
-            <element signature="method#getCourse#0;class#CourseDaoImpl#0" expanded="false" />
-            <element signature="method#setMark#0;class#CourseDaoImpl#0" expanded="false" />
-            <marker date="1462849904000" expanded="true" signature="1302:1403" placeholder="SELECT cours... course" />
-            <marker date="1462849904000" expanded="true" signature="2435:2482" placeholder="SELECT head,... cc" />
-            <marker date="1462849904000" expanded="true" signature="4758:4798" placeholder="SELECT cc.he... cc" />
-            <marker date="1462849904000" expanded="true" signature="5682:5722" placeholder="SELECT cc.ta... cc" />
-            <marker date="1462849904000" expanded="true" signature="6626:6670" placeholder="SELECT cc.he... cc" />
-            <marker date="1462849904000" expanded="true" signature="6626:6683" placeholder="SELECT cc.he... cc" />
-            <marker date="1462849904000" expanded="true" signature="6626:6716" placeholder="SELECT cc.he... cc" />
-            <marker date="1462849904000" expanded="true" signature="7763:7811" placeholder="SELECT cc.ta... cc" />
-            <marker date="1462849904000" expanded="true" signature="7763:7851" placeholder="SELECT cc.ta... cc" />
-            <marker date="1462849904000" expanded="true" signature="7763:7853" placeholder="SELECT cc.ta... cc" />
-            <marker date="1462849904000" expanded="true" signature="7763:7856" placeholder="SELECT cc.ta... cc" />
-            <marker date="1462849904000" expanded="true" signature="8795:8828" placeholder="SELECT * FRO... course" />
-            <marker date="1462849904000" expanded="true" signature="9617:9662" placeholder="SELECT codeN... academy" />
-            <marker date="1462849904000" expanded="true" signature="9923:9972" placeholder="SELECT * FRO... course" />
-            <marker date="1462849904000" expanded="true" signature="10736:10785" placeholder="SELECT mark uc" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/CourseDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/courseplanadd.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/course.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="229" column="18" selection-start-line="229" selection-start-column="18" selection-end-line="229" selection-end-column="18" />
+        <state relative-caret-position="285">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="1367" column="8" selection-start-line="1367" selection-start-column="8" selection-end-line="1367" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/tools/MyJdbcTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding>
-            <element signature="e#19676#23362#0#HTML" expanded="false" />
-            <marker date="1464256759000" expanded="true" signature="14720:14778" placeholder="..." />
-            <marker date="1464256759000" expanded="true" signature="14738:14778" placeholder="..." />
-            <marker date="1464256759000" expanded="true" signature="15548:15606" placeholder="..." />
-            <marker date="1464256759000" expanded="true" signature="15566:15606" placeholder="..." />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/DetailDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/course.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="274">
+          <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/model/entity/LoginViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding>
-            <marker date="1464258790000" expanded="true" signature="968:1050" placeholder="SELECT detai... detail" />
-            <marker date="1464258790000" expanded="true" signature="1857:1977" placeholder="SELECT detai... detail" />
-            <marker date="1464258790000" expanded="true" signature="1936:1976" placeholder="SELECT dd.he... dd" />
-            <marker date="1464258790000" expanded="true" signature="2777:2897" placeholder="SELECT detai... detail" />
-            <marker date="1464258790000" expanded="true" signature="2856:2896" placeholder="SELECT dd.ta... dd" />
+            <element signature="e#185#186#0" expanded="false" />
+            <element signature="e#224#225#0" expanded="false" />
+            <element signature="e#254#255#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/detail.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="-414">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="method#addUser#0;class#UserDaoImpl#0" expanded="false" />
+            <element signature="method#getUser#0;class#UserDaoImpl#0" expanded="false" />
+            <element signature="method#getUserRole#0;class#UserDaoImpl#0" expanded="false" />
+            <element signature="method#addUserInfo#0;class#UserDaoImpl#0" expanded="false" />
+            <marker date="1464804405000" expanded="true" signature="1451:1512" ph="SELECT id, n... user" />
+            <marker date="1464804405000" expanded="true" signature="1741:1794" ph="INSERT INTO user... " />
+            <marker date="1464804405000" expanded="true" signature="2093:2137" ph="INSERT INTO roles... " />
+            <marker date="1464804405000" expanded="true" signature="3897:3975" ph="SELECT id,na... user" />
+            <marker date="1464804405000" expanded="true" signature="5375:5414" ph="SELECT role roles" />
+            <marker date="1464804405000" expanded="true" signature="6248:6313" ph="UPDATE user " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/coursewiki.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/navagation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="29" column="128" selection-start-line="29" selection-start-column="117" selection-end-line="29" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/model/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/impl/CourseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <marker date="1464804405000" expanded="true" signature="1333:1434" ph="SELECT cours... course" />
+            <marker date="1464804405000" expanded="true" signature="2466:2513" ph="SELECT head,... cc" />
+            <marker date="1464804405000" expanded="true" signature="4789:4829" ph="SELECT cc.he... cc" />
+            <marker date="1464804405000" expanded="true" signature="5713:5753" ph="SELECT cc.ta... cc" />
+            <marker date="1464804405000" expanded="true" signature="6657:6747" ph="SELECT cc.he... cc" />
+            <marker date="1464804405000" expanded="true" signature="7794:7884" ph="SELECT cc.ta... cc" />
+            <marker date="1464804405000" expanded="true" signature="8826:8859" ph="SELECT * FRO... course" />
+            <marker date="1464804405000" expanded="true" signature="9648:9693" ph="SELECT codeN... academy" />
+            <marker date="1464804405000" expanded="true" signature="9954:10003" ph="SELECT * FRO... course" />
+            <marker date="1464804405000" expanded="true" signature="10767:10816" ph="SELECT mark uc" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/api/impl/APICoursePlanDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="49" selection-end-column="32" />
+          <folding>
+            <element signature="e#1791#2354#0" expanded="true" />
+            <element signature="e#2353#2354#0" expanded="true" />
+            <marker date="1464804434000" expanded="true" signature="1720:1755" ph="select codeN... academy" />
+            <marker date="1464804434000" expanded="true" signature="2924:2971" ph="select id,ye... " />
+            <marker date="1464804434000" expanded="true" signature="4325:4360" ph="select year " />
+            <marker date="1464804434000" expanded="true" signature="5597:5632" ph="select cours... mc" />
+            <marker date="1464804434000" expanded="true" signature="6031:6065" ph="select name course" />
+            <marker date="1464804434000" expanded="true" signature="7209:7252" ph="select codeN... academy" />
+            <marker date="1464804434000" expanded="true" signature="7658:7726" ph="select cours... course" />
+            <marker date="1464804434000" expanded="true" signature="8635:8671" ph="select name category" />
+            <marker date="1464804434000" expanded="true" signature="9264:9308" ph="select id fr... major" />
+            <marker date="1464804434000" expanded="true" signature="9670:9713" ph="select codeN... academy" />
+            <marker date="1464804434000" expanded="true" signature="10100:10157" ph="select id,cr... course" />
+            <marker date="1464804434000" expanded="true" signature="10805:10854" ph="insert into mc... " />
+            <marker date="1464804434000" expanded="true" signature="10885:10928" ph="select * fro... mc" />
+            <marker date="1464804434000" expanded="true" signature="12124:12171" ph="insert into cc... " />
+            <marker date="1464804434000" expanded="true" signature="12688:12742" ph="select * fro... cc" />
+            <marker date="1464804434000" expanded="true" signature="14310:14353" ph="select codeN... academy" />
+            <marker date="1464804434000" expanded="true" signature="14754:14798" ph="select id fr... major" />
+            <marker date="1464804434000" expanded="true" signature="15191:15226" ph="select cours... mc" />
+            <marker date="1464804434000" expanded="true" signature="15637:15681" ph="SELECT id,cr... course" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/pointadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="353" column="14" selection-start-line="353" selection-start-column="14" selection-end-line="353" selection-end-column="14" />
+          <folding>
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#31787#33869#0#HTML" expanded="false" />
+            <element signature="n#script#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/courseadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6694">
+          <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+          <folding>
+            <marker date="1464943452000" expanded="true" signature="1803:1834" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="1996:2027" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="5142:5159" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="5190:5207" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="5237:5254" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="5293:5299" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="5342:5348" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="5395:5401" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="5448:5464" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="5486:5519" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="5691:5724" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="5958:5964" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="6007:6013" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="6060:6066" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="6113:6129" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="6151:6184" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="6356:6389" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="6625:6631" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="6674:6680" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="6727:6733" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="6780:6796" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="6818:6851" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="7023:7056" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="7711:7747" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="7775:7813" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="7843:7849" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="7887:7904" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="7926:7959" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="8131:8164" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="8411:8447" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="8475:8513" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="8543:8549" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="8587:8604" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="8626:8659" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="8831:8864" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1464943452000" expanded="true" signature="1654:1685" ph="..." />
+            <marker date="1464943452000" expanded="true" signature="1847:1878" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/js/MessageBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/model/entity/CourseRate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/model/entity/CourseRate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="method#toString#0;class#CourseRate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/model/entity/CourseWiki.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/CourseWikiDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="257" column="26" selection-start-line="257" selection-start-column="26" selection-end-line="257" selection-end-column="26" />
+        <state relative-caret-position="290">
+          <caret line="235" column="33" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/apiControllers/CourseApiController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/courseplanadd.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/CoursePlanAddModels/CourseViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/GradeDropDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointFourthLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/CommonPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="381">
+          <caret line="238" column="30" selection-start-line="238" selection-start-column="30" selection-end-line="238" selection-end-column="30" />
           <folding>
-            <element signature="e#245#246#0" expanded="false" />
-            <element signature="e#266#267#0" expanded="false" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/MajorDropDown.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/CourseWikiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1632#1645#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/CourseWikiService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/CourseDropDown.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/impl/CourseWikiDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APIPointDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+        <state relative-caret-position="570">
+          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
           <folding>
-            <element signature="method#getPointSelections#0;class#APIPointDaoImpl#0" expanded="false" />
-            <element signature="method#addPoint#0;class#APIPointDaoImpl#0" expanded="false" />
-            <marker date="1464268620000" expanded="true" signature="850:893" placeholder="select codeN... academy" />
-            <marker date="1464268620000" expanded="true" signature="1261:1311" placeholder="select id fr... course" />
-            <marker date="1464268620000" expanded="true" signature="1657:1722" placeholder="SELECT detai... detail" />
-            <marker date="1464268620000" expanded="true" signature="2493:2536" placeholder="select codeN... academy" />
-            <marker date="1464268620000" expanded="true" signature="2904:2954" placeholder="select id fr... course" />
-            <marker date="1464268620000" expanded="true" signature="3320:3366" placeholder="select * fro... detail" />
-            <marker date="1464268620000" expanded="true" signature="4079:4129" placeholder="insert into detail... " />
-            <marker date="1464268620000" expanded="true" signature="4496:4543" placeholder="select id fr... detail" />
-            <marker date="1464268620000" expanded="true" signature="5033:5070" placeholder="insert into dd... " />
-            <marker date="1464268620000" expanded="true" signature="5274:5311" placeholder="insert into dd... " />
-            <marker date="1464268620000" expanded="true" signature="5597:5634" placeholder="insert into dd... " />
-            <marker date="1464268620000" expanded="true" signature="5669:5707" placeholder="delete from " />
+            <element signature="e#1737#2497#0" expanded="true" />
+            <element signature="e#2496#2497#0" expanded="true" />
+            <element signature="e#3152#3587#0" expanded="true" />
+            <element signature="e#3586#3587#0" expanded="true" />
+            <element signature="method#editCourseInfo#0;class#CourseWikiDaoImpl#0" expanded="false" />
+            <element signature="method#updateCourseWikiByCourseId#0;class#CourseWikiDaoImpl#0" expanded="false" />
+            <marker date="1465486240000" expanded="true" signature="837:880" ph="select * fro... course_wiki" />
+            <marker date="1465486240000" expanded="true" signature="940:971" ph="select * fro... course_wiki" />
+            <marker date="1465486240000" expanded="true" signature="1036:1128" ph="insert into course_wiki... " />
+            <marker date="1465486240000" expanded="true" signature="1180:1215" ph="update cours... " />
+            <marker date="1465486240000" expanded="true" signature="1282:1387" ph="update cours... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/dao/apiDao/APICoursePlanDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/impl/CourseRateDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="245">
+          <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1549#1565#0" expanded="false" />
-            <element signature="e#1677#2240#0" expanded="false" />
-            <element signature="e#2239#2240#0" expanded="false" />
-            <element signature="e#2912#3647#0" expanded="false" />
-            <element signature="e#3646#3647#0" expanded="false" />
-            <element signature="e#4162#4177#0" expanded="false" />
-            <element signature="e#4311#5100#0" expanded="false" />
-            <element signature="e#5099#5100#0" expanded="false" />
-            <element signature="e#5429#5445#0" expanded="false" />
-            <element signature="e#5615#5842#0" expanded="false" />
-            <element signature="e#5841#5842#0" expanded="false" />
-            <element signature="e#6074#6592#0" expanded="false" />
-            <element signature="e#6591#6592#0" expanded="false" />
-            <element signature="e#7043#7060#0" expanded="false" />
-            <element signature="e#7234#7447#0" expanded="false" />
-            <element signature="e#7446#7447#0" expanded="false" />
-            <element signature="e#7501#7510#0" expanded="false" />
-            <element signature="e#7682#8305#0" expanded="false" />
-            <element signature="e#8304#8305#0" expanded="false" />
-            <element signature="e#8586#8795#0" expanded="false" />
-            <element signature="e#8794#8795#0" expanded="false" />
-            <element signature="e#9289#9497#0" expanded="false" />
-            <element signature="e#9496#9497#0" expanded="false" />
-            <element signature="e#9689#9905#0" expanded="false" />
-            <element signature="e#9904#9905#0" expanded="false" />
-            <element signature="e#10254#10623#0" expanded="false" />
-            <element signature="e#10622#10623#0" expanded="false" />
-            <element signature="e#11269#11691#0" expanded="false" />
-            <element signature="e#11690#11691#0" expanded="false" />
-            <element signature="e#12263#12501#0" expanded="false" />
-            <element signature="e#12500#12501#0" expanded="false" />
-            <element signature="e#12826#13246#0" expanded="false" />
-            <element signature="e#13245#13246#0" expanded="false" />
-            <element signature="e#14336#14567#0" expanded="false" />
-            <element signature="e#14566#14567#0" expanded="false" />
-            <element signature="e#14781#15004#0" expanded="false" />
-            <element signature="e#15003#15004#0" expanded="false" />
-            <element signature="e#15210#15437#0" expanded="false" />
-            <element signature="e#15436#15437#0" expanded="false" />
-            <element signature="e#15757#16372#0" expanded="false" />
-            <element signature="e#16371#16372#0" expanded="false" />
-            <marker date="1464266054000" expanded="true" signature="1606:1641" placeholder="select codeN... academy" />
-            <marker date="1464266054000" expanded="true" signature="2810:2857" placeholder="select id,ye... " />
-            <marker date="1464266054000" expanded="true" signature="4211:4246" placeholder="select year " />
-            <marker date="1464266054000" expanded="true" signature="5483:5518" placeholder="select cours... mc" />
-            <marker date="1464266054000" expanded="true" signature="5917:5951" placeholder="select name course" />
-            <marker date="1464266054000" expanded="true" signature="7095:7138" placeholder="select codeN... academy" />
-            <marker date="1464266054000" expanded="true" signature="7544:7612" placeholder="select cours... course" />
-            <marker date="1464266054000" expanded="true" signature="8521:8557" placeholder="select name category" />
-            <marker date="1464266054000" expanded="true" signature="9150:9194" placeholder="select id fr... major" />
-            <marker date="1464266054000" expanded="true" signature="9556:9599" placeholder="select codeN... academy" />
-            <marker date="1464266054000" expanded="true" signature="9986:10043" placeholder="select id,cr... course" />
-            <marker date="1464266054000" expanded="true" signature="10691:10740" placeholder="insert into mc... " />
-            <marker date="1464266054000" expanded="true" signature="10771:10814" placeholder="select * fro... mc" />
-            <marker date="1464266054000" expanded="true" signature="12010:12057" placeholder="insert into cc... " />
-            <marker date="1464266054000" expanded="true" signature="12574:12628" placeholder="select * fro... cc" />
-            <marker date="1464266054000" expanded="true" signature="14196:14239" placeholder="select codeN... academy" />
-            <marker date="1464266054000" expanded="true" signature="14640:14684" placeholder="select id fr... major" />
-            <marker date="1464266054000" expanded="true" signature="15077:15112" placeholder="select cours... mc" />
-            <marker date="1464266054000" expanded="true" signature="15523:15567" placeholder="SELECT id,cr... course" />
+            <element signature="e#2923#3499#0" expanded="true" />
+            <element signature="e#3498#3499#0" expanded="true" />
+            <marker date="1465486177000" expanded="true" signature="829:944" ph="insert into course_rate... " />
+            <marker date="1465486177000" expanded="true" signature="993:1036" ph="select * fro... course_rate" />
+            <marker date="1465486177000" expanded="true" signature="1097:1129" ph="select * fro... course_rate" />
+            <marker date="1465486177000" expanded="true" signature="1097:1157" ph="select * fro... course_rate" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/CommonDropDown.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/dao/CourseRateDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="38" selection-start-line="9" selection-start-column="3" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="195">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointFirstLevel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/common/service/CourseRateService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        <state relative-caret-position="335">
+          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
+            <element signature="method#addComment#0;class#CourseRateService#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointThirdLevel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/coursewiki.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        <state relative-caret-position="416">
+          <caret line="269" column="25" selection-start-line="269" selection-start-column="25" selection-end-line="269" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
+            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#8288#8528#0#HTML" expanded="false" />
+            <marker date="1465487014000" expanded="true" signature="10474:10486" ph="..." />
+            <marker date="1465487014000" expanded="true" signature="10502:10519" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointSecondLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/css/style-main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/entity/DropDownModel/PointDropDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/model/service/apiService/APIPointService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
-          <folding>
-            <element signature="e#1525#1533#0" expanded="true" />
-            <element signature="method#getPointSelectionsByLevel#0;class#APIPointService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/tools/SqlUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="52" column="13" selection-start-line="49" selection-start-column="12" selection-end-line="52" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/filter/AuthPassport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/filter/LoginInterceptors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
-          <folding>
-            <element signature="method#afterCompletion#0;class#LoginInterceptors#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/andy/kmap/controller/apiControllers/PointApiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="70" column="37" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="37" />
-          <folding>
-            <element signature="method#addPoint#0;class#PointApiController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/pointadd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="95" column="58" selection-start-line="95" selection-start-column="58" selection-end-line="95" selection-end-column="58" />
-          <folding>
-            <element signature="e#34470#36907#0#HTML" expanded="false" />
-            <marker date="1464280675000" expanded="true" signature="2809:2920" placeholder="..." />
-            <marker date="1464280675000" expanded="true" signature="2851:2915" placeholder="..." />
-            <marker date="1464280675000" expanded="true" signature="19390:19448" placeholder="..." />
-            <marker date="1464280675000" expanded="true" signature="19408:19448" placeholder="..." />
-            <marker date="1464280675000" expanded="true" signature="20218:20276" placeholder="..." />
-            <marker date="1464280675000" expanded="true" signature="20236:20276" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="169" column="44" selection-start-line="169" selection-start-column="44" selection-end-line="169" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2286,10 +2444,10 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="jpa-descriptors" />
-              <type id="javaee-facet-resources" />
               <type id="artifact" />
               <type id="library" />
+              <type id="jpa-descriptors" />
+              <type id="javaee-facet-resources" />
             </show-content>
           </artifact-editor>
           <last-edited>kmap:Web exploded</last-edited>
@@ -2345,6 +2503,7 @@
             <option name="proportions">
               <list>
                 <option value="0.32336017" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

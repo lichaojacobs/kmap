@@ -1,20 +1,15 @@
 package org.andy.kmap.controller;
 
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.andy.kmap.model.entity.*;
+import org.andy.kmap.common.model.entity.*;
 
-import org.andy.kmap.model.service.CourseService;
-import org.andy.kmap.model.service.DetailService;
+import org.andy.kmap.common.service.CourseService;
+import org.andy.kmap.common.service.DetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/")

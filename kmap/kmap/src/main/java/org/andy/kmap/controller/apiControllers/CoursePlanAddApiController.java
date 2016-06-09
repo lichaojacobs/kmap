@@ -1,8 +1,8 @@
 package org.andy.kmap.controller.apiControllers;
 
-import org.andy.kmap.model.entity.CommonResult;
-import org.andy.kmap.model.map.CourseRelations;
-import org.andy.kmap.model.service.apiService.APICoursePlanService;
+import org.andy.kmap.common.model.entity.CommonResult;
+import org.andy.kmap.common.model.map.CourseRelations;
+import org.andy.kmap.common.service.apiService.APICoursePlanService;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;

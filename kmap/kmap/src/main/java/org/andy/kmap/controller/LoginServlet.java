@@ -1,14 +1,11 @@
 package org.andy.kmap.controller;
 
-import java.io.IOException;
-
 import javax.servlet.http.*;
 
-import org.andy.kmap.model.entity.CommonResult;
-import org.andy.kmap.model.entity.LoginResult;
-import org.andy.kmap.model.entity.LoginViewModel;
-import org.andy.kmap.model.entity.User;
-import org.andy.kmap.model.service.UserService;
+import org.andy.kmap.common.model.entity.LoginResult;
+import org.andy.kmap.common.model.entity.LoginViewModel;
+import org.andy.kmap.common.model.entity.User;
+import org.andy.kmap.common.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

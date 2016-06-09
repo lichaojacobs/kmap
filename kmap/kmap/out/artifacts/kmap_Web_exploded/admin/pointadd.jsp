@@ -1,4 +1,4 @@
-<%@ page import="org.andy.kmap.model.entity.LoginViewModel" %>
+<%@ page import="org.andy.kmap.common.model.entity.LoginViewModel" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -115,6 +115,8 @@
                                    } else {
                                        pointforward.options.length = 0;
                                        pointbehind.options.length = 0;
+                                       pointbehind.add(new Option("无", 0));
+                                       pointforward.add(new Option("无", 0));
                                        $.MsgBox.Alert("提示", "暂无该级别的知识点");
                                    }
                                }
@@ -354,11 +356,13 @@
     (function () {
         $.MsgBox = {
             Alert: function (title, msg) {
+                $("#mb_box,#mb_con,#mb_overview").remove();
                 GenerateHtml("alert", title, msg);
                 btnOk();  //alert只是弹出消息，因此没必要用到回调函数callback
                 btnNo();
             },
             Confirm: function (title, msg, callback) {
+                $("#mb_box,#mb_con,#mb_overview").remove();
                 GenerateHtml("confirm", title, msg);
                 btnOk(callback);
                 btnNo();
@@ -665,8 +669,9 @@
         var tempbehind;
         //一些前置判断
         if (pointlevel == "1") {
-            if (pointforward != "无")
+            if (pointforward != "无") {
                 $.MsgBox.Alert("错误提示", "知识点层数选择有误!");
+            }
         }
         if (pointlevel != "1") {
             if (pointbehind == "无" && pointforward == "无")
@@ -816,7 +821,7 @@
                    dataType: "json",
                    type: "POST",
                    success: function (data, status) {
-                       pointdropdown=data;
+                       pointdropdown = data;
                        $('#point_tree_view').treeview({
                                                           levels: 1,
                                                           data: data

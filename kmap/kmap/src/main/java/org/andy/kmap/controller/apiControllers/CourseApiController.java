@@ -1,8 +1,8 @@
 package org.andy.kmap.controller.apiControllers;
 
-import org.andy.kmap.model.entity.Course;
-import org.andy.kmap.model.entity.LoginViewModel;
-import org.andy.kmap.model.service.apiService.APICourseService;
+import org.andy.kmap.common.model.entity.Course;
+import org.andy.kmap.common.model.entity.LoginViewModel;
+import org.andy.kmap.common.service.apiService.APICourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

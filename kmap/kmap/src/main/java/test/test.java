@@ -1,23 +1,10 @@
 package test;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import jdk.nashorn.internal.parser.JSONParser;
-import org.andy.kmap.model.entity.Academy;
-import org.andy.kmap.model.entity.DropDownModel.CourseDropDown;
-import org.andy.kmap.model.entity.DropDownModel.GradeDropDown;
-import org.andy.kmap.model.service.apiService.APIAcademyService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
-import org.springframework.core.env.SystemEnvironmentPropertySource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowCallbackHandler;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.test.context.ContextConfiguration;
@@ -25,17 +12,8 @@ import org.junit.runner.*;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.mail.internet.MimeMessage;
-import javax.swing.tree.TreeNode;
+
 import java.io.File;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.LinkedBlockingDeque;
 
 /**
  * Created by Mtime on 2015/9/17.

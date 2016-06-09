@@ -1,7 +1,7 @@
 package org.andy.kmap.controller.apiControllers;
 
-import org.andy.kmap.model.entity.CommonResult;
-import org.andy.kmap.model.service.apiService.APIPointService;
+import org.andy.kmap.common.model.entity.CommonResult;
+import org.andy.kmap.common.service.apiService.APIPointService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;

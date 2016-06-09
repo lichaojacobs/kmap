@@ -1,4 +1,3 @@
-<%@ page import="org.andy.kmap.model.entity.LoginViewModel" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,9 +15,9 @@
     <canvas id="viewport" width="100%" height="650"></canvas>
 </div>
 <div id="modal" class="list-group" style="display:none;">
-    <a href="#" class="list-group-item">百度百科</a>
+    <a href="#" class="list-group-item">百科</a>
     <a href="#" class="list-group-item" onchange="">局部详情图</a>
-    <a href="#" class="list-group-item">幕客网</a>
+    <a href="/kmap/wiki/index.do?courseId=0" class="list-group-item">课程维基</a>
 </div>
 
 <div id="partialload" class="partialload" style="display: none;">

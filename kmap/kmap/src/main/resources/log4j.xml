@@ -12,7 +12,7 @@
 
 <!-- [公共Appender] -->
 <appender name="DEFAULT-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
-<param name="File" value="/Users/apple/Desktop/kmap/kmap/logs/logs/common-default.log" />
+<param name="File" value="/Users/lichao/Desktop/kmap_log/common-default.log" />
 <param name="Append" value="true" />
 <param name="encoding" value="UTF-8" />
 <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
@@ -23,7 +23,7 @@
 
 <!-- [错误日志APPENDER] -->
 <appender name="ERROR-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
-<param name="File" value="/Users/apple/Desktop/kmap/kmap/logs/common-error.log" />
+<param name="File" value="/Users/lichao/Desktop/kmap_log/common-error.log" />
 <param name="Append" value="true" />
 <param name="encoding" value="UTF-8" />
 <param name="threshold" value="error" />
@@ -36,7 +36,7 @@
 <!-- [组件日志APPENDER] -->
 <appender name="COMPONENT-APPENDER"
 class="org.apache.log4j.DailyRollingFileAppender">
-<param name="File" value="/Users/apple/Desktop/kmap/kmap/logs/logistics-component.log" />
+<param name="File" value="/Users/lichao/Desktop/kmap_log/logistics-component.log" />
 <param name="Append" value="true" />
 <param name="encoding" value="GBK" />
 <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />

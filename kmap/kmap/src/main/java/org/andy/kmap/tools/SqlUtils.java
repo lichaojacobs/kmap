@@ -1,11 +1,9 @@
 package org.andy.kmap.tools;
 
-import com.mysql.jdbc.Connection;
-import org.andy.kmap.model.entity.Major;
+import org.andy.kmap.common.model.entity.Major;
 import org.apache.log4j.Logger;
 
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.List;
 /**
  * Created by lichao on 16/5/10.

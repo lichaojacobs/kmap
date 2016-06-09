@@ -1,4 +1,4 @@
-<%@ page import="org.andy.kmap.model.entity.LoginViewModel" %>
+<%@ page import="org.andy.kmap.common.entity.LoginViewModel" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">

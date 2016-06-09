@@ -1,23 +1,21 @@
 package org.andy.kmap.controller;
 
-import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.ServletException;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.andy.kmap.enums.RolesEnum;
-import org.andy.kmap.model.entity.*;
+import org.andy.kmap.common.model.entity.*;
 
-import org.andy.kmap.model.service.CourseService;
-import org.andy.kmap.model.service.MajorService;
-import org.andy.kmap.model.service.UserService;
+import org.andy.kmap.common.service.CourseService;
+import org.andy.kmap.common.service.MajorService;
+import org.andy.kmap.common.service.UserService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/")

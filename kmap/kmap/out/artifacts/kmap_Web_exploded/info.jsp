@@ -1,4 +1,4 @@
-<%@ page import="org.andy.kmap.model.entity.LoginViewModel" %><%--
+<%@ page import="org.andy.kmap.common.model.entity.LoginViewModel" %><%--
   Created by IntelliJ IDEA.
   User: lichao
   Date: 16/3/16

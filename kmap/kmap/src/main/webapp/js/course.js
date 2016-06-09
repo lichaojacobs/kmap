@@ -171,6 +171,8 @@
                             var modal = $("#modal a:first");
                             modal.text(nearest.node.name + "百科");
                             modal.attr("href", "http://www.baike.baidu.com/item/" + nearest.node.data.name);
+                            var wiki=$("#modal a:nth-child(3)");
+                            wiki.attr("href","/kmap/wiki/index.do?courseId="+nearest.node.data.id);
                             $(".list-group").attr("style", ";position:absolute;top:" + e.pageY + "px;left:" + e.pageX + "px");
                             var partialload=$("#modal a:nth-child(2)");
                             partialload.click(function () {
@@ -194,7 +196,7 @@
                         dragged = null;
                         _mouseP = null;
                         selected = null;
-                        return false
+                        return false;
                     }
                 }
                 $(canvas).dblclick(handler.dbclicked);

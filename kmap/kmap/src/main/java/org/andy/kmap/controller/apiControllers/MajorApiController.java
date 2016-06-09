@@ -1,8 +1,8 @@
 package org.andy.kmap.controller.apiControllers;
 
 import org.andy.kmap.filter.AuthPassport;
-import org.andy.kmap.model.entity.Major;
-import org.andy.kmap.model.service.apiService.APIMajorService;
+import org.andy.kmap.common.model.entity.Major;
+import org.andy.kmap.common.service.apiService.APIMajorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
